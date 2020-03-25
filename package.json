@@ -1,0 +1,32 @@
+{
+  "name": "a17t",
+  "version": "0.0.1",
+  "description": "Atomic design toolkit for beautiful, maintainable, and custom interfaces",
+  "main": "src/index.js",
+  "scripts": {
+    "tests": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milesmcc/a17t.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "design",
+    "webdesign",
+    "atomic",
+    "modern",
+    "minimalist",
+    "postcss"
+  ],
+  "author": "R. Miles McCain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milesmcc/a17t/issues"
+  },
+  "homepage": "https://github.com/milesmcc/a17t#readme",
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  }
+}
