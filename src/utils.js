@@ -17,14 +17,14 @@ function isString(val) {
 let substituteVariables = (rules, config) => {
   for (let rule of Object.keys(rules)) {
     let value = rules[rule];
-    if (isString(value) && value.startsWith("==")) {
+    if (isString(value) && value.startsWith("$")) {
       delete rules[rule];
       // Is a variable; perform substitution
-      value = value.slice(2);
+      value = value.slice(1);
       for (let binding of value.split(" or ")) {
         // Add all of the color classes
         for (let tone of config.tones) {
-          let toneClass = `&:t-${tone}`;
+          let toneClass = `&.t-${tone}`;
           let path = "colorMappings.$tone.$weight";
           if (binding == "fillColor") {
             path += ".fill";
@@ -37,7 +37,9 @@ let substituteVariables = (rules, config) => {
             null
           );
           if (defaultValue != null) {
-            rules[toneClass] = {};
+            if (rules[toneClass] == undefined) {
+              rules[toneClass] = {};
+            }
             rules[toneClass][rule] = defaultValue;
           }
 
@@ -48,8 +50,10 @@ let substituteVariables = (rules, config) => {
               null
             );
             if (foundValue != null) {
-              let priorityClass = `&:p-${priority}`;
-              rules[toneClass][priorityClass] = {};
+              let priorityClass = `&.p-${priority}`;
+              if (rules[toneClass][priorityClass] == undefined) {
+                rules[toneClass][priorityClass] = {};
+              }
               rules[toneClass][priorityClass][rule] = foundValue;
             }
           }

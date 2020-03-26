@@ -10,7 +10,7 @@ const DEFAULT_CONFIG = {
 
 const sub = require("./utils").substituteVariables; 
 
-module.exports = (config, overrides) => {
+const generate = (config, overrides) => {
   let c = {
     ...DEFAULT_CONFIG,
     ...config,
@@ -20,4 +20,12 @@ module.exports = (config, overrides) => {
     ...sub(require("./atoms/layout/card")(c), c),
     ...overrides,
   }
+}
+
+exports.generate = generate;
+
+exports.tailwindPlugin = (config, overrides) => {
+  return ({addComponents}) => {
+    addComponents(generate(config, overrides));
+  };
 }
