@@ -3,6 +3,8 @@ module.exports = c => {
     borderRadius: c.borderRadii.large,
     padding: "1rem",
     boxShadow: c.shadows.normal,
+    backgroundColor: "==fillColor",
+    color: "==contentColor",
   };
 
   if (c.margin) {

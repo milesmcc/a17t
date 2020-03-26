@@ -8,6 +8,8 @@ const DEFAULT_CONFIG = {
   margin: true,
 };
 
+const sub = require("./utils").substituteVariables; 
+
 module.exports = (config, overrides) => {
   let c = {
     ...DEFAULT_CONFIG,
@@ -15,8 +17,7 @@ module.exports = (config, overrides) => {
   };
 
   return {
-    ...require("./atoms/common")(c),
-    ...require("./atoms/layout/card")(c),
+    ...sub(require("./atoms/layout/card")(c), c),
     ...overrides,
   }
 }
