@@ -1,17 +1,17 @@
 module.exports = c => {
-  let card = {
-    borderRadius: c.borderRadii.large,
-    padding: "1rem",
-    boxShadow: c.shadows.medium,
-    backgroundColor: "$fillColor",
-    color: "$contentColor"
-  };
-
-  if (c.margin) {
-    card["margin"] = "2rem 0";
-  }
-
   return {
-    ".card": card
+    ".card": {
+      borderRadius: "=card.borderRadius, borderRadii.large",
+      padding: "=card.padding, spacing.4",
+      boxShadow: "=card.shadow, shadows.large",
+      backgroundColor:
+        "=card.{{tone}}.{{priority}}.fill,\
+      colors.{{tone}}.{{priority}}.fill,\
+      colors.{{tone}}.normal.fill",
+      color:
+        "=card.{{tone}}.{{priority}}.content,\
+      colors.{{tone}}.{{priority}}.content,\
+      colors.{{tone}}.normal.content"
+    }
   };
 };

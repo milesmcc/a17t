@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "a17t": "file:..",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "pretty": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

@@ -46,16 +46,16 @@ const COLOR = {
     "#276749",
     "#22543d"
   ],
-  indigo: [
-    "#ebf4ff",
-    "#c3dafe",
-    "#a3bffa",
-    "#7f9cf5",
-    "#667eea",
-    "#5a67d8",
-    "#4c51bf",
-    "#434190",
-    "#3c366b"
+  blue: [
+    '#ebf8ff',
+    '#bee3f8',
+    '#90cdf4',
+    '#63b3ed',
+    '#4299e1',
+    '#3182ce',
+    '#2b6cb0',
+    '#2c5282',
+    '#2a4365'
   ],
   purple: [
     "#faf5ff",
@@ -74,7 +74,7 @@ module.exports = {
   positive: {
     low: {
       content: COLOR.green[5],
-      fill: COLOR.none,
+      fill: COLOR.light,
     },
     normal: {
       content: COLOR.green[6],
@@ -82,13 +82,13 @@ module.exports = {
     },
     high: {
       content: COLOR.light,
-      fill: COLOR.green[4],
+      fill: COLOR.green[5],
     }
   },
   warning: {
     low: {
       content: COLOR.yellow[5],
-      fill: COLOR.none,
+      fill: COLOR.light,
     },
     normal: {
       content: COLOR.yellow[6],
@@ -102,7 +102,7 @@ module.exports = {
   critical: {
     low: {
       content: COLOR.red[5],
-      fill: COLOR.none,
+      fill: COLOR.light,
     },
     normal: {
       content: COLOR.red[6],
@@ -110,13 +110,13 @@ module.exports = {
     },
     high: {
       content: COLOR.light,
-      fill: COLOR.red[3],
+      fill: COLOR.red[4],
     }
   },
   neutral: {
     low: {
       content: COLOR.gray[8],
-      fill: COLOR.none,
+      fill: COLOR.light,
     },
     normal: {
       content: COLOR.gray[9],
@@ -124,27 +124,27 @@ module.exports = {
     },
     high: {
       content: COLOR.light,
-      fill: COLOR.gray[8],
+      fill: COLOR.gray[7],
     }
   },
   info: {
     low: {
-      content: COLOR.indigo[7],
-      fill: COLOR.none,
+      content: COLOR.blue[7],
+      fill: COLOR.light,
     },
     normal: {
-      content: COLOR.indigo[8],
-      fill: COLOR.indigo[0]
+      content: COLOR.blue[8],
+      fill: COLOR.blue[0]
     },
     high: {
       content: COLOR.light,
-      fill: COLOR.indigo[7],
+      fill: COLOR.blue[6],
     }
   },
   urge: {
     low: {
       content: COLOR.purple[7],
-      fill: COLOR.none,
+      fill: COLOR.light,
     },
     normal: {
       content: COLOR.purple[8],
@@ -152,7 +152,7 @@ module.exports = {
     },
     high: {
       content: COLOR.light,
-      fill: COLOR.purple[7],
+      fill: COLOR.purple[6],
     }
   },
 };

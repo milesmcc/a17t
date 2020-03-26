@@ -2,30 +2,32 @@
 const DEFAULT_CONFIG = {
   tones: ["neutral", "critical", "warning", "positive", "info", "urge"],
   priorities: ["low", "normal", "high"],
-  colorMappings: require("./defaults/colors"),
+  colors: require("./defaults/colors"),
   borderRadii: require("./defaults/borderRadii"),
   shadows: require("./defaults/shadows"),
-  margin: true,
+  spacing: require("./defaults/spacing")
 };
 
-const sub = require("./utils").substituteVariables; 
+const utils = require("./utils");
 
 const generate = (config, overrides) => {
   let c = {
     ...DEFAULT_CONFIG,
-    ...config,
+    ...config
   };
-
-  return {
-    ...sub(require("./atoms/layout/card")(c), c),
-    ...overrides,
-  }
-}
+  return utils.hydrate(
+    {
+      ...require("./atoms/layout/card")(c),
+      ...overrides
+    },
+    c
+  );
+};
 
 exports.generate = generate;
 
 exports.tailwindPlugin = (config, overrides) => {
-  return ({addComponents}) => {
+  return ({ addComponents }) => {
     addComponents(generate(config, overrides));
   };
-}
+};

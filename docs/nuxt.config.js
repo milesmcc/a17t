@@ -49,5 +49,11 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  env: {
+    tones: ["~neutral", "~critical", "~warning", "~positive", "~info", "~urge"],
+    priorities: ["!low", "!normal", "!high"],
+    lipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec sollicitudin tortor. Vestibulum tempus, lacus ac vulputate."
   }
 }
