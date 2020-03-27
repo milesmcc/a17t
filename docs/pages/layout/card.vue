@@ -5,7 +5,10 @@
   >
     <Example>
       <div class="card ~info !high">
-        <strong>Hey!</strong> Check out our new card!
+        <p class="content">
+          <strong>Hey!</strong> Check out our new card! And here's a
+          <a href="https://rmrm.io">link</a> for good measure.
+        </p>
       </div>
     </Example>
     <div v-for="tone in tones" :key="tone">
@@ -17,8 +20,11 @@
             class="card my-4 md:my-0"
             :class="[tone, priority]"
           >
-            <h3 class="text-xl font-medium">{{ tone }} {{ priority }}</h3>
-            <p>{{ lipsum }}</p>
+            <p class="supra">{{ tone }} {{ priority }}</p>
+            <h3 class="heading text-2xl">Hello world!</h3>
+            <p class="content">
+              {{ lipsum }}
+            </p>
           </div>
         </section>
       </Example>

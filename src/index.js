@@ -5,7 +5,8 @@ const DEFAULT_CONFIG = {
   colors: require("./defaults/colors"),
   borderRadii: require("./defaults/borderRadii"),
   shadows: require("./defaults/shadows"),
-  spacing: require("./defaults/spacing")
+  spacing: require("./defaults/spacing"),
+  type: require("./defaults/type")
 };
 
 const utils = require("./utils");
@@ -15,9 +16,28 @@ const generate = (config, overrides) => {
     ...DEFAULT_CONFIG,
     ...config
   };
+  let data = {};
+  for (let group of [
+    // Layout
+    require("./atoms/layout/card")(c),
+    require("./atoms/layout/section")(c),
+    require("./atoms/layout/sep")(c),
+    require("./atoms/layout/core")(c),
+
+    // Typography
+    require("./atoms/typography/caption")(c),
+    require("./atoms/typography/content")(c),
+    require("./atoms/typography/core")(c),
+    require("./atoms/typography/heading")(c),
+    require("./atoms/typography/label")(c),
+    require("./atoms/typography/supra")(c),
+
+  ]) {
+    Object.assign(data, group);
+  }
   return utils.hydrate(
     {
-      ...require("./atoms/layout/card")(c),
+      ...data,
       ...overrides
     },
     c

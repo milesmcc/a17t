@@ -59,29 +59,36 @@ function pathPermutations(path, config) {
 
 let hydrate = (rules, config) => {
   for (let rule of Object.keys(rules)) {
-    let value = rules[rule];
-    if (isString(value) && value.startsWith("=")) {
+    if (isString(rules[rule])) {
+      let values = rules[rule]
+        .split("||")
+        .map(x => x.trim())
+        .reverse(); // Reversing to give higher priority to earlier elements, as later ones will simply be overridden
       delete rules[rule];
-      // Is a variable; perform substitution
-      for (let completePath of value.slice(1).split(",").map(x => x.trim())) {
-        for (let permutation of pathPermutations(completePath, config)) {
-          let computedValue = g(config, permutation.path, null);
-          if (computedValue == null) {
-            continue;
-          }
-          if (permutation.classes.length == 0) {
-            rules[rule] = computedValue;
-          } else {
-            let narrower = `&.${permutation.classes.join(".")}`;
-            if (rules[narrower] == undefined) {
-              rules[narrower] = {};
+      for (let value of values) {
+        if (value.startsWith("=")) {
+          // Is a variable; perform substitution
+          for (let permutation of pathPermutations(value.slice(1), config)) {
+            let computedValue = g(config, permutation.path, null);
+            if (computedValue == null) {
+              continue;
             }
-            rules[narrower][rule] = computedValue;
+            if (permutation.classes.length == 0) {
+              rules[rule] = computedValue;
+            } else {
+              let narrower = `&.${permutation.classes.join(".")}`;
+              if (rules[narrower] == undefined) {
+                rules[narrower] = {};
+              }
+              rules[narrower][rule] = computedValue;
+            }
           }
+        } else {
+          rules[rule] = value;
         }
       }
-    } else if (!isString(value)) {
-      rules[rule] = hydrate(value, config);
+    } else {
+      rules[rule] = hydrate(rules[rule], config);
     }
   }
   return rules;

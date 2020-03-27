@@ -71,24 +71,31 @@ const COLOR = {
 };
 
 module.exports = {
+  body: COLOR.gray[9],
+  textDecoration: COLOR.gray[6],
+  supportingText: COLOR.gray[5], // Used for captions, subheads
   positive: {
     low: {
       content: COLOR.green[5],
       fill: COLOR.light,
+      decoration: COLOR.green[2],
     },
     normal: {
       content: COLOR.green[6],
-      fill: COLOR.green[0]
+      fill: COLOR.green[0],
+      decoration: COLOR.green[3],
     },
     high: {
       content: COLOR.light,
       fill: COLOR.green[5],
+      decoration: COLOR.green[1],
     }
   },
   warning: {
     low: {
       content: COLOR.yellow[5],
       fill: COLOR.light,
+      decoration: COLOR.yellow[3],
     },
     normal: {
       content: COLOR.yellow[6],

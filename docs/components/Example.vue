@@ -4,9 +4,11 @@
       <slot></slot>
     </div>
     <details class="pt-2 text-gray-700 text-sm">
-      <summary class="cursor-pointer">Source code</summary>
+      <summary class="cursor-pointer caption" :open="expanded"
+        >Source code</summary
+      >
       <pre
-        class="p-3 bg-gray-800 rounded text-white overflow-scroll"
+        class="card ~neutral !high overflow-scroll"
       ><code class="example-code"></code></pre>
     </details>
   </article>
@@ -27,6 +29,12 @@ function escapeHtml(unsafe) {
 }
 
 export default {
+  props: {
+    expanded: {
+      type: Boolean,
+      default: false
+    }
+  },
   mounted() {
     this.$el.querySelector('.example-code').innerHTML = escapeHtml(
       pretty(this.$el.querySelector('.example-display').innerHTML)
