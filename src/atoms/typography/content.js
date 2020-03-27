@@ -3,10 +3,6 @@ module.exports = c => {
     ".content": {
       fontFamily: "=content.fontFamily || =fonts.families.primary",
       lineHeight: "=content.lineHeight || 1.5",
-      color:
-        "=content.{{tone}}.{{priority}}.color ||\
-         =colors.{{tone}}.{{priority}}.content"
-      // TODO: others?
     },
     ".content a": {
       color: "=content.anchor.color || inherit",

@@ -20,8 +20,7 @@
             class="card my-4 md:my-0"
             :class="[tone, priority]"
           >
-            <p class="supra">{{ tone }} {{ priority }}</p>
-            <h3 class="heading text-2xl">Hello world!</h3>
+            <h3 class="heading text-2xl">{{ tone }} {{ priority }}</h3>
             <p class="content">
               {{ lipsum }}
             </p>

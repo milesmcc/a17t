@@ -11,7 +11,7 @@ const DEFAULT_CONFIG = {
 
 const utils = require("./utils");
 
-const generate = (config, overrides) => {
+const generate = (config, overrides, insertions) => {
   let c = {
     ...DEFAULT_CONFIG,
     ...config
@@ -22,16 +22,20 @@ const generate = (config, overrides) => {
     require("./atoms/layout/card")(c),
     require("./atoms/layout/section")(c),
     require("./atoms/layout/sep")(c),
-    require("./atoms/layout/core")(c),
 
     // Typography
     require("./atoms/typography/caption")(c),
     require("./atoms/typography/content")(c),
-    require("./atoms/typography/core")(c),
     require("./atoms/typography/heading")(c),
     require("./atoms/typography/label")(c),
+    require("./atoms/typography/support")(c),
     require("./atoms/typography/supra")(c),
 
+    // General
+    require("./atoms/core")(c),
+
+    // User-provideds
+    insertions || {}
   ]) {
     Object.assign(data, group);
   }

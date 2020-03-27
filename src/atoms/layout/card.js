@@ -11,7 +11,8 @@ module.exports = c => {
       color:
         "=card.{{tone}}.{{priority}}.content ||\
          =colors.{{tone}}.{{priority}}.content ||\
-         =colors.{{tone}}.normal.content"
+         =colors.{{tone}}.normal.content",
+      overflow: "hidden",
     }
   };
 };

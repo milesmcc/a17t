@@ -1,5 +1,7 @@
 <template>
-  <div class="mx-auto max-w-5xl py-10 px-4 a17t">
-    <nuxt />
-  </div>
+  <section class="a17t">
+    <div class="mx-auto max-w-5xl py-10 px-4">
+      <nuxt />
+    </div>
+  </section>
 </template>

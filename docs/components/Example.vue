@@ -1,9 +1,9 @@
 <template>
-  <article class="border border-gray-300 rounded-lg my-5 p-5">
+  <article class="my-5 p-4 rounded-lg border border-gray-300">
     <div class="example-display">
       <slot></slot>
     </div>
-    <details class="pt-2 text-gray-700 text-sm">
+    <details class="pt-3">
       <summary class="cursor-pointer caption" :open="expanded"
         >Source code</summary
       >
