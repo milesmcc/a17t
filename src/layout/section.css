@@ -1,7 +1,5 @@
-.card {
+.section {
     color: var(--color-content);
     background-color: var(--color-fill);
     text-decoration-color: var(--color-muted);
-    
-    @apply p-4 rounded-lg shadow-lg overflow-hidden;
 }

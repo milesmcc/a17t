@@ -1,0 +1,6 @@
+.heading {
+    font-family: var(--family-secondary);
+    color: var(--color-title);
+
+    @apply font-semibold text-3xl leading-snug;
+}

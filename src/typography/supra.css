@@ -1,0 +1,6 @@
+.supra {
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+
+    @apply text-sm;
+}

@@ -1,0 +1,6 @@
+:root {
+    --family-primary: theme("fontFamily.sans");
+    --family-secondary: theme("fontFamily.sans");
+    --text-rendering-mode: optimizeLegibility;
+    --body-line-height: 1.3;
+}

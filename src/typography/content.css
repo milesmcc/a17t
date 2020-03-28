@@ -1,0 +1,26 @@
+.content {
+    line-height: var(--body-line-height);
+    font-family: var(--family-primary);
+}
+
+.content p:not(:last-child) {
+    @apply mb-2;
+}
+
+.content .heading {
+    @apply mb-2;
+}
+
+.content .heading+.subheading {
+    @apply -mt-2 mb-2;
+}
+
+.content p+.heading {
+    @apply mt-4;
+}
+
+.content a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-muted);
+}

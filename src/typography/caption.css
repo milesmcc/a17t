@@ -1,0 +1,5 @@
+.caption {
+    color: var(--text-muted);
+
+    @apply text-sm;
+}
