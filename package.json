@@ -11,7 +11,6 @@
     "url": "git+https://github.com/milesmcc/a17t.git"
   },
   "keywords": [
-    "tailwindcss",
     "css",
     "design",
     "webdesign",
@@ -28,5 +27,16 @@
   "homepage": "https://github.com/milesmcc/a17t#readme",
   "devDependencies": {
     "mocha": "^7.1.1"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.2",
+    "tailwindcss": "^1.2.0"
   }
 }

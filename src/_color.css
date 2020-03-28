@@ -1,0 +1,110 @@
+:root {
+    --color-transparent: theme('colors.transparent');
+
+    /* NEUTRAL */
+    --color-neutral: theme('colors.gray.700');
+
+    --color-neutral-low-content: var(--color-neutral);
+    --color-neutral-low-fill: var(--color-transparent);
+    --color-neutral-low-muted: theme('colors.gray.500');
+
+    --color-neutral-normal-content: theme('colors.gray.800');
+    --color-neutral-normal-fill: theme('colors.gray.200');
+    --color-neutral-normal-muted: theme('colors.gray.600');
+
+    --color-neutral-high-content: theme('colors.white');
+    --color-neutral-high-fill: var(--color-neutral);
+    --color-neutral-high-muted: theme('colors.gray.300');
+
+    /* POSITIVE */
+    --color-positive: theme('colors.green.600');
+
+    --color-positive-low-content: var(--color-positive);
+    --color-positive-low-fill: var(--color-transparent);
+    --color-positive-low-muted: theme('colors.green.500');
+
+    --color-positive-normal-content: theme('colors.green.800');
+    --color-positive-normal-fill: theme('colors.green.200');
+    --color-positive-normal-muted: theme('colors.green.500');
+
+    --color-positive-high-content: theme('colors.white');
+    --color-positive-high-fill: var(--color-positive);
+    --color-positive-high-muted: theme('colors.green.100');
+
+    /* WARNING */
+    --color-warning: theme('colors.yellow.500');
+
+    --color-warning-low-content: var(--color-warning);
+    --color-warning-low-fill: var(--color-transparent);
+    --color-warning-low-muted: theme('colors.yellow.500');
+
+    --color-warning-normal-content: theme('colors.yellow.800');
+    --color-warning-normal-fill: theme('colors.yellow.200');
+    --color-warning-normal-muted: theme('colors.yellow.500');
+
+    --color-warning-high-content: theme('colors.black');
+    --color-warning-high-fill: var(--color-warning);
+    --color-warning-high-muted: theme('colors.gray.800');
+
+    /* CRITICAL */
+    --color-critical: theme('colors.red.500');
+
+    --color-critical-low-content: var(--color-critical);
+    --color-critical-low-fill: var(--color-transparent);
+    --color-critical-low-muted: theme('colors.red.500');
+
+    --color-critical-normal-content: theme('colors.red.800');
+    --color-critical-normal-fill: theme('colors.red.200');
+    --color-critical-normal-muted: theme('colors.red.500');
+
+    --color-critical-high-content: theme('colors.white');
+    --color-critical-high-fill: var(--color-critical);
+    --color-critical-high-muted: theme('colors.red.100');
+
+    /* INFO */
+    --color-info: theme('colors.blue.500');
+
+    --color-info-low-content: var(--color-info);
+    --color-info-low-fill: var(--color-transparent);
+    --color-info-low-muted: theme('colors.blue.500');
+
+    --color-info-normal-content: theme('colors.blue.800');
+    --color-info-normal-fill: theme('colors.blue.200');
+    --color-info-normal-muted: theme('colors.blue.500');
+
+    --color-info-high-content: theme('colors.white');
+    --color-info-high-fill: var(--color-info);
+    --color-info-high-muted: theme('colors.blue.100');
+
+    /* URGE */
+    --color-urge: theme('colors.purple.600');
+
+    --color-urge-low-content: var(--color-urge);
+    --color-urge-low-fill: var(--color-transparent);
+    --color-urge-low-muted: theme('colors.purple.500');
+
+    --color-urge-normal-content: theme('colors.purple.800');
+    --color-urge-normal-fill: theme('colors.purple.200');
+    --color-urge-normal-muted: theme('colors.purple.500');
+
+    --color-urge-high-content: theme('colors.white');
+    --color-urge-high-fill: var(--color-urge);
+    --color-urge-high-muted: theme('colors.purple.100');
+
+
+    @each $tone in neutral, positive, warning, critical, info, urge {
+        .\~$(tone) {
+            --color-content: var(--color-$(tone)-normal-content);
+            --color-fill: var(--color-$(tone)-normal-fill);
+            --color-content: var(--color-$(tone)-normal-content);
+        }
+
+        @each $priority in low, normal, high {
+            .\~(tone).\!$(priority) {
+                --color-content: var(--color-$(tone)-$(priority)-content);
+                --color-fill: var(--color-$(tone)-$(priority)-fill);
+                --color-content: var(--color-$(tone)-$(priority)-content);
+            }
+        }
+    }
+}

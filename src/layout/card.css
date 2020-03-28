@@ -1,0 +1,7 @@
+.card {
+    @apply p-4 rounded-lg shadow-xl overflow-hidden;
+
+    color: var(--color-content);
+    background-color: var(--color-fill);
+    text-decoration-color: var(--color-muted);
+}
