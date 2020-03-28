@@ -4,12 +4,13 @@
 @import './layout/card.css';
 @import './layout/section.css';
 @import './layout/sep.css';
+@import './layout/well.css';
 
-@import './typography/caption.css';
 @import './typography/content.css';
 @import './typography/heading.css';
 @import './typography/label.css';
 @import './typography/subheading.css';
+@import './typography/support.css';
 @import './typography/supra.css';
 
 

@@ -1,0 +1,13 @@
+<div class="mb-6">
+    <div class="well {{include.classes|default:'bg-white'}}">
+        {{include.code}}
+    </div>
+    <details {% if open %}open="open" {% endif %}>
+        <summary class="support cursor-pointer">Source code</summary>
+        <div class="overflow-scroll bg-gray-100 p-4 rounded-lg">
+    {% highlight html linenos %}
+    {{include.code}}
+    {% endhighlight %}
+        </div>
+    </details>
+</div>
