@@ -4,6 +4,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.6rem;
 
-    @apply rounded py-px px-1 text-xs font-semibold;
+    @apply rounded py-px px-1 font-semibold;
 }

@@ -1,0 +1,14 @@
+.chev {
+  z-index: 10;
+  border: 1.5px solid var(--color-core);
+  height: 0.5em;
+  width: 0.5em;
+  margin-top: -0.4em;
+  position: absolute;
+  transform: rotate(45deg);
+  transform-origin: top;
+  top: 50%;
+  content: " ";
+
+  @apply border-t-0 border-l-0;
+}

@@ -1,0 +1,12 @@
+.select {
+    @apply relative inline-flex items-center w-full;
+
+    select {
+        @apply field block pr-8;
+    }
+
+    &::after {
+        right: 1em;
+        @apply chev pointer-events-none my-auto inset-y-0 self-center;
+    }
+}

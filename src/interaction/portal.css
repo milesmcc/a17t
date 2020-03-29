@@ -5,12 +5,12 @@
     cursor: pointer;
     white-space: nowrap;
     padding: 0.15em 0.5em;
-    transition: transform 150ms;
+    transition: transform 50ms;
 
     @apply rounded-full font-medium;
 
     &:hover:not([disabled]) {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     @media (prefers-reduced-motion: reduce) {

@@ -1,5 +1,7 @@
-@import './vars/_color.css';
+@import './vars/_intents.css';
 @import './vars/_typography.css';
+
+@import './utils/chev.css';
 
 @import './layout/card.css';
 @import './layout/section.css';
@@ -21,8 +23,10 @@
 
 @import './interaction/button.css';
 @import './interaction/portal.css';
-
-@import './forms/input.css';
+@import './interaction/field.css';
+@import './interaction/input.css';
+@import './interaction/textarea.css';
+@import './interaction/select.css';
 
 .a17t {
     text-rendering: var(--text-rendering-mode);
@@ -49,5 +53,11 @@
             --color-muted: var(--color-$(tone)-$(priority)-muted);
             --color-title: var(--color-$(tone)-$(priority)-content);
         }
+    }
+}
+
+@each $priority in low, normal, high {
+    .\!$(priority) {
+        --fallback-box-shadow: var(--fallback-box-shadow-$(priority));
     }
 }

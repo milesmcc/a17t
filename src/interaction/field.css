@@ -1,0 +1,26 @@
+.field {
+    border-color: var(--color-light);
+    transition: box-shadow 100ms ease-out;
+    display: inline-flex;
+    box-shadow: var(--fallback-box-shadow);
+    appearance: none;
+    -webkit-appearance: none;
+
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: var(--color-light);
+        opacity: 0.8;
+    }
+
+    &:hover {
+        box-shadow: 0 0 1px 1px var(--color-light), var(--fallback-box-shadow);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--color-core), var(--fallback-box-shadow);
+
+        @apply outline-none;
+    }
+
+    @apply border rounded w-full max-w-full p-2 leading-tight bg-white inline-flex;
+}

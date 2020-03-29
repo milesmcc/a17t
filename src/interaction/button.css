@@ -7,13 +7,14 @@
     cursor: pointer;
     line-height: 1.5;
     white-space: nowrap;
-    padding: 0.5em 0.75em;
-    transition: transform 150ms;
+    padding: 0.3em 0.6em;
+    transition: box-shadow 50ms;
+    transition: transform 50ms;
 
-    @apply rounded;
+    @apply rounded-md;
 
     &:hover:not([disabled]) {
-        transform: scale(1.1);
+        transform: scale(1.05);
         @apply shadow;
     }
 
