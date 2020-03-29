@@ -24,7 +24,7 @@
     --color-positive-low-muted: theme('colors.green.600');
 
     --color-positive-normal-content: theme('colors.green.800');
-    --color-positive-normal-fill: theme('colors.green.100');
+    --color-positive-normal-fill: theme('colors.green.200');
     --color-positive-normal-muted: theme('colors.green.600');
 
     --color-positive-high-content: theme('colors.white');
@@ -39,7 +39,7 @@
     --color-warning-low-muted: theme('colors.yellow.600');
 
     --color-warning-normal-content: theme('colors.yellow.800');
-    --color-warning-normal-fill: theme('colors.yellow.100');
+    --color-warning-normal-fill: theme('colors.yellow.200');
     --color-warning-normal-muted: theme('colors.yellow.600');
 
     --color-warning-high-content: theme('colors.black');
@@ -54,7 +54,7 @@
     --color-critical-low-muted: theme('colors.red.500');
 
     --color-critical-normal-content: theme('colors.red.800');
-    --color-critical-normal-fill: theme('colors.red.100');
+    --color-critical-normal-fill: theme('colors.red.200');
     --color-critical-normal-muted: theme('colors.red.600');
 
     --color-critical-high-content: theme('colors.white');
@@ -69,7 +69,7 @@
     --color-info-low-muted: theme('colors.blue.500');
 
     --color-info-normal-content: theme('colors.blue.800');
-    --color-info-normal-fill: theme('colors.blue.100');
+    --color-info-normal-fill: theme('colors.blue.200');
     --color-info-normal-muted: theme('colors.blue.600');
 
     --color-info-high-content: theme('colors.white');
@@ -84,7 +84,7 @@
     --color-urge-low-muted: theme('colors.purple.500');
 
     --color-urge-normal-content: theme('colors.purple.800');
-    --color-urge-normal-fill: theme('colors.purple.100');
+    --color-urge-normal-fill: theme('colors.purple.200');
     --color-urge-normal-muted: theme('colors.purple.600');
 
     --color-urge-high-content: theme('colors.white');
@@ -95,5 +95,8 @@
     --color-content: var(--color-neutral);
     --color-fill: var(--color-transparent);
     --color-muted: var(--color-neutral-low-muted);
+    --color-core: var(--color-neutral);
     --color-title: theme('colors.gray.900');
+    --color-light: theme('colors.gray.300');
+    --color-dark: theme('colors.gray.700');
 }

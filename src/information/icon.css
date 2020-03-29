@@ -1,0 +1,11 @@
+.icon {
+    height: 1.25em;
+    width: 1.25em;
+    background-color: var(--color-fill);
+    color: var(--color-content);
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+
+    @apply rounded;
+}

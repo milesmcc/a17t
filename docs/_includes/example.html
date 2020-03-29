@@ -1,5 +1,5 @@
-<div class="mb-6">
-    <div class="well {{include.classes|default:'bg-white'}}">
+<article class="mb-6 border border-gray-300 p-4 rounded {{include.classes|default:'bg-white'}} ">
+    <div class="mb-2">
         {{include.code}}
     </div>
     <details {% if open %}open="open" {% endif %}>
@@ -10,4 +10,4 @@
     {% endhighlight %}
         </div>
     </details>
-</div>
+</article>

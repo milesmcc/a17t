@@ -36,6 +36,7 @@
     "postcss-custom-properties": "^9.1.1",
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.2",
     "tailwindcss": "^1.2.0"

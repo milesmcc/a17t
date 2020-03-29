@@ -4,7 +4,7 @@
 @import './layout/card.css';
 @import './layout/section.css';
 @import './layout/sep.css';
-@import './layout/well.css';
+@import './layout/aside.css';
 
 @import './typography/content.css';
 @import './typography/heading.css';
@@ -12,6 +12,12 @@
 @import './typography/subheading.css';
 @import './typography/support.css';
 @import './typography/supra.css';
+
+@import './information/chip.css';
+@import './information/badge.css';
+@import './information/icon.css';
+@import './information/loading.css';
+@import './information/progress.css';
 
 
 .a17t {
@@ -28,6 +34,7 @@
         --color-fill: var(--color-$(tone)-normal-fill);
         --color-muted: var(--color-$(tone)-normal-muted);
         --color-title: var(--color-$(tone)-normal-content);
+        --color-core: var(--color-$(tone));
     }
 
     @each $priority in low, normal, high {

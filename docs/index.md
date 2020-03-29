@@ -21,6 +21,17 @@ layout: default
     {% endcapture %}
     {% include example.html code=example classes="bg-gray-100" %}
     {% endfor %}
+
+    <h3 class="heading text-2xl py-4">Asides</h3>
+    {% for tone in site.tones %}
+    {% capture example %}
+    <div class="aside ~{{tone}} mb-4 md:mb-0 content">
+        <p class="content"><strong>This is a {{tone}} aside.</strong> You can specify priorities, but you probably shouldn't. (It's an aside, after all.) What you're seeing here is the default variant &mdash; that is, the !normal priority.</p>
+    </div>
+    {% endcapture %}
+    {% include example.html code=example %}
+    {% endfor %}
+
 </section>
 <hr class="sep">
 <section>
@@ -69,5 +80,53 @@ layout: default
     <p class="subheading">I'm the subheading (which shouldn't be followed by a paragraph).</p>
     {% endcapture %}
     {% include example.html code=example %}
+
+</section>
+<hr class="sep">
+<section>
+    <h3 class="heading text-2xl py-4">Information</h3>
+    {% capture example %}
+    {% for tone in site.tones %}
+    <div class="mb-1">
+        {% for priority in site.priorities %}
+        <span class="chip ~{{tone}} !{{priority}}">{{tone|capitalize}}</span>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endcapture %}
+    {% include example.html code=example %}
+
+    {% capture example %}
+    {% for tone in site.tones %}
+    <div class="mb-1">
+        {% for priority in site.priorities %}
+        <span class="badge ~{{tone}} !{{priority}}">{{forloop.index}}</span>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endcapture %}
+    {% include example.html code=example %}
+
+    {% capture example %}
+    {% for tone in site.tones %}
+    <div class="mb-1">
+        {% for priority in site.priorities %}
+        <span class="chip ~{{tone}} !{{priority}} loading text-lg">Loading</span>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endcapture %}
+    {% include example.html code=example %}
+
+    {% for tone in site.tones %}
+    {% capture example %}
+    <div class="md:grid grid-cols-3 gap-3">
+        {% for priority in site.priorities %}
+        <progress class="progress ~{{tone}} !{{priority}} mb-4 md:mb-0" value="60" max="100">60%</progress>
+        {% endfor %}
+    </div>
+    {% endcapture %}
+    {% include example.html code=example %}
+    {% endfor %}
 
 </section>

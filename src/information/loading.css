@@ -1,0 +1,28 @@
+.loading {
+  pointer-events: none;
+  color: var(--color-fill);
+
+  &::after {
+    animation: spin 500ms infinite linear;
+    border: 2px solid var(--color-content);
+    border-color: var(--color-transparent) var(--color-transparent)
+      var(--color-content) var(--color-content);
+    content: "";
+    height: 0.85em;
+    width: 0.85em;
+    display: inline-block;
+    position: absolute;
+
+    @apply rounded-full;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
