@@ -1,0 +1,30 @@
+.button {
+    background-color: var(--color-fill);
+    color: var(--color-content);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 1.5;
+    white-space: nowrap;
+    padding: 0.5em 0.75em;
+    transition: transform 150ms;
+
+    @apply rounded;
+
+    &:hover:not([disabled]) {
+        transform: scale(1.1);
+        @apply shadow;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &:hover {
+            transform: none !important;
+        }
+    }
+
+    &[disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}

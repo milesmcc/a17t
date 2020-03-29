@@ -1,6 +1,6 @@
 .loading {
   pointer-events: none;
-  color: var(--color-fill);
+  color: var(--color-transparent) !important;
 
   &::after {
     animation: spin 500ms infinite linear;

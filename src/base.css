@@ -19,6 +19,9 @@
 @import './information/loading.css';
 @import './information/progress.css';
 
+@import './interaction/button.css';
+@import './interaction/portal.css';
+
 
 .a17t {
     text-rendering: var(--text-rendering-mode);

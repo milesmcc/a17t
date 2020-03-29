@@ -42,9 +42,9 @@
     --color-warning-normal-fill: theme('colors.yellow.200');
     --color-warning-normal-muted: theme('colors.yellow.600');
 
-    --color-warning-high-content: theme('colors.black');
-    --color-warning-high-fill: var(--color-warning);
-    --color-warning-high-muted: theme('colors.yellow.900');
+    --color-warning-high-content: theme('colors.yellow.900');
+    --color-warning-high-fill: theme('colors.yellow.400');
+    --color-warning-high-muted: theme('colors.yellow.800');
 
     /* CRITICAL */
     --color-critical: theme('colors.red.500');
