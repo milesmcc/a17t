@@ -101,6 +101,7 @@ layout: default
     <div class="mb-1">
         {% for priority in site.priorities %}
         <span class="badge ~{{tone}} !{{priority}}">{{forloop.index}}</span>
+        <span class="badge ~{{tone}} !{{priority}}">New</span>
         {% endfor %}
     </div>
     {% endfor %}
@@ -151,6 +152,20 @@ layout: default
         {% for priority in site.priorities %}
         <a class="portal ~{{tone}} !{{priority}}" href="https://rmrm.io">Hello</a>
         <a class="portal ~{{tone}} !{{priority}} active" href="https://rmrm.io">Hello</a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endcapture %}
+    {% include example.html code=example %}
+</section>
+<hr class="sep">
+<section>
+    <h3 class="heading text-2xl py-4">Forms</h3>
+    {% capture example %}
+    {% for tone in site.tones %}
+    <div class="md:grid grid-cols-3 gap-3 mb-6">
+        {% for priority in site.priorities %}
+        <input class="input ~{{tone}} !{{priority}} mb-1" type="text" placeholder="Type something">
         {% endfor %}
     </div>
     {% endfor %}

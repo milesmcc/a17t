@@ -5,7 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "build": "postcss src/base.css -o dist/a17t.css",
-    "watch": "postcss src/base.css -o dist/a17t.css --watch"
+    "watch": "postcss src/base.css -o dist/a17t.css --watch",
+    "updatedocs": "cp dist/a17t.css docs/assets/a17t.css",
+    "docs": "jekyll serve --source docs --watch",
+    "docswatch": "watch 'npm run updatedocs' ./dist --interval=1",
+    "dev": "npm run build; npm run updatedocs & npm run watch & npm run docs & npm run docswatch"
   },
   "repository": {
     "type": "git",
@@ -27,7 +31,8 @@
   },
   "homepage": "https://github.com/milesmcc/a17t#readme",
   "devDependencies": {
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "watch": "^1.0.2"
   },
   "dependencies": {
     "cssnano": "^4.1.10",

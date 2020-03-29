@@ -5,5 +5,5 @@
     align-items: center;
     justify-content: center;
 
-    @apply rounded-full h-5 w-5 text-xs font-semibold;
+    @apply rounded py-px px-1 text-xs font-semibold;
 }

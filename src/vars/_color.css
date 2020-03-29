@@ -2,7 +2,8 @@
     --color-transparent: theme('colors.transparent');
 
     /* NEUTRAL */
-    --color-neutral: theme('colors.gray.700');
+    --color-neutral: theme('colors.gray.600');
+    --color-neutral-light: theme('colors.gray.300');
 
     --color-neutral-low-content: theme('colors.gray.800');
     --color-neutral-low-fill: theme('colors.white');
@@ -13,7 +14,7 @@
     --color-neutral-normal-muted: theme('colors.gray.600');
 
     --color-neutral-high-content: theme('colors.white');
-    --color-neutral-high-fill: var(--color-neutral);
+    --color-neutral-high-fill: theme('colors.gray.700');
     --color-neutral-high-muted: theme('colors.gray.300');
 
     /* POSITIVE */
@@ -97,6 +98,4 @@
     --color-muted: var(--color-neutral-low-muted);
     --color-core: var(--color-neutral);
     --color-title: theme('colors.gray.900');
-    --color-light: theme('colors.gray.300');
-    --color-dark: theme('colors.gray.700');
 }

@@ -22,6 +22,7 @@
 @import './interaction/button.css';
 @import './interaction/portal.css';
 
+@import './forms/input.css';
 
 .a17t {
     text-rendering: var(--text-rendering-mode);
@@ -38,6 +39,7 @@
         --color-muted: var(--color-$(tone)-normal-muted);
         --color-title: var(--color-$(tone)-normal-content);
         --color-core: var(--color-$(tone));
+        --color-light: var(--color-$(tone)-light, var(--color-core));
     }
 
     @each $priority in low, normal, high {
