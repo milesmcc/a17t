@@ -108,3 +108,6 @@ dist
 _site
 .jekyll-metadata
 *.scssc
+
+# Other
+.vscode/
