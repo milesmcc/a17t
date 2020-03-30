@@ -42,23 +42,29 @@ layout: default
         <div>
             {% capture example %}
             <section class="content max-w-md">
-                <h3 class="heading">With content class.</h3>
+                <h3>This is a content block</h3>
                 <p>This is a paragraph. When you place your body content inside a content class,
                     a17t makes sure that the spacing figures everything out automatically.</p>
                 <p>While a17t usually tries to avoid '<a href="https://rmrm.io">magic</a>' solutions, type is important
                     (and difficult) enough to warrant an exception.</p>
-            </section>
-            {% endcapture %}
-            {% include example.html code=example %}
-        </div>
-        <div>
-            {% capture example %}
-            <section class="max-w-md">
-                <h3 class="heading">Without content class.</h3>
-                <p>This is a paragraph. When you place your body content inside a content class,
-                    a17t makes sure that the spacing figures everything out automatically.</p>
-                <p>While a17t usually tries to avoid '<a href="https://rmrm.io">magic</a>' solutions, type is important
-                    (and difficult) enough to warrant an exception.</p>
+                <blockquote>
+                    This is a blockquote. Lorem ipsum dolor sit amet. These are words that were once spoken, I guess.
+                    <cite>This is its source.</cite>
+                </blockquote>
+                <p>This is a final closing paragraph to show you how it all comes together.</p>
+                <h3>Just kidding, there's more.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <ul>
+                    <li>An item</li>
+                    <li>Another item</li>
+                    <li>Three items?</li>
+                </ul>
+                <p>This is <i>real</i>a final closing paragraph to show you how it all comes together.</p>
+                <ol>
+                    <li>One!</li>
+                    <li>Two?</li>
+                    <li>Three.</li>
+                </ol>
             </section>
             {% endcapture %}
             {% include example.html code=example %}
@@ -68,6 +74,18 @@ layout: default
     <p class="label">This is a label.</p>
     <p class="support">It's like the opposite of a support.</p>
     <p class="support ~critical">These can all have tones, by the way!</p>
+    {% endcapture %}
+    {% include example.html code=example %}
+
+    {% capture example %}
+    <div class="content">
+    <p>This is some text, with an inline <code>&lt;code&gt;</code> tag. This requires a content block!</p>
+    <pre><code>This is some longer code!
+that() {
+    spansMultipleLines();   
+}</code></pre>
+    <p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.</p>
+    </div>
     {% endcapture %}
     {% include example.html code=example %}
 

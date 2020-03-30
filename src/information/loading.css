@@ -10,10 +10,11 @@
     content: "";
     height: 0.85em;
     width: 0.85em;
-    display: inline-block;
+    right: calc(50% - (1em / 2));
+    overflow: visible;
     position: absolute;
 
-    @apply rounded-full;
+    @apply rounded-full relative inset-y-0 mx-auto;
   }
 }
 

@@ -8,8 +8,9 @@
     line-height: 1.5;
     white-space: nowrap;
     padding: 0.3em 0.6em;
-    transition: box-shadow 50ms;
-    transition: transform 50ms;
+    transition: box-shadow 75ms linear;
+    transition: transform 75ms linear;
+    transform-origin: center;
 
     @apply rounded-md;
 

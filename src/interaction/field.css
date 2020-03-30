@@ -5,6 +5,7 @@
     box-shadow: var(--fallback-box-shadow);
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
 
     &[disabled] {
         cursor: not-allowed;

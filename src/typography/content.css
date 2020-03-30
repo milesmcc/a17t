@@ -1,30 +1,113 @@
 .content {
-    line-height: var(--body-line-height);
-    font-family: var(--family-primary);
+  line-height: var(--body-line-height);
+  font-family: var(--family-primary);
 
-    p:not(:last-child) {
-        @apply mb-2;
+  /* How this works: everything has a y-margin of 3; special elements,
+     like headings, blockquotes, and preformatted code blocks, have 
+     special spacing to help them fit better visually. When editing this
+     file, be mindful of how various elements' spacing might interact and
+     overlap. */
+
+  > *:not(:last-child) {
+    @apply mb-3;
+  }
+
+  > *:not(:first-child) {
+    @apply mt-3;
+  }
+
+  @each $h in h1, h2, h3, h4, h5, h6 {
+    $(h):not(:first-child) {
+      @apply mt-6;
     }
 
-    .heading {
-        @apply mb-2;
+    $(h) {
+      @apply heading;
     }
+  }
 
-    .heading+.subheading {
-        @apply -mt-2 mb-2;
-    }
+  code {
+    @apply code;
+  }
 
-    p+.heading {
-        @apply mt-4;
-    }
+  pre {
+    @apply pre;
+  }
 
-    a {
-        color: inherit;
-        text-decoration: underline;
-        text-decoration-color: var(--color-muted);
-    }
+  code,
+  kbd {
+    @apply mx-px;
+  }
 
-    strong {
-        @apply font-semibold;
+  pre code {
+    @apply mx-0;
+  }
+
+  pre {
+    @apply my-5;
+  }
+
+  kbd {
+    @apply kbd;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm;
+  }
+
+  li {
+    display: list-item;
+    text-align: left;
+  }
+
+  ol,
+  ul {
+    @apply block ml-8;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-muted);
+  }
+
+  strong {
+    @apply font-semibold;
+  }
+
+  blockquote {
+    @apply aside ~neutral !normal my-5;
+
+    cite {
+      @apply support not-italic block mt-1;
     }
+  }
 }

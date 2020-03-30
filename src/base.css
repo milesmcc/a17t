@@ -8,8 +8,10 @@
 @import "./layout/sep.css";
 @import "./layout/aside.css";
 
+@import "./typography/code.css";
 @import "./typography/content.css";
 @import "./typography/heading.css";
+@import "./typography/kbd.css";
 @import "./typography/label.css";
 @import "./typography/subheading.css";
 @import "./typography/support.css";
