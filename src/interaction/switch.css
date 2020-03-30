@@ -1,0 +1,11 @@
+.switch {
+    @apply relative inline-block leading-snug align-baseline cursor-pointer pr-2;
+
+    input {
+        &[disabled], &[disabled] ~ * {
+            opacity: 0.8;
+            @apply cursor-not-allowed;
+        }
+        @apply pr-1;
+    }
+}

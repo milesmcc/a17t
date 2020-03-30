@@ -1,63 +1,64 @@
-@import './vars/_intents.css';
-@import './vars/_typography.css';
+@import "./vars/_intents.css";
+@import "./vars/_typography.css";
 
-@import './utils/chev.css';
+@import "./utils/chev.css";
 
-@import './layout/card.css';
-@import './layout/section.css';
-@import './layout/sep.css';
-@import './layout/aside.css';
+@import "./layout/card.css";
+@import "./layout/section.css";
+@import "./layout/sep.css";
+@import "./layout/aside.css";
 
-@import './typography/content.css';
-@import './typography/heading.css';
-@import './typography/label.css';
-@import './typography/subheading.css';
-@import './typography/support.css';
-@import './typography/supra.css';
+@import "./typography/content.css";
+@import "./typography/heading.css";
+@import "./typography/label.css";
+@import "./typography/subheading.css";
+@import "./typography/support.css";
+@import "./typography/supra.css";
 
-@import './information/chip.css';
-@import './information/badge.css';
-@import './information/icon.css';
-@import './information/loading.css';
-@import './information/progress.css';
+@import "./information/chip.css";
+@import "./information/badge.css";
+@import "./information/icon.css";
+@import "./information/loading.css";
+@import "./information/progress.css";
 
-@import './interaction/button.css';
-@import './interaction/portal.css';
-@import './interaction/field.css';
-@import './interaction/input.css';
-@import './interaction/textarea.css';
-@import './interaction/select.css';
+@import "./interaction/button.css";
+@import "./interaction/portal.css";
+@import "./interaction/field.css";
+@import "./interaction/input.css";
+@import "./interaction/select.css";
+@import "./interaction/switch.css";
+@import "./interaction/textarea.css";
+@import "./interaction/upload.css";
 
 .a17t {
-    text-rendering: var(--text-rendering-mode);
-    min-height: var(--min-height);
-    font-family: var(--family-primary);
-    color: var(--color-content);
+  text-rendering: var(--text-rendering-mode);
+  min-height: var(--min-height);
+  font-family: var(--family-primary);
+  color: var(--color-content);
 }
 
-
 @each $tone in neutral, positive, warning, critical, info, urge {
-    .\~$(tone) {
-        --color-content: var(--color-$(tone)-normal-content);
-        --color-fill: var(--color-$(tone)-normal-fill);
-        --color-muted: var(--color-$(tone)-normal-muted);
-        --color-title: var(--color-$(tone)-normal-content);
-        --color-core: var(--color-$(tone));
-        --color-light: var(--color-$(tone)-light, var(--color-core));
-    }
+  .\~$(tone) {
+    --color-content: var(--color-$(tone)-normal-content);
+    --color-fill: var(--color-$(tone)-normal-fill);
+    --color-muted: var(--color-$(tone)-normal-muted);
+    --color-title: var(--color-$(tone)-normal-content);
+    --color-core: var(--color-$(tone));
+    --color-light: var(--color-$(tone)-light, var(--color-core));
+  }
 
-    @each $priority in low, normal, high {
-        .\~$(tone).\!$(priority) {
-            --color-content: var(--color-$(tone)-$(priority)-content);
-            --color-fill: var(--color-$(tone)-$(priority)-fill);
-            --color-muted: var(--color-$(tone)-$(priority)-muted);
-            --color-title: var(--color-$(tone)-$(priority)-content);
-        }
+  @each $priority in low, normal, high {
+    .\~$(tone).\!$(priority) {
+      --color-content: var(--color-$(tone)-$(priority)-content);
+      --color-fill: var(--color-$(tone)-$(priority)-fill);
+      --color-muted: var(--color-$(tone)-$(priority)-muted);
+      --color-title: var(--color-$(tone)-$(priority)-content);
     }
+  }
 }
 
 @each $priority in low, normal, high {
-    .\!$(priority) {
-        --fallback-box-shadow: var(--fallback-box-shadow-$(priority));
-    }
+  .\!$(priority) {
+    --fallback-box-shadow: var(--fallback-box-shadow-$(priority));
+  }
 }

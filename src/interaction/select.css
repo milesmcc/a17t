@@ -2,7 +2,7 @@
     @apply relative inline-flex items-center w-full;
 
     select {
-        @apply field block pr-8;
+        @apply field block pr-10;
     }
 
     &::after {

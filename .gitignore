@@ -104,6 +104,7 @@ dist
 .tern-port
 
 # Jekyll
-.sass_cache/
+.sass_cache
 _site
 .jekyll-metadata
+*.scssc

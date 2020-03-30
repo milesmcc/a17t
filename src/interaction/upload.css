@@ -1,0 +1,7 @@
+.upload {
+    @apply inline-block relative pr-2;
+
+    input {
+        @apply hidden w-0 inline;
+    }
+}
