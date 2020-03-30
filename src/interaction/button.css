@@ -1,32 +1,35 @@
 .button {
-    background-color: var(--color-fill);
-    color: var(--color-content);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    line-height: 1.5;
-    white-space: nowrap;
-    padding: 0.3em 0.6em;
-    transition: box-shadow 75ms linear;
-    transition: transform 75ms linear;
-    transform-origin: center;
+  background-color: var(--color-fill);
+  color: var(--color-content);
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  line-height: var(--button-line-height, 1.5);
+  white-space: nowrap;
+  transition: box-shadow var(--button-transition-speed, 75ms) linear;
+  transition: transform var(--button-transition-speed, 75ms) linear;
+  transform-origin: center;
 
-    @apply rounded-md;
+  @apply rounded-md py-1 px-2;
 
-    &:hover:not([disabled]) {
-        transform: scale(1.05);
-        @apply shadow;
+  &:hover:not([disabled]) {
+    transform: scale(var(--button-hover-scale, 1.05));
+    @apply shadow;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none !important;
     }
+  }
 
-    @media (prefers-reduced-motion: reduce) {
-        &:hover {
-            transform: none !important;
-        }
-    }
-
-    &[disabled] {
-        opacity: 0.6;
-        cursor: not-allowed;
-    }
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }

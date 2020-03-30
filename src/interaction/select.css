@@ -1,12 +1,13 @@
 .select {
-    @apply relative inline-flex items-center w-full;
+  @apply relative inline-flex items-center w-full;
 
-    select {
-        @apply field block pr-10;
-    }
+  select {
+    @apply field block pr-10;
+  }
 
-    &::after {
-        right: 1em;
-        @apply chev pointer-events-none my-auto inset-y-0 self-center;
-    }
+  &::after {
+    right: var(--select-chev-offset, 1em);
+    --color-icon: var(--color-core);
+    @apply chev absolute;
+  }
 }

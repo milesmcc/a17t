@@ -22,6 +22,7 @@
 @import "./information/icon.css";
 @import "./information/loading.css";
 @import "./information/progress.css";
+@import "./information/table.css";
 
 @import "./interaction/button.css";
 @import "./interaction/portal.css";
@@ -47,6 +48,7 @@
     --color-title: var(--color-$(tone)-normal-content);
     --color-core: var(--color-$(tone));
     --color-light: var(--color-$(tone)-light, var(--color-core));
+    --color-icon: var(--color-$(tone)-normal-muted);
   }
 
   @each $priority in low, normal, high {
@@ -55,6 +57,7 @@
       --color-fill: var(--color-$(tone)-$(priority)-fill);
       --color-muted: var(--color-$(tone)-$(priority)-muted);
       --color-title: var(--color-$(tone)-$(priority)-content);
+      --color-icon: var(--color-$(tone)-$(priority)-muted);
     }
   }
 }

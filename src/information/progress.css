@@ -1,6 +1,6 @@
 .progress {
   appearance: none;
-  height: 1em;
+  height: var(--progress-height, 1em);
   display: block;
   overflow: hidden;
   width: 100%;

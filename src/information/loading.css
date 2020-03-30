@@ -3,15 +3,15 @@
   color: var(--color-transparent) !important;
 
   &::after {
-    animation: spin 500ms infinite linear;
-    border: 2px solid var(--color-content);
+    animation: spin var(--loading-speed, 500ms) infinite linear;
+    border: var(--loading-width, 2px) solid var(--color-content);
     border-color: var(--color-transparent) var(--color-transparent)
       var(--color-content) var(--color-content);
     content: "";
-    height: 0.85em;
-    width: 0.85em;
-    right: calc(50% - (0.85em / 2));
-    bottom: calc(50% - (0.85em / 2));
+    height: var(--loading-height, 0.85em);
+    width: var(--loading-height, 0.85em);
+    right: calc(50% - (var(--loading-height, 0.85em) / 2));
+    bottom: calc(50% - (var(--loading-height, 0.85em) / 2));
     overflow: visible;
     position: absolute;
 

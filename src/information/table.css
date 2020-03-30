@@ -1,0 +1,36 @@
+.table {
+  @apply w-full border-collapse;
+
+  thead {
+    @apply border-b;
+  }
+
+  tfoot {
+      @apply border-t;
+  }
+
+  tr {
+    @apply table-row;
+
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(
+      --table-background-alternating,
+      theme("colors.gray.100")
+    );
+  }
+
+  td,
+  th {
+    @apply p-2 text-left table-cell;
+  }
+
+  th {
+    color: var(--color-title);
+    
+    @apply font-semibold;
+  }
+}

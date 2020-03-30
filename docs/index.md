@@ -81,17 +81,49 @@ layout: default
     <div class="content">
     <p>This is some text, with an inline <code>&lt;code&gt;</code> tag. This requires a content block!</p>
     <pre><code>This is some longer code!
+
 that() {
-    spansMultipleLines();   
+spansMultipleLines();  
 }</code></pre>
-    <p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.</p>
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
+
+<p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.</p>
+</div>
+{% endcapture %}
+{% include example.html code=example %}
 
     {% capture example %}
     <p class="supra">This is a supra</p>
     <h3 class="heading">This is a heading</h3>
+    {% endcapture %}
+    {% include example.html code=example %}
+
+    {% capture example %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Landinator 9000 <span class="badge ~neutral">New</span></td>
+                <td><span class="chip ~positive">Completed</span></td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Hammer</td>
+                <td><span class="chip ~urge">Waiting</span></td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td><span class="chip ~info">Processing</span></td>
+                <td>$500</td>
+            </tr>
+        </tbody>
+    </table>
     {% endcapture %}
     {% include example.html code=example %}
 
@@ -149,6 +181,7 @@ that() {
     {% endcapture %}
     {% include example.html code=example %}
     {% endfor %}
+
 </section>
 <hr class="sep">
 <section>
@@ -177,6 +210,7 @@ that() {
     {% endfor %}
     {% endcapture %}
     {% include example.html code=example %}
+
 </section>
 <hr class="sep">
 <section>
@@ -185,7 +219,7 @@ that() {
     {% for tone in site.tones %}
     <div class="md:grid grid-cols-3 gap-3 mb-6">
         {% for priority in site.priorities %}
-        <input class="field ~{{tone}} !{{priority}} mb-1" type="text" placeholder="Type something">
+        <input class="input ~{{tone}} !{{priority}} mb-1" type="text" placeholder="Type something">
         {% endfor %}
     </div>
     {% endfor %}
@@ -248,9 +282,18 @@ that() {
     {% capture example %}
     <label class="upload">
         <input type="file">
-        <span class="button !normal ~neutral">Upload</span>
+        <span class="button field">Upload</span>
         Pick a file...
     </label>
     {% endcapture %}
     {% include example.html code=example %}
+
+    {% capture example %}
+    <div class="button ~neutral !high">
+        Dropdown
+        <div class="chev mw-5"></div>
+    </div>
+    {% endcapture %}
+    {% include example.html code=example %}
+
 </section>

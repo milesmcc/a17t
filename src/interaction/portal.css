@@ -4,13 +4,13 @@
     justify-content: left;
     cursor: pointer;
     white-space: nowrap;
-    padding: 0.15em 0.5em;
-    transition: transform 75ms linear;
+    padding: var(--portal-padding, 0.15em 0.5em);
+    transition: transform var(--portal-transition-speed, 75ms) linear;
 
     @apply rounded-full font-medium;
 
     &:hover:not([disabled]) {
-        transform: scale(1.05);
+        transform: scale(var(--portal-hover-scale, 1.05));
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -20,7 +20,7 @@
     }
 
     &[disabled] {
-        opacity: 0.6;
+        opacity: var(--portal-disabled-opacity, 0.6);
         cursor: not-allowed;
     }
 

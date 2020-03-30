@@ -3,7 +3,7 @@
 
     input {
         &[disabled], &[disabled] ~ * {
-            opacity: 0.8;
+            opacity: var(--switch-disabled-opacity, 0.8);
             @apply cursor-not-allowed;
         }
         @apply pr-1;
