@@ -10,12 +10,15 @@
     content: "";
     height: 0.85em;
     width: 0.85em;
-    right: calc(50% - (1em / 2));
+    right: calc(50% - (0.85em / 2));
+    bottom: calc(50% - (0.85em / 2));
     overflow: visible;
     position: absolute;
 
-    @apply rounded-full relative inset-y-0 mx-auto;
+    @apply rounded-full mx-auto;
   }
+
+  @apply relative;
 }
 
 @keyframes spin {
