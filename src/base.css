@@ -25,6 +25,7 @@
 @import "./information/table.css";
 
 @import "./interaction/button.css";
+@import "./interaction/dropdown.css";
 @import "./interaction/portal.css";
 @import "./interaction/field.css";
 @import "./interaction/input.css";
@@ -44,6 +45,7 @@
   .\~$(tone) {
     --color-content: var(--color-$(tone)-normal-content);
     --color-fill: var(--color-$(tone)-normal-fill);
+    --color-background: var(--color-$(tone)-normal-background, var(--color-fill));
     --color-muted: var(--color-$(tone)-normal-muted);
     --color-title: var(--color-$(tone)-normal-content);
     --color-core: var(--color-$(tone));

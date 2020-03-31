@@ -27,7 +27,7 @@
     }
 
     &.active {
-        background-color: var(--color-background);
+        background-color: var(--color-fill);
         color: var(--color-content);
 
         &:hover {

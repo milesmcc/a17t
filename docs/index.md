@@ -2,8 +2,11 @@
 layout: default
 ---
 
-<h1 class="heading text-5xl">a17t demo</h1>
-<h3 class="subheading">a17t is an atomic design toolkit built for the future</h3>
+<div>
+<h1 class="heading text-5xl">At a Glance</h1>
+<h3 class="subheading">Here is a quick overview of all a17t's atoms.</h3>
+</div>
+
 <hr class="sep">
 <section>
     <h3 class="heading text-2xl py-4">Cards</h3>
@@ -38,7 +41,12 @@ layout: default
     {% capture example %}
     {% for tone in site.tones %}
     <span class="icon m-2 ~{{tone}} !low">
-        <i class="fas fa-camera fa-lg"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13">
+            <g stroke-width="2" stroke="currentColor" fill="none">
+                <path d="M11.29 11.71l-4-4" />
+                <circle cx="5" cy="5" r="4" />
+            </g>
+        </svg>
     </span>
     {% endfor %}
     {% endcapture %}

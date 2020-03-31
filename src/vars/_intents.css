@@ -21,9 +21,9 @@
   /* POSITIVE */
   --color-positive: theme("colors.green.500");
 
-  --color-positive-low-content: theme("colors.green.800");
+  --color-positive-low-content: theme("colors.green.600");
   --color-positive-low-fill: theme("colors.white");
-  --color-positive-low-muted: theme("colors.green.600");
+  --color-positive-low-muted: theme("colors.green.500");
 
   --color-positive-normal-content: theme("colors.green.800");
   --color-positive-normal-fill: theme("colors.green.200");

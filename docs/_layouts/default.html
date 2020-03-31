@@ -3,15 +3,21 @@
 
 {%- include head.html -%}
 
-<body class="a17t">
+<body class="a17t bg-gray-100">
 
-  {%- include header.html -%}
+  <div class="max-w-screen-lg mx-auto py-10 px-4">
 
-  <main class="max-w-4xl mx-auto py-10 px-4" aria-label="Content">
-    {{ content }}
-  </main>
+    {%- include header.html -%}
 
-  {%- include footer.html -%}
+    <hr class="sep h-12">
+
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+  </div>
 
 </body>
 
