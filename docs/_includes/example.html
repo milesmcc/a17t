@@ -4,10 +4,8 @@
     </div>
     <details {% if open %}open="open" {% endif %}>
         <summary class="support cursor-pointer">Source code</summary>
-        <div class="overflow-scroll bg-gray-100 p-4 rounded-lg">
-    {% highlight html linenos %}
-    {{include.code}}
-    {% endhighlight %}
+        <div class="overflow-scroll bg-gray-100 p-4 mt-2 text-sm">
+{% highlight html %}{{include.code}}{% endhighlight %}
         </div>
     </details>
 </article>
