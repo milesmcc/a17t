@@ -1,18 +1,24 @@
-<header class="flex items-center justify-between">
-    <div class="w-1/12">
-        <h3 class="heading font-normal">a<span class="text-gray-600 text-md">17</span>t</h3>
+<header class="flex items-center flex-wrap justify-between">
+    <div class="mr-5">
+        <h3 class="heading text-2xl">a17t</h3>
     </div>
-    <div class="mr-4">
+    <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900" onclick="document.querySelector('#navFullContent').classList.toggle('hidden')">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div
+        class="w-full block flex-wrap lg:flex lg:items-center lg:justify-between lg:w-11/12 bg-gray-300 lg:bg-transparent rounded-lg p-2 lg:p-0 hidden" id="navFullContent">
         <ul>
-            <li class="portal ~urge active dropdown">
-                Overview
-            </li>
             <li tabindex="0" class="portal dropdown outline-none">
                 Atoms
-                <div class="dropdown-display text-sm">
-                    <div class="card ~neutral !low mt-1 flex">
-                        <div class="mb-2 md:mr-6">
-                            <p class="portal supra text-gray-600">Information</p>
+                <div class="dropdown-display text-sm w-screen lg:w-auto">
+                    <div class="card ~neutral !low mt-1 flex flex-wrap lg:flex-no-wrap w-4/5 lg:w-auto">
+                        <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
+                            <p class="pl-2 pb-1 supra text-gray-600">Information</p>
                             <ul>
                                 <li><a class="portal">Badge</a></li>
                                 <li><a class="portal">Chip</a></li>
@@ -22,8 +28,8 @@
                                 <li><a class="portal">Table</a></li>
                             </ul>
                         </div>
-                        <div class="mb-2 md:mr-6">
-                            <p class="portal supra text-gray-600">Interaction</p>
+                        <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
+                            <p class="pl-2 pb-1 supra text-gray-600">Interaction</p>
                             <ul>
                                 <li><a class="portal">Button</a></li>
                                 <li><a class="portal">Dropdown</a></li>
@@ -36,8 +42,8 @@
                                 <li><a class="portal">Upload</a></li>
                             </ul>
                         </div>
-                        <div class="mb-2 md:mr-6">
-                            <p class="portal supra text-gray-600">Layout</p>
+                        <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
+                            <p class="pl-2 pb-1 supra text-gray-600">Layout</p>
                             <ul>
                                 <li><a class="portal">Aside</a></li>
                                 <li><a class="portal">Card</a></li>
@@ -45,8 +51,8 @@
                                 <li><a class="portal">Sep</a></li>
                             </ul>
                         </div>
-                        <div class="mb-2">
-                            <p class="portal supra text-gray-600">Typography</p>
+                        <div class="mb-4 w-1/2 lg:w-auto">
+                            <p class="pl-2 pb-1 supra text-gray-600">Typography</p>
                             <ul>
                                 <li><a class="portal">Code</a></li>
                                 <li><a class="portal">Content</a></li>
@@ -76,14 +82,14 @@
                     </div>
                 </div>
             </li>
-            <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a></li>
+            <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a>
+            </li>
         </ul>
-    </div>
-    <div class="w-1/12 text-right">
-        <a href="https://github.com/milesmcc/a17t">
-            <span class="pr-2 text-gray-600 hover:text-gray-800">v0.0.1</span>
-            <span class="icon opacity-25 hover:opacity-50"><img width="25px" height="25px"
-                    src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></span>
-        </a>
+        <div class="lg:w-2/12 lg:text-right lg:p-0 p-2">
+            <a class="pr-2 text-gray-600 hover:text-gray-800"
+                href="https://github.com/milesmcc/a17t/releases">v0.0.1</a>
+            <a class="icon opacity-25 hover:opacity-50" href="https://github.com/milesmcc/a17t"><img width="25px"
+                    height="25px" src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></a>
+        </div>
     </div>
 </header>

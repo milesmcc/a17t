@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div>
-<h1 class="heading text-5xl">At a Glance</h1>
+<h1 class="heading text-5xl">Build beautiful interfaces without fighting a framework.</h1>
 <h3 class="subheading">Here is a quick overview of all a17t's atoms.</h3>
 </div>
 

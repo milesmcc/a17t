@@ -6,13 +6,16 @@
     opacity: 0;
     position: absolute;
     top: 100%;
-    transition: opacity 200ms;
+    transition: opacity var(--dropdown-animation-speed, 100ms);
+    z-index: 10;
   }
 
   &:hover, &:focus, &:focus-within {
     .dropdown-display {
       visibility: visible;
       opacity: 1;
+
+      @apply cursor-default;
     }
   }
 }
