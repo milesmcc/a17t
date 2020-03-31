@@ -15,15 +15,17 @@
   transition: transform var(--button-transition-speed, 75ms) linear;
   transform-origin: center;
 
-  @apply rounded-md py-1 px-2;
+  @apply rounded-md py-1 px-2 outline-none;
 
-  &:hover:not([disabled]) {
-    transform: scale(var(--button-hover-scale, 1.05));
-    @apply shadow;
+  &:hover, &:focus {
+    &:not([disabled]) {
+        transform: scale(var(--button-hover-scale, 1.05));
+        @apply shadow;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    &:hover {
+    &:hover, &:focus {
       transform: none !important;
     }
   }

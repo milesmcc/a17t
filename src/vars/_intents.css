@@ -11,6 +11,7 @@
 
   --color-neutral-normal-content: theme("colors.gray.800");
   --color-neutral-normal-fill: theme("colors.gray.200");
+  --color-neutral-normal-background: theme("colors.gray.100");
   --color-neutral-normal-muted: theme("colors.gray.600");
 
   --color-neutral-high-content: theme("colors.white");
@@ -26,6 +27,7 @@
 
   --color-positive-normal-content: theme("colors.green.800");
   --color-positive-normal-fill: theme("colors.green.200");
+  --color-positive-normal-background: theme("colors.green.100");
   --color-positive-normal-muted: theme("colors.green.600");
 
   --color-positive-high-content: theme("colors.white");
@@ -41,6 +43,7 @@
 
   --color-warning-normal-content: theme("colors.yellow.800");
   --color-warning-normal-fill: theme("colors.yellow.200");
+  --color-warning-normal-background: theme("colors.yellow.100");
   --color-warning-normal-muted: theme("colors.yellow.600");
 
   --color-warning-high-content: theme("colors.yellow.900");
@@ -56,6 +59,7 @@
 
   --color-critical-normal-content: theme("colors.red.800");
   --color-critical-normal-fill: theme("colors.red.200");
+  --color-critical-normal-background: theme("colors.red.100");
   --color-critical-normal-muted: theme("colors.red.600");
 
   --color-critical-high-content: theme("colors.white");
@@ -71,6 +75,7 @@
 
   --color-info-normal-content: theme("colors.blue.800");
   --color-info-normal-fill: theme("colors.blue.200");
+  --color-info-normal-background: theme("colors.blue.100");
   --color-info-normal-muted: theme("colors.blue.600");
 
   --color-info-high-content: theme("colors.white");
@@ -86,6 +91,7 @@
 
   --color-urge-normal-content: theme("colors.purple.800");
   --color-urge-normal-fill: theme("colors.purple.200");
+  --color-urge-normal-background: theme("colors.purple.100");
   --color-urge-normal-muted: theme("colors.purple.600");
 
   --color-urge-high-content: theme("colors.white");
@@ -95,6 +101,7 @@
   /* DEFAULTS and APPLICATIONS */
   --color-content: theme("colors.gray.700");
   --color-fill: var(--color-transparent);
+  --color-background: var(--color-transparent);
   --color-muted: var(--color-neutral-low-muted);
   --color-core: var(--color-neutral);
   --color-light: var(--color-neutral-light);

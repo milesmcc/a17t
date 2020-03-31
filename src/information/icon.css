@@ -1,12 +1,9 @@
 .icon {
-    height: var(--icon-size, 1.25em);
-    width: var(--icon-size, 1.25em);
-    background-color: var(--color-fill);
     color: var(--color-content);
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     display: inline-flex;
 
-    @apply rounded;
+    @apply rounded-full;
 }

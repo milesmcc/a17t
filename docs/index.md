@@ -34,42 +34,48 @@ layout: default
     {% include example.html code=example %}
     {% endfor %}
 
+    <h3 class="heading text-2xl py-4">Icons</h3>
+    {% capture example %}
+    {% for tone in site.tones %}
+    <span class="icon m-2 ~{{tone}} !low">
+        <i class="fas fa-camera fa-lg"></i>
+    </span>
+    {% endfor %}
+    {% endcapture %}
+    {% include example.html code=example %}
+
 </section>
 <hr class="sep">
 <section>
     <h3 class="heading text-2xl py-4">Typography</h3>
-    <div class="md:grid grid-cols-2 gap-6">
-        <div>
-            {% capture example %}
-            <section class="content max-w-md">
-                <h3>This is a content block</h3>
-                <p>This is a paragraph. When you place your body content inside a content class,
-                    a17t makes sure that the spacing figures everything out automatically.</p>
-                <p>While a17t usually tries to avoid '<a href="https://rmrm.io">magic</a>' solutions, type is important
-                    (and difficult) enough to warrant an exception.</p>
-                <blockquote>
-                    This is a blockquote. Lorem ipsum dolor sit amet. These are words that were once spoken, I guess.
-                    <cite>This is its source.</cite>
-                </blockquote>
-                <p>This is a final closing paragraph to show you how it all comes together.</p>
-                <h3>Just kidding, there's more.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <ul>
-                    <li>An item</li>
-                    <li>Another item</li>
-                    <li>Three items?</li>
-                </ul>
-                <p>This is <i>real</i>a final closing paragraph to show you how it all comes together.</p>
-                <ol>
-                    <li>One!</li>
-                    <li>Two?</li>
-                    <li>Three.</li>
-                </ol>
-            </section>
-            {% endcapture %}
-            {% include example.html code=example %}
-        </div>
-    </div>
+    {% capture example %}
+    <section class="content">
+        <h3>This is a content block</h3>
+        <p>This is a paragraph. When you place your body content inside a content class,
+            a17t makes sure that the spacing figures everything out automatically.</p>
+        <p>While a17t usually tries to avoid '<a href="https://rmrm.io">magic</a>' solutions, type is important
+            (and difficult) enough to warrant an exception.</p>
+        <blockquote>
+            This is a blockquote. Lorem ipsum dolor sit amet. These are words that were once spoken, I guess.
+            <cite>This is its source.</cite>
+        </blockquote>
+        <p>This is a final closing paragraph to show you how it all comes together.</p>
+        <h3>Just kidding, there's more.</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>An item</li>
+            <li>Another item</li>
+            <li>Three items?</li>
+        </ul>
+        <p>This is <i>real</i>a final closing paragraph to show you how it all comes together.</p>
+        <ol>
+            <li>One!</li>
+            <li>Two?</li>
+            <li>Three.</li>
+        </ol>
+    </section>
+    {% endcapture %}
+    {% include example.html code=example %}
     {% capture example %}
     <p class="label">This is a label.</p>
     <p class="support">It's like the opposite of a support.</p>
@@ -290,8 +296,10 @@ spansMultipleLines();
 
     {% capture example %}
     <div class="button ~neutral !high">
-        Dropdown
-        <div class="chev mw-5"></div>
+        More Options
+        <span class="icon ml-4 mr-1">
+            <i class="chev"></i>
+        </span>
     </div>
     {% endcapture %}
     {% include example.html code=example %}

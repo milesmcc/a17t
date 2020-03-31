@@ -9,9 +9,11 @@
 
     @apply rounded-full font-medium;
 
-    &:hover:not([disabled]) {
+    &:hover, &:focus {
+    &:not([disabled]) {
         transform: scale(var(--portal-hover-scale, 1.05));
     }
+  }
 
     @media (prefers-reduced-motion: reduce) {
         &:hover {
@@ -25,7 +27,7 @@
     }
 
     &.active {
-        background-color: var(--color-fill);
+        background-color: var(--color-background);
         color: var(--color-content);
 
         &:hover {

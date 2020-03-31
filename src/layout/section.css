@@ -1,5 +1,5 @@
 .section {
     color: var(--color-content);
-    background-color: var(--color-fill);
+    background-color: var(--color-background);
     text-decoration-color: var(--color-muted);
 }

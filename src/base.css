@@ -55,6 +55,7 @@
     .\~$(tone).\!$(priority) {
       --color-content: var(--color-$(tone)-$(priority)-content);
       --color-fill: var(--color-$(tone)-$(priority)-fill);
+      --color-background: var(--color-$(tone)-$(priority)-background, var(--color-fill));
       --color-muted: var(--color-$(tone)-$(priority)-muted);
       --color-title: var(--color-$(tone)-$(priority)-content);
       --color-icon: var(--color-$(tone)-$(priority)-muted);
