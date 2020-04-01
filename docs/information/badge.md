@@ -4,13 +4,13 @@ tab: atom
 subtab: atom-badge
 category: Information
 title: Badge
-description: A small inline status indicator helpful for unread counts, notifications, and more.
+description: A small inline status indicator helpful for unread counts, notifications, and more
 source: https://github.com/milesmcc/a17t/blob/master/src/information/badge.css
 selectors:
   - .badge
 features:
-  - tones
-  - priorities
+  - Tones
+  - Priorities
 display: Inline Flex
 examples:
   - "<span class='badge ~neutral'>Badge</span>\n<span class='badge ~positive'>Badge</span>\n<span class='badge ~warning'>Badge</span>\n<span class='badge ~critical'>Badge</span>\n<span class='badge ~info'>Badge</span>\n<span class='badge ~urge'>Badge</span>"
@@ -33,12 +33,7 @@ The badge is a small inline element ideal for data heavy interfaces. It's useful
 
 Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/chip) instead.
 
-{% capture example %}
-<p>Unread <span class='badge ~critical !high'>55</span></p>
-{% endcapture %}
-{% include example.html code=example %}
-
-# Design Considerations
+# Considerations
 
 **Vertical alignment** --- Badges are vertically aligned with the middle of the text surrounding it. While normally this results in correct positioning, it can look odd when badges are followed by non-text elements.
 
@@ -65,3 +60,12 @@ Badges have full tone and priority support.
 # Accessibility
 
 {% include accessibility_defaults.html %}
+
+# Examples
+
+{% capture example %}
+<p>Unread <span class='badge ~critical !high'>55</span></p>
+{% endcapture %}
+{% include example.html code=example %}
+
+TODO: more

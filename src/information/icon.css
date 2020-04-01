@@ -4,6 +4,7 @@
     justify-content: center;
     vertical-align: middle;
     display: inline-flex;
-
-    @apply rounded-full;
+    width: var(--icon-width, 1em);
+    height: var(--icon-height, 1em);
+    fill: var(--color-content);
 }

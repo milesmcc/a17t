@@ -29,11 +29,11 @@
   }
 
   h1:not(:first-child) {
-    @apply mt-16;
+    @apply mt-12;
   }
 
   h2:not(:first-child) {
-    @apply mt-12;
+    @apply mt-10;
   }
 
   h3:not(:first-child) {

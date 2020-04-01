@@ -8,23 +8,31 @@ layout: default
     <p class="subheading text-lg">{{page.description}}</p>
     <hr class="sep">
     <ul class="flex flex-wrap md:block">
+      {% if page.display %}
       <li class="mb-4 w-1/3">
         <p class="label">Display</p>
         <p>{{page.display}}</p>
       </li>
+      {% endif %}
+      {% if page.selectors %}
       <li class="mb-4 w-1/3">
         <p class="label">Selectors</p>
         <p>{% for selector in page.selectors %}<code>{{selector}}</code>{% endfor %}</p>
       </li>
+      {% endif %}
+      {% if page.source %}
       <li class="mb-4 w-1/3">
         <p class="label">Source</p>
         <p><a href="{{page.source}}" class="portal p-0 font-normal">GitHub &nearr;</a></p>
       </li>
+      {% endif %}
+      {% if page.features %}
       <li class="mb-4 w-full">
         <p class="label">Features</p>
-        <p>{% for feature in page.features %}<span class="chip ~positive mr-1 mb-1">{{feature|capitalize}}</span>{% endfor %}
+        <p>{% for feature in page.features %}<span class="chip ~positive mr-1 mb-1">{{feature}}</span>{% endfor %}
         </p>
       </li>
+      {% endif %}
     </ul>
   </section>
   <article class="md:w-2/3 mt-4">
@@ -32,7 +40,7 @@ layout: default
     <div class="card ~neutral !low mb-10">
     {% for example in page.examples %}
     {{example}}
-    <div class="text-sm mt-6 overflow-x-scroll max-w-full">
+    <div class="text-sm mt-6 overflow-scroll max-w-full" style="max-height: 20rem;">
       {% highlight html %}{{example}}{% endhighlight %}
     </div>
     {% endfor %}
@@ -71,9 +79,9 @@ layout: default
       </tbody>
     </table>
     {% else %}
-    <p>This atom has no variables.</p>
+    <p class="my-2">This atom has no variables.</p>
     {% endif %}
-    <p>You can also customize this atom by simply overriding any of its CSS attributes, listed <a
+    <p class="my-2">You can also customize this atom by simply overriding any of its CSS attributes, listed <a
         href="{{page.source}}">here</a>.</p>
   </article>
 </div>

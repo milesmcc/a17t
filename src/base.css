@@ -2,6 +2,7 @@
 @import "./vars/_typography.css";
 
 @import "./utils/chev.css";
+@import "./utils/loading.css";
 
 @import "./layout/card.css";
 @import "./layout/section.css";
@@ -20,7 +21,6 @@
 @import "./information/chip.css";
 @import "./information/badge.css";
 @import "./information/icon.css";
-@import "./information/loading.css";
 @import "./information/progress.css";
 @import "./information/table.css";
 
