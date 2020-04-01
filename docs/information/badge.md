@@ -38,11 +38,15 @@ Badges are nearly always pinned on another element (i.e., inline). If you're thi
 {% endcapture %}
 {% include example.html code=example %}
 
-# Considerations
+# Design Considerations
 
-**Badges are vertically aligned in the middle of the line.** While normally this results in correct positioning, it can look odd when badges are then followed with more text.
+**Vertical alignment** --- Badges are vertically aligned with the middle of the text surrounding it. While normally this results in correct positioning, it can look odd when badges are followed by non-text elements.
 
-**Badges have a reduced text size.** They are best preceded with text that is of size `1 rem`. If they are used next to text of other sizes, the badge will look disproportional.
+**Reduced text size** --- Badges are best preceded with text that is of size `1 rem`. If they are used next to text of other sizes, the badge will look disproportional. (You can resize setting `--badge-size`.)
+
+**Medium font weight** --- To compensate for their reduced text size, badges by default have an increased text weight (medium) to aid readability.
+
+**Spacing** --- When using badges, be mindful of margins. In most cases, you'll want an x-margin of at least `1rem`. (Like all a17t atoms, badges specify no padding themselves.)
 
 # Variants
 

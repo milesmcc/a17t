@@ -118,7 +118,7 @@
   strong {
     color: var(--color-title);
 
-    @apply font-semibold;
+    @apply font-medium;
   }
 
   b {
