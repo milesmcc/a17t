@@ -1,11 +1,9 @@
-<article class="mb-6 border border-gray-300 p-4 rounded {{include.classes|default:'bg-white'}} ">
+<figure class="mb-6 border bg-white p-4 rounded-lg w-full max-w-full content {{include.classes}}">
     <div class="mb-2">
         {{include.code}}
     </div>
     <details {% if open %}open="open" {% endif %}>
-        <summary class="support cursor-pointer">Source code</summary>
-        <div class="overflow-scroll bg-gray-100 p-4 mt-2 text-sm">
-{% highlight html %}{{include.code}}{% endhighlight %}
-        </div>
+        <summary class="support cursor-pointer mb-0">Source code</summary>
+        {% highlight html %}{{include.code}}{% endhighlight %}
     </details>
-</article>
+</figure>

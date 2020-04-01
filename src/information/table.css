@@ -1,5 +1,5 @@
 .table {
-  @apply w-full border-collapse;
+  @apply w-full border-collapse max-w-full overflow-scroll;
 
   thead {
     @apply border-b;

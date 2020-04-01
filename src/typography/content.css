@@ -17,12 +17,32 @@
   }
 
   @each $h in h1, h2, h3, h4, h5, h6 {
-    $(h):not(:first-child) {
-      @apply mt-6;
-    }
-
     $(h) {
       @apply heading;
+    }
+  }
+
+  @each $h in h1, h2, h3, h4, h5, h6 {
+    $(h) {
+      @apply heading;
+    }
+  }
+
+  h1:not(:first-child) {
+    @apply mt-16;
+  }
+
+  h2:not(:first-child) {
+    @apply mt-12;
+  }
+
+  h3:not(:first-child) {
+    @apply mt-8;
+  }
+
+  @each $h in h4, h5, h6 {
+    $(h):not(:first-child) {
+      @apply mt-6;
     }
   }
 
@@ -31,7 +51,7 @@
   }
 
   pre {
-    @apply pre;
+    @apply pre overflow-scroll;
   }
 
   code,
@@ -41,10 +61,6 @@
 
   pre code {
     @apply mx-0;
-  }
-
-  pre {
-    @apply my-5;
   }
 
   kbd {

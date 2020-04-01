@@ -4,10 +4,16 @@ tab: atom
 subtab: atom-badge
 category: Information
 title: Badge
-description: A small status indicator helpful for unread counts, product updates, and more.
+description: A small inline status indicator helpful for unread counts, notifications, and more.
 source: https://github.com/milesmcc/a17t/blob/master/src/information/badge.css
+selectors:
+  - .badge
+features:
+  - tones
+  - priorities
+display: Inline Flex
 examples:
-  - "Unread <span class='badge ~critical !high'>55</span><br>\nNew item <span class='badge ~neutral !normal'>New</span>"
+  - "<span class='badge ~neutral'>Badge</span>\n<span class='badge ~positive'>Badge</span>\n<span class='badge ~warning'>Badge</span>\n<span class='badge ~critical'>Badge</span>\n<span class='badge ~info'>Badge</span>\n<span class='badge ~urge'>Badge</span>"
 variables:
   - name: --color-fill
     type: color
@@ -21,6 +27,37 @@ variables:
     default: 0.6em
 ---
 
-The badge is a helpful element. It can do a lot of helpful things.
+# Overview
 
-Lorem ipsum dolor sit amet. This is `code` and it is helpful.
+The badge is a small inline element ideal for data heavy interfaces. It's useful for drawing attention to the elements near it -- for example, as a "New" label or unread count.
+
+Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/chip) instead.
+
+{% capture example %}
+<p>Unread <span class='badge ~critical !high'>55</span></p>
+{% endcapture %}
+{% include example.html code=example %}
+
+# Considerations
+
+**Badges are vertically aligned in the middle of the line.** While normally this results in correct positioning, it can look odd when badges are then followed with more text.
+
+**Badges have a reduced text size.** They are best preceded with text that is of size `1 rem`. If they are used next to text of other sizes, the badge will look disproportional.
+
+# Variants
+
+Badges have full tone and priority support.
+
+{% for priority in site.priorities %}
+###### {{priority|capitalize}} Priority
+{% capture example %}
+{% for tone in site.tones %}
+<span class="badge ~{{tone}} !{{priority}}">New</span>
+{% endfor %}
+{% endcapture %}
+{% include example.html code=example %}
+{% endfor %}
+
+# Accessibility
+
+{% include accessibility_defaults.html %}
