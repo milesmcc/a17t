@@ -35,12 +35,12 @@ layout: default
       {% endif %}
     </ul>
   </section>
-  <article class="md:w-2/3 mt-4">
+  <article class="w-full md:w-2/3 mt-4">
     {% if page.examples %}
     <div class="card ~neutral !low mb-10">
     {% for example in page.examples %}
     {{example}}
-    <div class="text-sm mt-6 overflow-scroll max-w-full" style="max-height: 20rem;">
+    <div class="text-sm mt-6 overflow-scroll" style="max-height: 20rem;">
       {% highlight html %}{{example}}{% endhighlight %}
     </div>
     {% endfor %}
