@@ -1,7 +1,7 @@
 ---
-layout: atom
-tab: atom
-subtab: atom-progress
+layout: element
+tab: element
+subtab: element-progress
 category: Information
 title: Progress
 description: A block element to show completion, fullness, and other ratios

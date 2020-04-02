@@ -28,27 +28,27 @@
     <div class="block flex-wrap lg:flex lg:items-center lg:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
         id="navFullContent">
         <ul>
-            <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'atom' %}~urge active{% endif %}">
-                Atoms
+            <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
+                Elements
                 <div class="dropdown-display text-sm w-screen lg:w-auto">
                     <div class="card ~neutral !low mt-1 flex flex-wrap lg:flex-no-wrap w-4/5 lg:w-auto">
                         <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
                             <p class="pl-2 pb-1 supra text-gray-600">Information</p>
                             <ul>
-                                <li><a class="portal ~urge !low {% if page.subtab == 'atom-badge' %}active{% endif %}"
+                                <li><a class="portal ~urge !low {% if page.subtab == 'element-badge' %}active{% endif %}"
                                         href="{{'/information/badge' | relative_url}}">Badge</a></li>
-                                <li><a class="portal ~urge !low {% if page.subtab == 'atom-chip' %}active{% endif %}"
+                                <li><a class="portal ~urge !low {% if page.subtab == 'element-chip' %}active{% endif %}"
                                         href="{{'/information/chip' | relative_url}}">Chip</a>
                                 </li>
-                                <li><a class=" portal ~urge !low {% if page.subtab == 'atom-icon' %}active{% endif %}"
+                                <li><a class=" portal ~urge !low {% if page.subtab == 'element-icon' %}active{% endif %}"
                                         href="{{'/information/icon' | relative_url}}">Icon</a>
                                 </li>
                                 <li><a class=" portal ~urge !low
-                                        {% if page.subtab == 'atom-progress' %}active{% endif %}"
+                                        {% if page.subtab == 'element-progress' %}active{% endif %}"
                                         href="{{'/information/progress' | relative_url}}">Progress</a>
                                 </li>
                                 <li><a class=" portal ~urge !low
-                                        {% if page.subtab == 'atom-table' %}active{% endif %}"
+                                        {% if page.subtab == 'element-table' %}active{% endif %}"
                                         href="{{'/information/table' | relative_url}}">Table</a>
                                 </li>
                             </ul>

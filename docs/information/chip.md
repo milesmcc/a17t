@@ -1,7 +1,7 @@
 ---
-layout: atom
-tab: atom
-subtab: atom-chip
+layout: element
+tab: element
+subtab: element-chip
 category: Information
 title: Chip
 description: An inline element for statuses, labels, categories, and more
@@ -25,13 +25,13 @@ variables:
 
 # Overview
 
-A chip (also called a "tag" or "label") is a helpful atom for representing categorical data. For example, you might use a chip to display the status of an item, to list its features (as this documentation does), or to display tags.
+A chip (also called a "tag" or "label") is a helpful element for representing categorical data. For example, you might use a chip to display the status of an item, to list its features (as this documentation does), or to display tags.
 
 Most chips will generally be only a word or two. For longer content, consider using a [card](/layout/card) instead.
 
 # Considerations
 
-**Margins** --- When using badges, be mindful of margins. In most cases, you'll want an y-margin of at least `1rem` to prevent visual overlap when wrapping. (Like all a17t atoms, badges specify no padding themselves.) Using Tailwind? Just add `mb-1` to any chip that could have another chip wrap below it.
+**Margins** --- When using badges, be mindful of margins. In most cases, you'll want an y-margin of at least `1rem` to prevent visual overlap when wrapping. (Like all a17t elements, badges specify no margin themselves.) Using Tailwind? Just add `mb-1` to any chip that could have another chip wrap below it.
 
 **Similarity to Buttons** --- Depending on your layout, chips can look a lot like buttons. Avoid using chips and buttons with the same priority near one another to prevent confusion over which elements are interactive.
 

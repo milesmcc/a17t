@@ -1,7 +1,7 @@
 ---
-layout: atom
-tab: atom
-subtab: atom-badge
+layout: element
+tab: element
+subtab: element-badge
 category: Information
 title: Badge
 description: A small inline status indicator helpful for unread counts, notifications, and more
@@ -41,7 +41,7 @@ Badges are nearly always pinned on another element (i.e., inline). If you're thi
 
 **Medium font weight** --- To compensate for their reduced text size, badges by default have an increased text weight (medium) to aid readability.
 
-**Spacing** --- When using badges, be mindful of margins. In most cases, you'll want an x-margin of at least `1rem`. (Like all a17t atoms, badges specify no padding themselves.)
+**Spacing** --- When using badges, be mindful of margins. In most cases, you'll want an x-margin of at least `1rem`. (Like all a17t elements, badges specify no margin themselves.)
 
 # Variants
 

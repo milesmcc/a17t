@@ -1,10 +1,10 @@
 ---
-layout: atom
-tab: atom
-subtab: atom-icon
+layout: element
+tab: element
+subtab: element-icon
 category: Information
 title: Icon
-description: A utility atom to wrap all icons, regardless of source
+description: A utility element to wrap all icons, regardless of source
 source: https://github.com/milesmcc/a17t/blob/master/src/information/icon.css
 selectors:
   - .icon
@@ -29,9 +29,9 @@ variables:
 
 Icons are deceptively difficult. Usually, they are loaded from a separate source (sometimes even a separate origin), and can be one of the last elements to appear on a page. When they do finally load, they often cause the interface to resize.
 
-The icon atom has two purposes: to give all icons a set width and height (`1em` by `1em` by default) so that the page doesn't resize when they load, and to ensure that the icon is the correct color (by setting the `color` and `fill` properties).
+The icon element has two purposes: to give all icons a set width and height (`1em` by `1em` by default) so that the page doesn't resize when they load, and to ensure that the icon is the correct color (by setting the `color` and `fill` properties).
 
-If you're looking for a nice way to display icons in your content, consider using the icon atom in conjunction with a [shield](./shield).
+If you're looking for a nice way to display icons in your content, consider using the icon element in conjunction with a [shield](./shield).
 
 # Considerations
 

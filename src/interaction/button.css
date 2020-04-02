@@ -14,6 +14,7 @@
   transition: box-shadow var(--button-transition-speed, 75ms) linear;
   transition: transform var(--button-transition-speed, 75ms) linear;
   transform-origin: center;
+  text-decoration: none;
 
   @apply rounded-md py-1 px-2 outline-none;
 

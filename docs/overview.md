@@ -2,11 +2,9 @@
 layout: default
 ---
 
-<div class="flex items-center justify-between my-8">
-    <section class="w-6/12">
-        <h1 class="heading text-4xl">Build beautiful, atomic interfaces without reinventing the wheel.</h1>
-        <h3 class="subheading">An atomic design toolkit that empowers you to build flexibly without starting from scratch.</h3>
-    </section>
+<div>
+<h1 class="heading text-5xl">Build beautiful interfaces without fighting a framework.</h1>
+<h3 class="subheading">Here is a quick overview of all a17t's elements.</h3>
 </div>
 
 <hr class="sep">
@@ -95,18 +93,17 @@ layout: default
 
     {% capture example %}
     <div class="content">
-        <p>This is some text, with an inline <code>&lt;code&gt;</code> tag. This requires a content block!</p>
-        <pre><code>This is some longer code!
+    <p>This is some text, with an inline <code>&lt;code&gt;</code> tag. This requires a content block!</p>
+    <pre><code>This is some longer code!
 
 that() {
 spansMultipleLines();  
 }</code></pre>
 
-        <p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.
-        </p>
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
+<p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.</p>
+</div>
+{% endcapture %}
+{% include example.html code=example %}
 
     {% capture example %}
     <p class="supra">This is a supra</p>

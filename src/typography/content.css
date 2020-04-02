@@ -109,7 +109,7 @@
     @apply list-disc;
   }
 
-  a {
+  a:not(.button):not(.portal) {
     color: inherit;
     text-decoration: underline;
     text-decoration-color: var(--color-muted);

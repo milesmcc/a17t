@@ -22,6 +22,7 @@
 @import "./information/badge.css";
 @import "./information/icon.css";
 @import "./information/progress.css";
+@import "./information/shield.css";
 @import "./information/table.css";
 
 @import "./interaction/button.css";

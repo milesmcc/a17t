@@ -6,6 +6,7 @@
     white-space: nowrap;
     padding: var(--portal-padding, 0.15em 0.5em);
     transition: transform var(--portal-transition-speed, 75ms) linear;
+    text-decoration: none;
 
     @apply rounded-full font-medium;
 

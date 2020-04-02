@@ -1,7 +1,7 @@
 ---
-layout: atom
-tab: atom
-subtab: atom-table
+layout: element
+tab: element
+subtab: element-table
 category: Information
 title: Table
 description: A minimal table for displaying structured data
@@ -24,15 +24,15 @@ variables:
 
 # Overview
 
-Tables are surprisingly hard to get right. The table atom applies to the top-level `<table>` element and results in nice-looking (albeit somewhat opinionated) tables.
+Tables are surprisingly hard to get right. The table element applies to the top-level `<table>` element and results in nice-looking (albeit somewhat opinionated) tables.
 
-Tables are one of the few atoms in a17t that are more complex than a single element. The `.table` selector specifies styles for `thead`, `tfoot`, `tr`, `tbody`, `td`, and `th`. It automatically also applies itself to `<table>` elements inside the `.content` selector.
+Tables are one of the few elements in a17t that are more complex than a single class. The `.table` selector specifies styles for `thead`, `tfoot`, `tr`, `tbody`, `td`, and `th`. It automatically also applies itself to `<table>` elements inside the `.content` selector.
 
 # Considerations
 
 **Responsiveness** --- As a UI element, tables generally don't work well on smaller devices. (Just look at the Google Sheets app.) If a fluid mobile layout is important to you, consider using a [card](/layout/card) layout instead.
 
-**Width** --- This atom by default is set to use all the horizontal space available to it. This is _usually_ correct, but you can safely change the `.table` width and the content will automatically reflow.
+**Width** --- This element by default is set to use all the horizontal space available to it. This is _usually_ correct, but you can safely change the `.table` width and the content will automatically reflow.
 
 # Variants
 

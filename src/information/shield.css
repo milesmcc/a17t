@@ -1,0 +1,9 @@
+.shield {
+    display: inline-flex;
+    background-color: var(--color-fill);
+    color: var(--color-content);
+    height: 1.25em;
+    width: 1.25em;
+
+    @apply items-center justify-between;
+}
