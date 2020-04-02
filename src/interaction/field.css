@@ -29,5 +29,5 @@
     @apply outline-none;
   }
 
-  @apply border rounded max-w-full p-2 leading-tight bg-white inline-flex;
+  @apply border rounded max-w-full w-full p-2 leading-tight bg-white inline-flex;
 }

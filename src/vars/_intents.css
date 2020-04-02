@@ -3,7 +3,7 @@
 
   /* NEUTRAL */
   --color-neutral: theme("colors.gray.600");
-  --color-neutral-light: theme("colors.gray.400");
+  --color-neutral-light: theme("colors.gray.300");
 
   --color-neutral-low-content: theme("colors.gray.800");
   --color-neutral-low-fill: theme("colors.white");

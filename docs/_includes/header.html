@@ -1,120 +1,65 @@
-<header class="flex items-center flex-wrap justify-between">
-    <div class="mr-6">
-        <h3 class="text-2xl ~urge !low"><a href="/" class="flex items-center">
-                <div class="icon mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 32 32">
-                        <g>
-                            <g>
-                                <circle cx="7.377" cy="25.043" r="6.956" />
-                                <circle cx="24.646" cy="25.043" r="6.956" />
-                                <circle cx="16" cy="6.956" r="6.956" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="label text-gray-800 text-2xl">a17t</div>
-            </a></h3>
-    </div>
-    <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900"
-            onclick="document.querySelector('#navFullContent').classList.toggle('hidden')">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-        </button>
-    </div>
-    <div class="block flex-wrap lg:flex lg:items-center lg:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
-        id="navFullContent">
-        <ul>
-            <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
-                Elements
-                <div class="dropdown-display text-sm w-screen lg:w-auto">
-                    <div class="card ~neutral !low mt-1 flex flex-wrap lg:flex-no-wrap w-4/5 lg:w-auto">
-                        <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
-                            <p class="pl-2 pb-1 supra text-gray-600">Information</p>
-                            <ul>
-                                <li><a class="portal ~urge !low {% if page.subtab == 'element-badge' %}active{% endif %}"
-                                        href="{{'/information/badge' | relative_url}}">Badge</a></li>
-                                <li><a class="portal ~urge !low {% if page.subtab == 'element-chip' %}active{% endif %}"
-                                        href="{{'/information/chip' | relative_url}}">Chip</a>
-                                </li>
-                                <li><a class=" portal ~urge !low {% if page.subtab == 'element-icon' %}active{% endif %}"
-                                        href="{{'/information/icon' | relative_url}}">Icon</a>
-                                </li>
-                                <li><a class=" portal ~urge !low
-                                        {% if page.subtab == 'element-progress' %}active{% endif %}"
-                                        href="{{'/information/progress' | relative_url}}">Progress</a>
-                                </li>
-                                <li><a class=" portal ~urge !low
-                                        {% if page.subtab == 'element-table' %}active{% endif %}"
-                                        href="{{'/information/table' | relative_url}}">Table</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class=" mb-4 lg:mr-6 w-1/2 lg:w-auto">
-                            <p class="pl-2 pb-1 supra text-gray-600">Interaction</p>
-                            <ul>
-                                <li><a class="portal">Button</a></li>
-                                <li><a class="portal">Dropdown</a></li>
-                                <li><a class="portal">Field</a></li>
-                                <li><a class="portal">Input</a></li>
-                                <li><a class="portal">Portal</a></li>
-                                <li><a class="portal">Select</a></li>
-                                <li><a class="portal">Switch</a></li>
-                                <li><a class="portal">Textarea</a></li>
-                                <li><a class="portal">Upload</a></li>
-                            </ul>
-                        </div>
-                        <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
-                            <p class="pl-2 pb-1 supra text-gray-600">Layout</p>
-                            <ul>
-                                <li><a class="portal">Aside</a></li>
-                                <li><a class="portal">Card</a></li>
-                                <li><a class="portal">Section</a></li>
-                                <li><a class="portal">Sep</a></li>
-                            </ul>
-                        </div>
-                        <div class="mb-4 w-1/2 lg:w-auto">
-                            <p class="pl-2 pb-1 supra text-gray-600">Typography</p>
-                            <ul>
-                                <li><a class="portal">Code</a></li>
-                                <li><a class="portal">Content</a></li>
-                                <li><a class="portal">Heading</a></li>
-                                <li><a class="portal">Kbd</a></li>
-                                <li><a class="portal">Label</a></li>
-                                <li><a class="portal">Subheading</a></li>
-                                <li><a class="portal">Support</a></li>
-                                <li><a class="portal">Supra</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li tabindex="0" class="portal dropdown outline-none">
-                Recipes
-                <div class="dropdown-display">
-                    <div class="card ~neutral !low mt-1">
-                        <p>Coming soon!</p>
-                    </div>
-                </div>
-            </li>
-            <li tabindex="0" class="portal dropdown outline-none">Customize
-                <div class="dropdown-display">
-                    <div class="card ~neutral !low mt-1">
-                        <p>Coming soon!</p>
-                    </div>
-                </div>
-            </li>
-            <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a>
-            </li>
-        </ul>
-        <div class="lg:w-2/12 lg:text-right lg:p-0 p-2 portal opacity-50 flex items-center">
-            <a class="pr-2" href="https://github.com/milesmcc/a17t/releases">v0.0.1
-                alpha</a>
-            <a class="icon" href="https://github.com/milesmcc/a17t"><img width="32px"
-                    height="32px" src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></a>
+<header class="flex items-center flex-wrap justify-between" style="z-index: 1;">
+  <div class="mr-6">
+    <h3 class="text-2xl ~urge !low"><a href="/" class="flex items-center">
+        <div class="icon mr-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 32 32">
+            <g>
+              <g>
+                <circle cx="7.377" cy="25.043" r="6.956" />
+                <circle cx="24.646" cy="25.043" r="6.956" />
+                <circle cx="16" cy="6.956" r="6.956" />
+              </g>
+            </g>
+          </svg>
         </div>
+        <div class="label text-gray-800 text-2xl">a17t</div>
+      </a></h3>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900"
+      onclick="document.querySelector('#navFullContent').classList.toggle('hidden')">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="block flex-wrap lg:flex lg:items-center lg:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
+    id="navFullContent">
+    <ul>
+      <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
+        Elements
+        <div class="dropdown-display text-sm w-screen lg:w-auto">
+          <div class="card ~neutral !low mt-1 flex flex-wrap lg:flex-no-wrap w-4/5 lg:w-auto">
+            {% include elements_list.html %}
+          </div>
+        </div>
+      </li>
+      <li tabindex="0" class="portal dropdown outline-none">
+        Recipes
+        <div class="dropdown-display">
+          <div class="card ~neutral !low mt-1">
+            <p>Coming soon!</p>
+          </div>
+        </div>
+      </li>
+      <li tabindex="0" class="portal dropdown outline-none">Customize
+        <div class="dropdown-display">
+          <div class="card ~neutral !low mt-1">
+            <p>Coming soon!</p>
+          </div>
+        </div>
+      </li>
+      <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a>
+      </li>
+    </ul>
+    <div class="lg:w-2/12 lg:text-right lg:p-0 p-2 portal opacity-50 flex items-center">
+      <a class="pr-2" href="https://github.com/milesmcc/a17t/releases">v0.0.1
+        alpha</a>
+      <a class="icon" href="https://github.com/milesmcc/a17t"><img width="32px" height="32px"
+          src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></a>
     </div>
+  </div>
 </header>

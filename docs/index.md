@@ -2,317 +2,115 @@
 layout: default
 ---
 
-<div class="flex items-center justify-between my-8">
-    <section class="w-6/12">
-        <h1 class="heading text-4xl">Build beautiful, atomic interfaces without reinventing the wheel.</h1>
-        <h3 class="subheading">An atomic design toolkit that empowers you to build flexibly without starting from scratch.</h3>
-    </section>
+{% capture example1 %}
+
+<div class="card ~neutral !low">
+  ...
+</div>
+{% endcapture %}
+
+<div class="md:flex items-center justify-between mt-8 mb-16">
+  <section class="md:w-6/12 md:mr-12 mb-8">
+    <h1 class="heading text-4xl">An atomic design toolkit<br class="hidden md:inline"> for pragmatists.</h1>
+    <h3 class="subheading text-xl">Build beautiful, unique interfaces without reinventing the wheel. Let a17t provide
+      the core building blocks so you can focus on the bigger picture.</h3>
+  </section>
+  <section class="md:w-5/12">
+    <p class="supra text-gray-600 mb-1">Live Demo</p>
+    <div class="card ~neutral !low mb-4">
+      <form>
+        <div class="mb-4">
+          <label class="label block">What does a17t optionally go well with?</label>
+          <div class="select !normal my-1">
+            <select>
+              <option selected="selected">TailwindCSS</option>
+              <option>Anything!</option>
+            </select>
+          </div>
+          <p class="support">And it's pure CSS, so it works with all JS.</p>
+        </div>
+        <button class="button ~urge !high">Submit</button>
+        <button class="button ~neutral !normal">Save</button>
+      </form>
+    </div>
+    <div class="text-sm">
+      {% highlight html %}{{example1}}{% endhighlight %}
+    </div>
+  </section>
 </div>
 
 <hr class="sep">
-<section>
-    <h3 class="heading text-2xl py-4">Cards</h3>
-    {% for tone in site.tones %}
-    {% capture example %}
-    <div class="md:grid grid-cols-3 gap-3">
-        {% for priority in site.priorities %}
-        <div class="card ~{{tone}} !{{priority}} mb-4 md:mb-0 content">
-            <h3 class="heading text-2xl">~{{tone}} !{{priority}}</h3>
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt euismod nibh, et
-                tempor lectus congue et.</p>
-        </div>
-        {% endfor %}
-    </div>
-    {% endcapture %}
-    {% include example.html code=example classes="bg-gray-100" %}
-    {% endfor %}
 
-    <h3 class="heading text-2xl py-4">Asides</h3>
-    {% for tone in site.tones %}
-    {% capture example %}
-    <div class="aside ~{{tone}} mb-4 md:mb-0 content">
-        <p class="content"><strong>This is a {{tone}} aside.</strong> You can specify priorities, but you probably
-            shouldn't. (It's an aside, after all.) What you're seeing here is the default variant &mdash; that is, the
-            !normal priority.</p>
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
-    {% endfor %}
+<section class="md:flex">
+  <div>
+    {% include elements_list.html %}
+  </div>
+  <div class="content max-w-xl mx-auto">
+    <h2>Core interface elements <br> No opinions about anything else.</h2>
+    <p>Some CSS frameworks come prepackaged with all sorts of components that are convenient
+      at first but quickly become limiting. Utility frameworks like TailwindCSS are awesome, but they go. Both types have their place, but
+      most projects need something in between.</p>
+    <p>a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like jumbotrons,
+      navbars, and menus), a17t provides common single-class elements in a default (but easily customizable) style. That
+      way, you can build custom designs without having to reinvent the wheel. And because nearly all of a17t's elements
+      are a only a single class, customization later on is a breeze.</p>
+    <p>When you're starting on a new project, getting your form inputs and buttons to look just right is the last thing
+      you should be doing. a17t lets you think about the bigger picture by providing common elements—like chips, form
+      elements, and buttons—so you can move quickly.</p>
+  </div>
+</section>
 
-    <h3 class="heading text-2xl py-4">Icons</h3>
-    {% capture example %}
-    {% for tone in site.tones %}
-    <span class="icon m-2 ~{{tone}} !low">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13">
-            <g stroke-width="2" stroke="currentColor" fill="none">
-                <path d="M11.29 11.71l-4-4" />
-                <circle cx="5" cy="5" r="4" />
-            </g>
-        </svg>
+<hr class="sep">
+
+<section class="md:grid grid-cols-2 gap-8">
+  <div class="flex mb-6">
+    <span class="badge ~info self-start mr-4">
+      <span class="icon">
+        <i class="fas fa-atom fa-lg"></i>
+      </span>
     </span>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
+    <div class="flex-grow">
+      <h4 class="heading text-xl mb-1">Atomic and flexible</h4>
+      <p>a17t provides core, single-class interface elements and empowers you to assemble them your way. And everything
+        is easily customizable using CSS variables, so you'll never need to settle for &ldquo;good enough.&rdquo;</p>
+    </div>
+  </div>
+  <div class="flex mb-6">
+    <span class="badge ~positive self-start mr-4">
+      <span class="icon">
+        <i class="fas fa-brain fa-lg"></i>
+      </span>
+    </span>
+    <div class="flex-grow">
+      <h4 class="heading text-xl mb-1">Logical and hierarchical</h4>
+      <p>a17t encourages you to think in terms of intent and hierarchy by specifying elements in terms of tone and
+        priority. As an added bonus, this makes refactoring and customization a breeze.</p>
+    </div>
+  </div>
+  <div class="flex mb-6">
+    <span class="badge ~critical self-start mr-4">
+      <span class="icon">
+        <i class="fas fa-feather fa-lg"></i>
+      </span>
+    </span>
+    <div class="flex-grow">
+      <h4 class="heading text-xl mb-1">Lightweight and modern</h4>
+      <p>a17t is built using PostCSS, CSS variables, and TailwindCSS. That means it's reliable, customizable, and can
+        integrate with any JS stack. Just import a small CSS file and you're good to go.</p>
+    </div>
+  </div>
+  <div class="flex mb-6">
+    <span class="badge ~warning self-start mr-4">
+      <span class="icon">
+        <i class="fas fa-smile-beam fa-lg"></i>
+      </span>
+    </span>
+    <div class="flex-grow">
+      <h4 class="heading text-xl mb-1">Satisfying and accessible</h4>
+      <p>a17t is designed to make every interaction a delight. In addition to its semantic markup, a17t is full of
+        subtle animations and accessibility features that make it satisfying for everyone to use.</p>
+    </div>
+  </div>
 </section>
-<hr class="sep">
-<section>
-    <h3 class="heading text-2xl py-4">Typography</h3>
-    {% capture example %}
-    <section class="content">
-        <h3>This is a content block</h3>
-        <p>This is a paragraph. When you place your body content inside a content class,
-            a17t makes sure that the spacing figures everything out automatically.</p>
-        <p>While a17t usually tries to avoid '<a href="https://rmrm.io">magic</a>' solutions, type is important
-            (and difficult) enough to warrant an exception.</p>
-        <blockquote>
-            This is a blockquote. Lorem ipsum dolor sit amet. These are words that were once spoken, I guess.
-            <cite>This is its source.</cite>
-        </blockquote>
-        <p>This is a final closing paragraph to show you how it all comes together.</p>
-        <h3>Just kidding, there's more.</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <ul>
-            <li>An item</li>
-            <li>Another item</li>
-            <li>Three items?</li>
-        </ul>
-        <p>This is <i>real</i>a final closing paragraph to show you how it all comes together.</p>
-        <ol>
-            <li>One!</li>
-            <li>Two?</li>
-            <li>Three.</li>
-        </ol>
-    </section>
-    {% endcapture %}
-    {% include example.html code=example %}
-    {% capture example %}
-    <p class="label">This is a label.</p>
-    <p class="support">It's like the opposite of a support.</p>
-    <p class="support ~critical">These can all have tones, by the way!</p>
-    {% endcapture %}
-    {% include example.html code=example %}
 
-    {% capture example %}
-    <div class="content">
-        <p>This is some text, with an inline <code>&lt;code&gt;</code> tag. This requires a content block!</p>
-        <pre><code>This is some longer code!
-
-that() {
-spansMultipleLines();  
-}</code></pre>
-
-        <p>To use this <code>code</code><code>block</code>, press <kbd>Cmd</kbd> and <kbd>C</kbd><kbd>X</kbd> together.
-        </p>
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <p class="supra">This is a supra</p>
-    <h3 class="heading">This is a heading</h3>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Status</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Landinator 9000 <span class="badge ~neutral">New</span></td>
-                <td><span class="chip ~positive">Completed</span></td>
-                <td>$300</td>
-            </tr>
-            <tr>
-                <td>Hammer</td>
-                <td><span class="chip ~urge">Waiting</span></td>
-                <td>$20</td>
-            </tr>
-            <tr>
-                <td>Computer</td>
-                <td><span class="chip ~info">Processing</span></td>
-                <td>$500</td>
-            </tr>
-        </tbody>
-    </table>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <h3 class="heading">This is a heading-subheading pair</h3>
-    <p class="subheading">I'm the subheading (which shouldn't be followed by a paragraph).</p>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-</section>
-<hr class="sep">
-<section>
-    <h3 class="heading text-2xl py-4">Information</h3>
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="mb-1">
-        {% for priority in site.priorities %}
-        <span class="chip ~{{tone}} !{{priority}}">{{tone|capitalize}}</span>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="mb-1">
-        {% for priority in site.priorities %}
-        <span class="badge ~{{tone}} !{{priority}}">{{forloop.index}}</span>
-        <span class="badge ~{{tone}} !{{priority}}">New</span>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="mb-1">
-        {% for priority in site.priorities %}
-        <span class="chip ~{{tone}} !{{priority}} loading text-lg">Loading</span>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% for tone in site.tones %}
-    {% capture example %}
-    <div class="md:grid grid-cols-3 gap-3">
-        {% for priority in site.priorities %}
-        <progress class="progress ~{{tone}} !{{priority}} mb-4 md:mb-0" value="60" max="100">60%</progress>
-        {% endfor %}
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
-    {% endfor %}
-
-</section>
-<hr class="sep">
-<section>
-    <h3 class="heading text-2xl py-4">Interaction</h3>
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="mb-1">
-        {% for priority in site.priorities %}
-        <a class="button ~{{tone}} !{{priority}}" href="https://rmrm.io">Hello</a>
-        <a class="button ~{{tone}} !{{priority}}" href="https://rmrm.io" disabled>Hello</a>
-        <a class="button ~{{tone}} !{{priority}} loading" href="https://rmrm.io">Hello</a>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="mb-1">
-        {% for priority in site.priorities %}
-        <a class="portal ~{{tone}} !{{priority}}" href="https://rmrm.io">Hello</a>
-        <a class="portal ~{{tone}} !{{priority}} active" href="https://rmrm.io">Hello</a>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-</section>
-<hr class="sep">
-<section>
-    <h3 class="heading text-2xl py-4">Forms</h3>
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="md:grid grid-cols-3 gap-3 mb-6">
-        {% for priority in site.priorities %}
-        <input class="input ~{{tone}} !{{priority}} mb-1" type="text" placeholder="Type something">
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    {% for priority in site.priorities %}
-    <textarea class="field !{{priority}} mb-1" placeholder="Type something"></textarea>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    {% for tone in site.tones %}
-    <div class="md:grid grid-cols-3 gap-3 mb-6">
-        {% for priority in site.priorities %}
-        <div class="select ~{{tone}} !{{priority}} mb-1">
-            <select>
-                <option>Option A</option>
-                <option>Option B</option>
-                <option>Option C</option>
-                <option>This is a very long option and is likely to overlap with the chevron</option>
-            </select>
-        </div>
-        {% endfor %}
-    </div>
-    {% endfor %}
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <label class="switch block">
-        <input type="checkbox">
-        <span>Save my information</span>
-    </label>
-    <label class="switch block">
-        <input type="checkbox">
-        <span>I am not a robot</span>
-    </label>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <label class="switch">
-        <input type="radio" name="rad">
-        <span>I am cool</span>
-    </label>
-    <label class="switch">
-        <input type="radio" name="rad">
-        <span>I am not cool</span>
-    </label>
-    <label class="switch">
-        <input type="radio" name="rad" disabled>
-        <span>Disabled</span>
-    </label>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <label class="upload">
-        <input type="file">
-        <span class="button field">Upload</span>
-        Pick a file...
-    </label>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-    {% capture example %}
-    <div class="button ~neutral !high">
-        More Options
-        <span class="icon ml-4 mr-1">
-            <i class="chev"></i>
-        </span>
-    </div>
-    {% endcapture %}
-    {% include example.html code=example %}
-
-</section>
+<script src="https://kit.fontawesome.com/ef150c472d.js" crossorigin="anonymous"></script>

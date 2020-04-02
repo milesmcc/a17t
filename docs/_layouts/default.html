@@ -7,11 +7,14 @@
 
   <div class="max-w-screen-lg mx-auto p-4 lg:py-10">
 
-    {%- include header.html -%}
+
+    <div style="z-index: 2;" class="relative">
+      {%- include header.html -%}
+    </div>
 
     <hr class="sep h-12">
 
-    <main aria-label="Content">
+    <main aria-label="Content" style="z-index: 1" class="relative">
       {{ content }}
     </main>
 
