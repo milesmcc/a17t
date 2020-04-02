@@ -1,6 +1,20 @@
 <header class="flex items-center flex-wrap justify-between">
-    <div class="mr-5">
-        <h3 class="heading text-2xl text-gray-700"><a href="/">a17t</a></h3>
+    <div class="mr-6">
+        <h3 class="text-2xl ~urge !low"><a href="/" class="flex items-center">
+                <div class="icon mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 32 32">
+                        <g>
+                            <g>
+                                <circle cx="7.377" cy="25.043" r="6.956" />
+                                <circle cx="24.646" cy="25.043" r="6.956" />
+                                <circle cx="16" cy="6.956" r="6.956" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="label text-gray-800 text-2xl">a17t</div>
+            </a></h3>
     </div>
     <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900"
@@ -11,7 +25,7 @@
             </svg>
         </button>
     </div>
-    <div class="w-full block flex-wrap lg:flex lg:items-center lg:justify-between lg:w-11/12 shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
+    <div class="block flex-wrap lg:flex lg:items-center lg:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
         id="navFullContent">
         <ul>
             <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'atom' %}~urge active{% endif %}">
@@ -96,11 +110,11 @@
             <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a>
             </li>
         </ul>
-        <div class="lg:w-2/12 lg:text-right lg:p-0 p-2">
-            <a class="pr-2 text-gray-600 hover:text-gray-800"
-                href="https://github.com/milesmcc/a17t/releases">v0.0.1 alpha</a>
-            <a class="icon opacity-25 hover:opacity-50" href="https://github.com/milesmcc/a17t"><img width="25px"
-                    height="25px" src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></a>
+        <div class="lg:w-2/12 lg:text-right lg:p-0 p-2 portal opacity-50 flex items-center">
+            <a class="pr-2" href="https://github.com/milesmcc/a17t/releases">v0.0.1
+                alpha</a>
+            <a class="icon" href="https://github.com/milesmcc/a17t"><img width="32px"
+                    height="32px" src="{{ '/assets/GitHub-Mark-64px.png' | relative_url }}" alt="GitHub" /></a>
         </div>
     </div>
 </header>

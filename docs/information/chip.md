@@ -43,7 +43,7 @@ Chips have full tone and priority support.
 ###### {{priority|capitalize}} Priority
 {% capture example %}
 {% for tone in site.tones %}
-<span class="chip ~{{tone}} !{{priority}}">Category</span>
+<span class="chip ~{{tone}} !{{priority}} mb-1">Category</span>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}

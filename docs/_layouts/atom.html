@@ -7,21 +7,21 @@ layout: default
     <h3 class="heading text-5xl">{{page.title}}</h3>
     <p class="subheading text-lg">{{page.description}}</p>
     <hr class="sep">
-    <ul class="flex flex-wrap md:block">
+    <ul class="flex flex-wrap justify-between md:block">
       {% if page.display %}
-      <li class="mb-4 w-1/3">
+      <li class="mb-4">
         <p class="label">Display</p>
         <p>{{page.display}}</p>
       </li>
       {% endif %}
       {% if page.selectors %}
-      <li class="mb-4 w-1/3">
+      <li class="mb-4">
         <p class="label">Selectors</p>
         <p>{% for selector in page.selectors %}<code>{{selector}}</code>{% endfor %}</p>
       </li>
       {% endif %}
       {% if page.source %}
-      <li class="mb-4 w-1/3">
+      <li class="mb-4">
         <p class="label">Source</p>
         <p><a href="{{page.source}}" class="portal p-0 font-normal">GitHub &nearr;</a></p>
       </li>
