@@ -99,7 +99,7 @@ layout: default
     </div>
   </section>
   <section class="md:w-5/12">
-    {% include example.html code=example_form classes="bg-gray-100" %}
+    {% include example.html code=example_form label=true classes="bg-gray-100" %}
   </section>
 </div>
 
@@ -125,7 +125,7 @@ layout: default
     <hr class="sep h-16">
     <article class="md:flex justify-end">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_profile classes="bg-gray-100" %}
+        {% include example.html code=example_profile label=true classes="bg-gray-100" %}
       </div>
     </article>
     <hr class="sep h-16">
@@ -183,7 +183,7 @@ layout: default
     <hr class="sep h-16">
     <article class="md:flex justify-end">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_table %}
+        {% include example.html label=true code=example_table %}
       </div>
     </article>
     <hr class="sep h-16">
@@ -212,7 +212,7 @@ layout: default
     <hr class="sep h-16">
     <article class="md:flex justify-end">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_delete classes="bg-gray-100" %}
+        {% include example.html code=example_delete label=true classes="bg-gray-100" %}
       </div>
     </article>
     <hr class="sep h-16">

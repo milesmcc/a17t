@@ -1,5 +1,7 @@
 <figure class="mb-6">
+    {% if include.label %}
     <p class="supra text-gray-600 text-xs pl-4 mb-1">Live Example</p>
+    {% endif %}
     <section class="mb-2 border bg-white p-4 rounded-lg max-w-full {{include.classes}}">
         <div class="mx-auto">
             {{include.code}}
