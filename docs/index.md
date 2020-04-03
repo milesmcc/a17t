@@ -2,52 +2,114 @@
 layout: default
 ---
 
-{% capture example1 %}<p class="supra">Live Demo</p>
-<div class="card ~urge !high">
-  ...
+{% capture example_profile %}
+<div class="card ~neutral !low md:flex max-w-lg">
+  <img class="rounded-full mx-auto h-20 w-20 md:mr-6 mb-6" src="{{ '/assets/profile_image.png' | relative_url }}">
+  <div class="flex-grow text-center md:text-left">
+    <p class="support">Senior Researcher</p>
+    <h3 class="heading text-xl">Dr. Katya Hattenagh</h3>
+    <p class="mb-3 mt-2">Katya studies the intersection of machine learning and differential topology.</p>
+    <div>
+      <span class="chip ~neutral mb-1">Discrete Math</span> <span class="chip ~neutral mb-1">Topology</span> <span
+        class="chip ~neutral mb-1">Neural Nets</span>
+    </div>
+  </div>
 </div>
 {% endcapture %}
 
-{% capture example2 %}
-<form>
+{% capture example_table %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Landinator 9000 <span class="badge ~neutral">New</span></td>
+      <td><span class="chip ~positive">Completed</span></td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Hammer</td>
+      <td><span class="chip ~urge">Waiting</span></td>
+      <td>$20</td>
+    </tr>
+    <tr>
+      <td>Computer</td>
+      <td><span class="chip ~info">Processing</span></td>
+      <td>$500</td>
+    </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+{% capture example_form %}
+<form class="card ~neutral !low">
   <div class="mb-4">
-    <label class="label block">What does a17t optionally go well with?</label>
-    <div class="select !normal my-1">
+    <label class="label" for="toolkit">Job for this demo</label>
+    <div class="select ~neutral !normal my-1">
       <select>
-        <option selected="selected">TailwindCSS</option>
-        <option>Anything!</option>
+        <option>Teacher</option>
+        <option>Engineer</option>
+        <option>Firefighter</option>
+        <option>Other</option>
       </select>
     </div>
-    <p class="support">And it's pure CSS, so it works with all JS.</p>
+    <p class="support">If you don't currently have a job, select 'other.'</p>
   </div>
-  <button class="button ~urge !high">Submit</button>
-  <button class="button ~neutral !normal">Save</button>
+  <div>
+    <label class="label" for="toolkit">Favorite toolkit</label>
+    <input id="toolkit" type="text" class="input ~critical !normal my-1" placeholder="At least 8 characters..."
+      value="Not a17t">
+    <p class="support ~critical">The correct answer is a17t!</p>
+  </div>
 </form>
 {% endcapture %}
 
-<div class="md:flex items-center justify-between md:mt-24 mb-32">
-  <section class="md:w-6/12 md:mr-12">
-    <h1 class="heading text-4xl mb-1">An atomic design toolkit<br class="hidden md:inline"> for pragmatists</h1>
-    <h3 class="subheading text-xl">Build beautiful, unique interfaces without reinventing the wheel. Let a17t provide
+{% capture example_delete %}
+<div class="card ~neutral !low p-0 max-w-sm">
+  <div class="p-4">
+    <h2 class="heading text-lg mb-1">Just making sure!</h2>
+    <p class="support text-base mb-3">To confirm you'd like to delete this repository, please enter its name below.</p>
+    <input class="input" type="text" placeholder="milesmcc/a17t">
+  </div>
+  <section class="section ~critical p-4">
+    <span class="button ~critical !high">Delete</span>
+    <span class="button ~neutral bg-transparent">Go Back</span>
+  </section>
+</div>
+{% endcapture %}
+
+<div class="md:flex justify-between md:mt-24 mb-24">
+  <section class="md:w-6/12 mb-12 mt-6">
+    <h1 class="heading text-3xl md:text-4xl mb-4">An atomic design toolkit <br class="hidden md:block">for pragmatists
+    </h1>
+    <h3 class="subheading text-xl mb-6">Build beautiful, unique interfaces without reinventing the wheel. Let a17t
+      provide
       the core building blocks, then customize with ease.</h3>
     <div>
+      <ul class="text-lg">
+        <li class="button ~urge !high font-medium"><a href="#install">Install</a></li>
+        <li class="portal ~urge"><a href="#design">Principles</a></li>
+        <li class="portal ~urge"><a href="#learn">Learn</a></li>
+      </ul>
     </div>
   </section>
   <section class="md:w-5/12">
-    <p class="supra mb-1">Live Demo</p>
-    <div class="card ~urge !high mb-4">
-      <pre><code>{{example1|escape}}</code></pre>
-    </div>
+    {% include example.html code=example_form classes="bg-gray-100" %}
   </section>
 </div>
 
 <hr class="sep h-12">
 
 <section class="md:flex">
-  <div class="flex-grow">
-    <article class="md:flex pb-12">
+  <div class="md:w-10/12">
+    <article class="md:flex">
       <aside class="hidden md:block w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-2xl">Overview</p>
+        <p class="heading text-purple-600 text-2xl">Overview</p>
       </aside>
       <div class="md:w-9/12 content">
         <h2>Core interface elements. <br> No opinions about anything else.</h2>
@@ -61,9 +123,15 @@ layout: default
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex pb-12">
+    <article class="md:flex justify-end">
+      <div class="md:w-9/12 md:max-w-full">
+        {% include example.html code=example_profile classes="bg-gray-100" %}
+      </div>
+    </article>
+    <hr class="sep h-16">
+    <article class="md:flex" id="design">
       <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-3xl mb-8 md:text-2xl">Design Principles</p>
+        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Design Principles</p>
       </aside>
       <div class="md:w-9/12">
         <section class="md:grid grid-cols-2 gap-8">
@@ -96,7 +164,7 @@ layout: default
               </span>
             </span>
             <h4 class="heading text-xl mb-1">Lightweight &amp; modern</h4>
-            <p>a17t is built using PostCSS, CSS variables, and TailwindCSS. That means it's reliable, customizable,
+            <p>a17t is built using PostCSS, CSS variables, and Tailwind CSS. That means it's reliable, customizable,
               and can integrate with any JS stack. Just import a small CSS file and you're good to go.</p>
           </div>
           <div class="mb-6">
@@ -113,36 +181,28 @@ layout: default
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex pb-12">
-      <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-3xl mb-8 md:text-2xl">Tailwind</p>
-      </aside>
-      <div class="md:w-9/12">
-        <aside class="aside ~positive content bg-green-200">
-          <h3>Great to use with TailwindCSS</h3>
-          <p>Using a17t in conjunction with <a href="https://tailwindcss.com/">TailwindCSS</a> is optional, but is the
-            recommended approach as it makes for a great development experience. Use a17t for your core interface
-            elements, and assemble them using Tailwind. That's how this documentation site is built!</p>
-        </aside>
+    <article class="md:flex justify-end">
+      <div class="md:w-9/12 md:max-w-full">
+        {% include example.html code=example_table %}
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex pb-12">
+    <article class="md:flex" id="learn">
       <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-3xl mb-8 md:text-2xl">Crash Course</p>
+        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Learn</p>
       </aside>
       <div class="md:w-9/12 content">
-        <h3>Use tones to control color</h3>
+        <h2>Use tones to control color</h2>
         <p>There are six tones by default: neutral, positive, warning, critical, info, and urge. (Don't worry, these
           colors are all customizable.) You can specify a tone by using its class: a tilde followed by the tone name
           (e.g., <code>~positive</code>). The classes required for a green chip, for example, are <code>chip
             ~positive</code>.</p>
-        <h3>Use priorities to control prominence</h3>
+        <h2>Use priorities to control prominence</h2>
         <p>There are three priorities &mdash; low, normal, and high. The default priority is normal. You can specify a
           priority by using its class: an exclamation point followed by its name (e.g., <code>!high</code> or
           <code>!low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
           (communicated through drop shadow by default) when changing colors is not possible.</p>
-        <h3>Consider using with Tailwind</h3>
+        <h2>Consider using with Tailwind</h2>
         <p>Because a17t only provides the core elements of your interface, like buttons and form inputs, you'll need a
           tool to stitch everything together. (a17t does not provide any grid utilities.) While you could do this using
           pure CSS, using a17t in conjunction with Tailwind makes for a very smooth and efficient development
@@ -150,9 +210,15 @@ layout: default
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex pb-12">
+    <article class="md:flex justify-end">
+      <div class="md:w-9/12 md:max-w-full">
+        {% include example.html code=example_delete classes="bg-gray-100" %}
+      </div>
+    </article>
+    <hr class="sep h-16">
+    <article class="md:flex">
       <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-3xl mb-8 md:text-2xl">More Benefits</p>
+        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">More Benefits</p>
       </aside>
       <div class="md:w-9/12 content">
         <p><strong>Thoughtful typography</strong> &mdash; a17t is optimized for legibility. From headings to body text
@@ -169,9 +235,9 @@ layout: default
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex pb-12">
+    <article class="md:flex pb-12" id="install">
       <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading support text-3xl mb-8 md:text-2xl">Install</p>
+        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Install</p>
       </aside>
       <div class="md:w-9/12">
         <div class="card ~neutral !high font-mono mb-4">
@@ -181,7 +247,7 @@ layout: default
       </div>
     </article>
   </div>
-  <div class="pl-20 hidden md:block opacity-75">
+  <div class="md:w-2/12 pl-20 hidden md:block opacity-75">
     {% include elements_list.html %}
   </div>
 </section>

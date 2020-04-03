@@ -38,46 +38,48 @@ layout: default
   <article class="w-full md:w-2/3 mt-4">
     {% if page.examples %}
     <div class="card ~neutral !low mb-10">
-    {% for example in page.examples %}
-    {{example}}
-    <div class="text-sm mt-6 overflow-scroll" style="max-height: 20rem;">
-      {% highlight html %}{{example}}{% endhighlight %}
-    </div>
-    {% endfor %}
+      {% for example in page.examples %}
+      {{example}}
+      <div class="text-sm mt-6 overflow-scroll" style="max-height: 20rem;">
+        {% highlight html %}{{example}}{% endhighlight %}
+      </div>
+      {% endfor %}
     </div>
     {% endif %}
     <hr class="sep">
     <main class="content">
-    {{content}}
+      {{content}}
     </main>
-    <h1 class="heading text-3xl mt-16">Customization</h1>
+    <h1 class="heading text-3xl mt-16 mb-4">Customization</h1>
     {% if page.variables %}
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for variable in page.variables %}
-        <tr>
-          <td><code>{{variable.name}}</code></td>
-          <td><span class="chip ~neutral !high">{{variable.type}}</code></td>
-          <td>
-            {% if variable.default %}
-            <code>{{variable.default}}</code>
-            {% else %}
-            &mdash;
-            {% endif %}
-          </td>
-          <td>{{variable.description}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <article class="border p-2 bg-white rounded">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for variable in page.variables %}
+          <tr>
+            <td><code>{{variable.name}}</code></td>
+            <td><span class="chip ~neutral !high">{{variable.type}}</code></td>
+            <td>
+              {% if variable.default %}
+              <code>{{variable.default}}</code>
+              {% else %}
+              &mdash;
+              {% endif %}
+            </td>
+            <td>{{variable.description}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </article>
     {% else %}
     <p class="my-2">This element has no variables.</p>
     {% endif %}

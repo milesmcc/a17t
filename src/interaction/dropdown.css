@@ -12,7 +12,7 @@
     z-index: 10;
   }
 
-  &:hover, &:focus, &:focus-within, &.active {
+  &:hover, &:focus, &:focus-within, &.selected {
     .dropdown-display {
       visibility: visible;
       opacity: 1;

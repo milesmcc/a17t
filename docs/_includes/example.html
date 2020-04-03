@@ -1,9 +1,14 @@
-<figure class="mb-6 border bg-white p-4 rounded-lg w-full max-w-full overflow-scroll content {{include.classes}}">
-    <div class="mb-2">
-        {{include.code}}
-    </div>
-    <details {% if open %}open="open" {% endif %}>
-        <summary class="support cursor-pointer mb-px">Source code</summary>
-        {% highlight html %}{{include.code}}{% endhighlight %}
+<figure class="mb-6">
+    <p class="supra text-gray-600 text-xs pl-4 mb-1">Live Example</p>
+    <section class="mb-2 border bg-white p-4 rounded-lg max-w-full {{include.classes}}">
+        <div class="mx-auto">
+            {{include.code}}
+        </div>
+    </section>
+    <details class="pl-4" {% if open %}open="open" {% endif %}>
+        <summary class="support cursor-pointer mb-px">Example code</summary>
+        <div class="overflow-scroll">
+            {% highlight html %}{{include.code}}{% endhighlight %}
+        </div>
     </details>
 </figure>

@@ -35,11 +35,12 @@
 @import "./interaction/textarea.css";
 @import "./interaction/upload.css";
 
-.a17t {
+:root {
   text-rendering: var(--text-rendering-mode);
   min-height: var(--min-height);
   font-family: var(--family-primary);
   color: var(--color-content);
+  scroll-behavior: smooth;
 }
 
 @each $tone in neutral, positive, warning, critical, info, urge {
