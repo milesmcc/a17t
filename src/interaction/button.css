@@ -11,23 +11,16 @@
   position: relative;
   line-height: var(--button-line-height, 1.5);
   white-space: nowrap;
-  transition: box-shadow var(--button-transition-speed, 75ms) linear;
-  transition: transform var(--button-transition-speed, 75ms) linear;
+  transition: filter var(--button-transition-speed, 75ms) linear;
   transform-origin: center;
   text-decoration: none;
 
   @apply rounded-md py-1 px-2 outline-none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     &:not([disabled]) {
-        transform: scale(var(--button-hover-scale, 1.05));
-        @apply shadow;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    &:hover, &:focus {
-      transform: none !important;
+      filter: brightness(var(--button-filter-brightness, 95%));
     }
   }
 

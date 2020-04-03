@@ -1,38 +1,33 @@
 .portal {
-    display: inline-flex;
-    align-items: left;
-    justify-content: left;
-    cursor: pointer;
-    white-space: nowrap;
-    padding: var(--portal-padding, 0.15em 0.5em);
-    transition: transform var(--portal-transition-speed, 75ms) linear;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: left;
+  justify-content: left;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: var(--portal-padding, 0.15em 0.5em);
+  transition: color var(--portal-transition-speed, 75ms) linear;
+  text-decoration: none;
 
-    @apply rounded-full font-medium;
+  @apply rounded-full font-medium;
 
-    &:hover, &:focus {
+  &:hover,
+  &:focus {
     &:not([disabled]) {
-        transform: scale(var(--portal-hover-scale, 1.05));
+      color: var(--color-title);
     }
   }
 
-    @media (prefers-reduced-motion: reduce) {
-        &:hover {
-            transform: none !important;
-        }
-    }
+  &[disabled] {
+    opacity: var(--portal-disabled-opacity, 0.6);
+    cursor: not-allowed;
+  }
 
-    &[disabled] {
-        opacity: var(--portal-disabled-opacity, 0.6);
-        cursor: not-allowed;
-    }
+  &.active {
+    background-color: var(--color-fill);
+    color: var(--color-content);
 
-    &.active {
-        background-color: var(--color-fill);
-        color: var(--color-content);
-
-        &:hover {
-            transform: none !important;
-        }
+    &:hover {
+      filter: none !important;
     }
+  }
 }

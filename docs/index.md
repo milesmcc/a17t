@@ -92,7 +92,7 @@ layout: default
       the core building blocks, then customize with ease.</h3>
     <div>
       <ul class="text-lg">
-        <li class="button ~urge !high font-medium"><a href="#install">Install</a></li>
+        <li class="button ~urge font-medium"><a href="#install">Install</a></li>
         <li class="portal ~urge"><a href="#design">Principles</a></li>
         <li class="portal ~urge"><a href="#learn">Learn</a></li>
       </ul>
