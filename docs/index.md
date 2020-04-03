@@ -115,7 +115,7 @@ layout: default
         <h2>Core interface elements. <br> No opinions about anything else.</h2>
         <p>Some CSS frameworks come prepackaged with all sorts of components that are convenient
           at first but quickly become limiting. Utility frameworks like Tailwind are awesome, but
-          can be slow to start with.</p>
+          can be difficult start using on their own.</p>
         <p>a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like
           jumbotrons, navbars, and menus), a17t provides common single-class elements in a default (but easily
           customizable) style.
