@@ -2,9 +2,11 @@
     background-color: var(--color-fill);
     color: var(--color-content);
     display: inline-flex;
+    align-items: center;
+    align-self: center;
     vertical-align: middle;
     justify-content: center;
-    padding: var(--badge-padding-x, 1rem) var(--badge-padding-y, 1rem);
+    font-size: var(--badge-size, 0.6rem);
 
-    @apply rounded-full;
+    @apply rounded py-px px-1 font-medium;
 }
