@@ -15,7 +15,7 @@
   transform-origin: center;
   text-decoration: none;
 
-  @apply rounded-md py-1 px-2 outline-none;
+  @apply rounded py-1 px-2 outline-none;
 
   &:hover,
   &:focus {
