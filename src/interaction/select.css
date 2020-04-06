@@ -1,5 +1,5 @@
 .select {
-  @apply relative inline-flex items-center w-full;
+  @apply relative;
 
   select {
     @apply field block pr-10;

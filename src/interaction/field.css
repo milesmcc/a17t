@@ -1,7 +1,6 @@
 .field {
   border-color: var(--color-light);
   transition: box-shadow var(--field-shadow-transition-speed, 75ms) ease-out;
-  display: inline-flex;
   box-shadow: var(--fallback-box-shadow);
   appearance: none;
   -webkit-appearance: none;
@@ -10,7 +9,7 @@
   &[disabled] {
     cursor: not-allowed;
     background-color: var(--color-light);
-    opacity: var(--field-disabled-opacity, 0.8);
+    opacity: var(--field-disabled-opacity, 0.6);
   }
 
   &[readonly] {

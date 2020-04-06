@@ -1,19 +1,19 @@
 ---
 layout: element
 tab: elements
-subtab: element-input
+subtab: element-textarea
 category: Interaction
-title: Input
-description: A specialized field for HTML input elements
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/input.css
+title: Textarea
+description: A specialized field for HTML textarea elements
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/textarea.css
 selectors:
-  - .input
+  - .textarea
 features:
   - Tones
   - Priorities
 display: Inline Flex
 examples:
-  - "<input type='text' class='input ~neutral !normal w-auto' placeholder='Hello world'>"
+  - "<textarea class='textarea ~neutral !normal' placeholder='Write something...'></textarea>"
 variables:
   - name: --color-light
     type: color
@@ -41,34 +41,33 @@ variables:
 
 # Overview
 
-Inputs are a specialized type of [field](/interaction/field) for use with most `<input>` elements. For more information on why this is useful, check out the [field documentation](/interaction/field).
+Textareas are a specialized type of [field](/interaction/field) for use with `<textarea>` elements. For more information on why this is useful, check out the [field documentation](/interaction/field).
 
-Currently, the `.input` selector is simply an alias for the `.field` selector. It's possible that input-specific features will be added in the future.
+Currently, the `.textarea` selector is simply an alias for the `.field` selector. It's possible that textarea-specific features will be added in the future.
 
 # Considerations
 
-**Multiple (adjacent) inputs** --- You can build adjacent inputs by removing the left or right border from the fields and setting their x-margin to zero. Beware that using adjacent fields can result in a poor user experience on mobile.
+The textarea element has no special considerations at this time.
 
 # Variants
 
-Inputs have full tone, priority, and disabling support. Priorities are communicated through elevation.
+Textareas have full tone, priority, and disabling support. Priorities are communicated through elevation.
 
 {% for priority in site.priorities %}
 ###### {{priority|capitalize}} Priority
 {% capture example %}
+<div class="md:grid grid-cols-3 gap-4">
 {% for tone in site.tones %}
-<input class="input ~{{tone}} !{{priority}} mb-4 mr-4 w-auto" placeholder="This is an input" type="text">
+  <textarea class="textarea ~{{tone}} !{{priority}}" placeholder="This is a textarea"></textarea>
 {% endfor %}
+</div>
 {% endcapture %}
 {% include example.html code=example %}
 {% endfor %}
 
 ###### Disabling
 
-{% capture example %}
-<input class="input ~neutral disabled" value="This is a disabled input" type="text">
-{% endcapture %}
-{% include example.html code=example %}
+<textarea class="textarea ~{{tone}} !{{priority}}" disabled>This is a disabled textarea!</textarea>
 
 # Accessibility
 
@@ -79,20 +78,17 @@ Inputs have full tone, priority, and disabling support. Priorities are communica
 # Examples
 
 {% capture example %}
-<div>
-  <p class="label">Your name</p>
-  <input class="field my-1" type="text" placeholder="Miles McCain">
-  <p class="support">Just your first name is fine, too.</p>
-</div>
+<textarea class="textarea ~neutral !normal" placeholder="This is a textarea placeholder."></textarea>
 {% endcapture %}
 {% include example.html code=example %}
 
 {% capture example %}
-<div>
-  <p class="label">Your name</p>
-  <input class="field my-1 ~critical" type="text" placeholder="Miles McCain" value="hello@sendmiles.email">
-  <p class="support ~critical">That's an email, not a name!</p>
-</div>
+<textarea class="textarea ~neutral !normal" rows="8">This textarea has 8 rows and actual content.</textarea>
+{% endcapture %}
+{% include example.html code=example %}
+
+{% capture example %}
+<textarea class="textarea ~neutral !normal" rows="8" disabled>This textarea has 8 rows and is disabled.</textarea>
 {% endcapture %}
 {% include example.html code=example %}
 

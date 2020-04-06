@@ -297,7 +297,7 @@ spansMultipleLines();
     <label class="upload">
         <input type="file">
         <span class="button field">Upload</span>
-        Pick a file...
+        <span>Pick a file...</span>
     </label>
     {% endcapture %}
     {% include example.html code=example %}

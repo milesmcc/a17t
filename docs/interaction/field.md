@@ -28,7 +28,7 @@ variables:
   - name: --field-disabled-opacity
     type: opacity
     description: sets the opacity of disabled fields
-    default: 0.8
+    default: 0.6
   - name: --field-hover-box-shadow
     description: sets additional box shadow on hover
     type: box shadow
@@ -53,7 +53,7 @@ Apply a `.field` selector whenever you want a form-style field to look nice. All
 
 # Variants
 
-Fields have full tone and priority support. Priorities are communicated through elevation.
+Fields have full tone, priority, and disabling support. Priorities are communicated through elevation.
 
 {% for priority in site.priorities %}
 ###### {{priority|capitalize}} Priority
@@ -65,9 +65,16 @@ Fields have full tone and priority support. Priorities are communicated through 
 {% include example.html code=example %}
 {% endfor %}
 
+###### Disabling
+
+{% capture example %}
+<input class="field ~neutral disabled" value="This is a disabled input" type="text">
+{% endcapture %}
+{% include example.html code=example %}
+
 # Accessibility
 
-**Use Aria roles and labels!** When building forms, it's easy to rely on visual guidelines to show relationships between elements. Unfortunately, this doesn't help those interacting with your site using a screenreader or other assistive technologies. For this reason, it's important to use [ARIA labels and roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) wherever possible.
+**Use Aria roles and labels.** When building forms, it's easy to rely on visual guidelines to show relationships between elements. Unfortunately, this doesn't help those interacting with your site using a screenreader or other assistive technologies. For this reason, it's important to use [ARIA labels and roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) wherever possible.
 
 {% include accessibility_defaults.html %}
 
