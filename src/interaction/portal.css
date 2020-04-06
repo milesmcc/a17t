@@ -13,7 +13,7 @@
   &:hover,
   &:focus {
     &:not([disabled]) {
-      color: var(--color-title);
+      color: var(--portal-focus-color, var(--color-title));
     }
   }
 
