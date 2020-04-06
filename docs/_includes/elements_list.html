@@ -26,8 +26,10 @@
 <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
   <p class="pl-2 pb-1 supra text-gray-600">Interaction</p>
   <ul>
-    <li><a class="portal">Button</a></li>
-    <li><a class="portal">Dropdown</a></li>
+    <li><a class="portal ~urge !low {% if page.subtab == 'element-button' %}active{% endif %}"
+      href="{{'/interaction/button' | relative_url}}">Button</a></li>
+      <li><a class="portal ~urge !low {% if page.subtab == 'element-dropdown' %}active{% endif %}"
+        href="{{'/interaction/dropdown' | relative_url}}">Dropdown</a></li>
     <li><a class="portal">Field</a></li>
     <li><a class="portal">Input</a></li>
     <li><a class="portal">Portal</a></li>

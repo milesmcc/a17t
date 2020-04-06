@@ -1,6 +1,6 @@
 ---
 layout: element
-tab: element
+tab: elements
 subtab: element-shield
 category: Information
 title: Shield

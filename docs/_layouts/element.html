@@ -17,7 +17,7 @@ layout: default
       {% if page.selectors %}
       <li class="mb-4">
         <p class="label">Selectors</p>
-        <p>{% for selector in page.selectors %}<code>{{selector}}</code>{% endfor %}</p>
+        {% for selector in page.selectors %}<code class="block my-px">{{selector}}</code>{% endfor %}
       </li>
       {% endif %}
       {% if page.source %}
@@ -52,7 +52,7 @@ layout: default
     </main>
     <h1 class="heading text-3xl mt-16 mb-4">Customization</h1>
     {% if page.variables %}
-    <article class="border p-2 bg-white rounded">
+    <article class="border px-2 bg-white rounded">
       <table class="table">
         <thead>
           <tr>
