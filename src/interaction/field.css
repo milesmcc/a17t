@@ -1,6 +1,6 @@
 .field {
   border-color: var(--color-light);
-  transition: box-shadow var(--field-shadow-transition-speed, 70ms) ease-out;
+  transition: box-shadow var(--field-shadow-transition-speed, 75ms) ease-out;
   display: inline-flex;
   box-shadow: var(--fallback-box-shadow);
   appearance: none;
