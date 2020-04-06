@@ -68,4 +68,4 @@ Badges have full tone and priority support.
 {% endcapture %}
 {% include example.html code=example %}
 
-TODO: more
+{% include todo_more.html %}

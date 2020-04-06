@@ -14,6 +14,10 @@
         href="{{'/information/progress' | relative_url}}">Progress</a>
     </li>
     <li><a class=" portal ~urge !low
+      {% if page.subtab == 'element-shield' %}active{% endif %}"
+        href="{{'/information/shield' | relative_url}}">Shield</a>
+    </li>
+    <li><a class=" portal ~urge !low
                 {% if page.subtab == 'element-table' %}active{% endif %}"
         href="{{'/information/table' | relative_url}}">Table</a>
     </li>

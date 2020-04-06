@@ -253,5 +253,3 @@ layout: default
 </section>
 
 <hr class="sep">
-
-<script src="https://kit.fontawesome.com/ef150c472d.js" crossorigin="anonymous"></script>

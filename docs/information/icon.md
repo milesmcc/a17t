@@ -63,4 +63,4 @@ Icons inherit their color from their context using the `--color-content` variabl
 
 # Examples
 
-TODO: more
+{% include todo_more.html %}

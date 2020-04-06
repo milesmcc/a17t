@@ -44,4 +44,4 @@ Tables do not directly respond to tone and priority variants; that information i
 
 # Examples
 
-TODO: more
+{% include todo_more.html %}
