@@ -13,6 +13,8 @@
     &bull;
     <a href="LICENSE.md">License (MIT)</a>
   </p>
+
+  <img src="docs/assets/main_code_demo.png" height="300>
 </p>
 
 ## Installation
