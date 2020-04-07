@@ -169,7 +169,7 @@ layout: default
             </span>
             <h4 class="heading text-xl mb-1">Lightweight &amp; modern</h4>
             <p>a17t is built using PostCSS, CSS variables, and Tailwind CSS. That means it's reliable, customizable,
-              and can integrate with any JS stack. Just import a small CSS file and you're good to go.</p>
+              and can integrate with any JS stack. Just import a small pure CSS file and you're good to go.</p>
           </div>
           <div class="mb-6">
             <span class="float-right shield ~urge ml-1 mb-1">
@@ -198,14 +198,14 @@ layout: default
       <div class="md:w-9/12 content">
         <h2>Use tones to control color</h2>
         <p>There are six tones by default: neutral, positive, warning, critical, info, and urge. (Don't worry, these
-          colors are all customizable.) You can specify a tone by using its class: a tilde followed by the tone name
-          (e.g., <code>~positive</code>). The classes required for a green chip, for example, are <code>chip
+          colors are all customizable.) Tones are specified using special class names that start with a tilde 
+          (e.g., <code>~positive</code>). To make a light green chip, for example, use <code>chip
             ~positive</code>.</p>
         <h2>Use priorities to control prominence</h2>
-        <p>There are three priorities &mdash; low, normal, and high. The default priority is normal. You can specify a
-          priority by using its class: an exclamation point followed by its name (e.g., <code>!high</code> or
+        <p>There are three priorities &mdash; low, normal, and high. You can specify a
+          priority by its class: an exclamation point followed by its name (e.g., <code>!high</code> or
           <code>!low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
-          (communicated through drop shadow by default) when changing colors is not possible.</p>
+          (communicated through drop shadow) when changing colors wouldn't look good.</p>
         <h2>Consider using with Tailwind</h2>
         <p>Because a17t only provides the core elements of your interface, like buttons and form inputs, you'll need a
           tool to stitch everything together. (a17t does not provide any grid utilities.) While you could do this using
