@@ -49,7 +49,7 @@ layout: default
 {% capture example_form %}
 <form class="card ~neutral !low">
   <div class="mb-4">
-    <label class="label" for="toolkit">Job for this demo</label>
+    <label class="label" for="toolkit">Current job</label>
     <div class="select ~neutral !normal my-1">
       <select>
         <option>Teacher</option>
@@ -87,14 +87,14 @@ layout: default
   <section class="md:w-6/12 mb-12 mt-6">
     <h1 class="heading text-3xl md:text-4xl mb-4">An atomic design toolkit <br class="hidden md:block">for pragmatists
     </h1>
-    <h3 class="subheading text-xl mb-6">Build beautiful, unique interfaces without reinventing the wheel. Let a17t
-      provide
+    <h3 class="subheading text-xl mb-6">Build beautiful, unique interfaces
+    without reinventing the wheel. Let a17t provide
       the core building blocks, then customize with ease.</h3>
     <div>
       <ul class="text-lg">
-        <li class="button ~urge font-medium"><a href="#install">Install</a></li>
-        <li class="portal ~urge"><a href="#design">Principles</a></li>
-        <li class="portal ~urge"><a href="#learn">Learn</a></li>
+        <li class="portal ~urge active"><a href="#install">Start</a></li>
+        <li class="portal"><a href="#design">Principles</a></li>
+        <li class="portal"><a href="#concepts">Concepts</a></li>
       </ul>
     </div>
   </section>
@@ -187,9 +187,9 @@ layout: default
       </div>
     </article>
     <hr class="sep h-16">
-    <article class="md:flex" id="learn">
+    <article class="md:flex" id="concepts">
       <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Learn</p>
+        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Concepts</p>
       </aside>
       <div class="md:w-9/12 content">
         <h2>Use tones to control color</h2>

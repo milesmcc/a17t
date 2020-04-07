@@ -1,3 +1,4 @@
 .sep {
-    @apply bg-transparent h-8 border-none;
+    height: var(--sep-height, 3rem);
+    @apply bg-transparent border-none;
 }

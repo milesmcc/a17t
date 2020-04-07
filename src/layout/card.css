@@ -1,7 +1,3 @@
 .card {
-    color: var(--color-content);
-    background-color: var(--color-background);
-    text-decoration-color: var(--color-muted);
-    
-    @apply p-4 rounded-lg shadow-lg overflow-hidden;
+    @apply section block p-4 rounded-lg shadow-lg overflow-hidden;
 }

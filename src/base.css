@@ -49,7 +49,7 @@
     --color-fill: var(--color-$(tone)-normal-fill);
     --color-background: var(--color-$(tone)-normal-background, var(--color-fill));
     --color-muted: var(--color-$(tone)-normal-muted);
-    --color-title: var(--color-$(tone)-normal-content);
+    --color-title: var(--color-$(tone)-normal-title, var(--color-$(tone)-normal-content));
     --color-core: var(--color-$(tone));
     --color-light: var(--color-$(tone)-light, var(--color-core));
     --color-icon: var(--color-$(tone)-normal-muted);
@@ -61,7 +61,7 @@
       --color-fill: var(--color-$(tone)-$(priority)-fill);
       --color-background: var(--color-$(tone)-$(priority)-background, var(--color-fill));
       --color-muted: var(--color-$(tone)-$(priority)-muted);
-      --color-title: var(--color-$(tone)-$(priority)-content);
+      --color-title: var(--color-$(tone)-$(priority)-title, var(--color-$(tone)-$(priority)-content));
       --color-icon: var(--color-$(tone)-$(priority)-muted);
     }
   }

@@ -37,16 +37,16 @@ layout: default
   </section>
   <article class="w-full md:w-2/3 mt-4">
     {% if page.examples %}
-    <div class="card ~neutral !low mb-10">
-      {% for example in page.examples %}
+    {% for example in page.examples %}
+    <div class="card ~neutral !low mb-4">
       {{example}}
       <div class="text-sm mt-6 overflow-scroll" style="max-height: 20rem;">
         {% highlight html %}{{example}}{% endhighlight %}
       </div>
-      {% endfor %}
     </div>
-    {% endif %}
+    {% endfor %}
     <hr class="sep">
+    {% endif %}
     <main class="content">
       {{content}}
     </main>

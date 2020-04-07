@@ -49,10 +49,14 @@
 <div class="mb-4 lg:mr-6 w-1/2 lg:w-auto">
   <p class="pl-2 pb-1 supra text-gray-600">Layout</p>
   <ul>
-    <li><a class="portal">Aside</a></li>
-    <li><a class="portal">Card</a></li>
-    <li><a class="portal">Section</a></li>
-    <li><a class="portal">Sep</a></li>
+    <li><a class="portal ~urge !low {% if page.subtab == 'element-aside' %}active{% endif %}"
+        href="{{'/layout/aside'|relative_url}}">Aside</a></li>
+    <li><a class="portal ~urge !low {% if page.subtab == 'element-card' %}active{% endif %}"
+        href="{{'/layout/card'|relative_url}}">Card</a></li>
+    <li><a class="portal ~urge !low {% if page.subtab == 'element-section' %}active{% endif %}"
+        href="{{'/layout/section'|relative_url}}">Section</a></li>
+    <li><a class="portal ~urge !low {% if page.subtab == 'element-sep' %}active{% endif %}"
+        href="{{'/layout/sep'|relative_url}}">Sep</a></li>
   </ul>
 </div>
 <div class="mb-4 w-1/2 lg:w-auto">

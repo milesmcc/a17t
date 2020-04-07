@@ -5,7 +5,8 @@
   --color-neutral: theme("colors.gray.600");
   --color-neutral-light: theme("colors.gray.300");
 
-  --color-neutral-low-content: theme("colors.gray.800");
+  --color-neutral-low-title: theme("colors.gray.900");
+  --color-neutral-low-content: theme("colors.gray.700");
   --color-neutral-low-fill: theme("colors.white");
   --color-neutral-low-muted: theme("colors.gray.600");
 
@@ -21,6 +22,7 @@
   /* POSITIVE */
   --color-positive: theme("colors.green.500");
 
+  --color-positive-low-title: theme("colors.green.700");
   --color-positive-low-content: theme("colors.green.600");
   --color-positive-low-fill: theme("colors.white");
   --color-positive-low-muted: theme("colors.green.500");
@@ -37,6 +39,7 @@
   /* WARNING */
   --color-warning: theme("colors.yellow.500");
 
+  --color-warning-low-title: theme("colors.yellow.800");
   --color-warning-low-content: theme("colors.yellow.700");
   --color-warning-low-fill: theme("colors.white");
   --color-warning-low-muted: theme("colors.yellow.600");
@@ -53,6 +56,7 @@
   /* CRITICAL */
   --color-critical: theme("colors.red.500");
 
+  --color-critical-low-title: theme("colors.red.700");
   --color-critical-low-content: theme("colors.red.600");
   --color-critical-low-fill: theme("colors.white");
   --color-critical-low-muted: theme("colors.red.500");
@@ -69,6 +73,7 @@
   /* INFO */
   --color-info: theme("colors.blue.500");
 
+  --color-info-low-title: theme("colors.blue.700");
   --color-info-low-content: theme("colors.blue.600");
   --color-info-low-fill: theme("colors.white");
   --color-info-low-muted: theme("colors.blue.500");
@@ -85,6 +90,7 @@
   /* URGE */
   --color-urge: theme("colors.purple.600");
 
+  --color-urge-low-title: theme("colors.purple.700");
   --color-urge-low-content: theme("colors.purple.600");
   --color-urge-low-fill: theme("colors.white");
   --color-urge-low-muted: theme("colors.purple.500");
@@ -99,13 +105,13 @@
   --color-urge-high-muted: theme("colors.purple.100");
 
   /* DEFAULTS and APPLICATIONS */
-  --color-content: theme("colors.gray.700");
+  --color-content: var(--color-neutral-low-content);
   --color-fill: var(--color-transparent);
   --color-background: var(--color-transparent);
   --color-muted: var(--color-neutral-low-muted);
   --color-core: var(--color-neutral);
   --color-light: var(--color-neutral-light);
-  --color-title: theme("colors.gray.900");
+  --color-title: var(--color-neutral-low-title);
   --color-icon: var(--color-content);
   --fallback-box-shadow-low: 0 0 0 0 rgba(0, 0, 0, 0);
   --fallback-box-shadow-normal: theme("boxShadow.default");
