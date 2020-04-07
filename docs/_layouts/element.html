@@ -52,7 +52,7 @@ layout: default
     </main>
     <h1 class="heading text-3xl mt-16 mb-4">Customization</h1>
     {% if page.variables %}
-    <article class="border px-2 bg-white rounded">
+    <article class="border px-2 bg-white rounded overflow-scroll max-w-full">
       <table class="table">
         <thead>
           <tr>
@@ -81,9 +81,11 @@ layout: default
       </table>
     </article>
     {% else %}
-    <p class="my-2">This element has no variables.</p>
+    <p class="my-4">This element has no variables.</p>
     {% endif %}
-    <p class="my-2">You can also customize this element by simply overriding any of its CSS attributes, listed <a
-        href="{{page.source}}">here</a>.</p>
+    <p class="my-4 content">You can also customize this element by simply overriding any of its CSS attributes, listed
+      <a href="{{page.source}}">here</a>. Contextual variable defaults (e.g., <code>--color-content</code>) and global
+      variables (e.g., <code>--family-primary</code>) are defined <a
+        href="https://github.com/milesmcc/a17t/tree/master/src/vars">here</a>.</p>
   </article>
 </div>

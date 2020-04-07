@@ -1,5 +1,5 @@
 .content {
-  line-height: var(--body-line-height);
+  line-height: var(--body-line-height, 1.5);
   font-family: var(--family-primary);
 
   /* How this works: everything has a y-margin of 3; special elements,

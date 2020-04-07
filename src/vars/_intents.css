@@ -8,12 +8,12 @@
   --color-neutral-low-title: theme("colors.gray.900");
   --color-neutral-low-content: theme("colors.gray.700");
   --color-neutral-low-fill: theme("colors.white");
-  --color-neutral-low-muted: theme("colors.gray.600");
+  --color-neutral-low-muted: theme("colors.gray.700");
 
   --color-neutral-normal-content: theme("colors.gray.800");
   --color-neutral-normal-fill: theme("colors.gray.200");
   --color-neutral-normal-background: theme("colors.gray.100");
-  --color-neutral-normal-muted: theme("colors.gray.600");
+  --color-neutral-normal-muted: theme("colors.gray.700");
 
   --color-neutral-high-content: theme("colors.white");
   --color-neutral-high-fill: theme("colors.gray.700");

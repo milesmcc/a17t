@@ -3,14 +3,3 @@
 
   @apply rounded py-px px-1 inline font-mono;
 }
-
-.pre {
-    background-color: var(--pre-background, theme("colors.gray.200"));
-    white-space: pre;
-
-    code {
-        @apply p-0;
-    }
-
-    @apply rounded p-2 block font-mono;
-}

@@ -1,5 +1,6 @@
 .subheading {
     color: var(--color-muted);
+    font-family: var(--family-secondary);
 
     @apply text-xl;
 }
