@@ -13,8 +13,6 @@
     &bull;
     <a href="LICENSE.md">License (MIT)</a>
   </p>
-
-  <img src="docs/assets/main_code_demo.png" height="300">
 </p>
 
 ## Installation
@@ -23,6 +21,18 @@ a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be insta
 ## Overview
 
 **Build beautiful, unique interfaces without reinventing the wheel. Let a17t provide the core building blocks, then customize with ease.**
+
+```html
+<article class="card ~positive !high">
+  <!-- ~positive is for tone; !high is for priority -->
+  
+  <b>Congratulations!</b>
+  You're using a17t to build a beautiful interface.
+  
+  <button class="button">Let's go!</button>
+  
+</article>
+```
 
 Some CSS frameworks come prepackaged with all sorts of components that are convenient at first but quickly become limiting. Utility frameworks like Tailwind are awesome, but can be difficult start using on their own.
 
