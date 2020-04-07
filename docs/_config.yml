@@ -16,7 +16,8 @@
 title: a17t
 email: a17t@sendmiles.email
 description: >- # this means to ignore newlines until "baseurl:"
-  a17t is an atomic design toolkit currently under construction.
+  Build beautiful, unique interfaces without reinventing the wheel.
+  Let a17t provide the core building blocks, then customize with ease.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MilesMcCain

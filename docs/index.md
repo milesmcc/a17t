@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "The atomic web toolkit for pragmatists"
 ---
 
 {% capture example_profile %}
