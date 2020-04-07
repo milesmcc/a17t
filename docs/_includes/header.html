@@ -16,7 +16,7 @@
         <div class="label text-gray-800 text-2xl">a17t</div>
       </a></h3>
   </div>
-  <div class="block lg:hidden">
+  <div class="block md:hidden">
     <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900"
       onclick="document.querySelector('#navFullContent').classList.toggle('hidden')">
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -26,13 +26,13 @@
     </button>
   </div>
   <div
-    class="block flex-wrap lg:flex lg:items-center lg:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden lg:bg-transparent lg:shadow-none lg:p-0"
+    class="block flex-wrap md:flex md:items-center md:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden md:bg-transparent md:shadow-none md:p-0"
     id="navFullContent">
     <ul>
       <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
         Elements
-        <div class="dropdown-display text-sm w-screen lg:w-auto">
-          <div class="card ~neutral !low mt-1 flex flex-wrap lg:flex-no-wrap w-4/5 lg:w-auto">
+        <div class="dropdown-display text-sm w-screen md:w-auto">
+          <div class="card ~neutral !low mt-1 flex flex-wrap md:flex-no-wrap w-4/5 md:w-auto">
             {% include elements_list.html %}
           </div>
         </div>
@@ -45,17 +45,17 @@
           </div>
         </div>
       </li>
-      <li tabindex="0" class="portal dropdown outline-none">Customize
+      <li tabindex="0" class="portal dropdown outline-none">Themes
         <div class="dropdown-display">
           <div class="card ~neutral !low mt-1">
-            <p>Coming soon!</p>
+            <p>More themes coming soon!</p>
           </div>
         </div>
       </li>
       <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/blob/master/LICENSE">License</a>
       </li>
     </ul>
-    <div class="lg:w-2/12 lg:text-right lg:p-0 p-2 portal opacity-50 flex items-center" style="z-index: 0;">
+    <div class="md:w-2/12 md:text-right md:p-0 p-2 portal opacity-50 flex items-center" style="z-index: 0;">
       <a class="pr-2" href="https://github.com/milesmcc/a17t/releases">v0.0.1
         alpha</a>
       <a class="icon" href="https://github.com/milesmcc/a17t"><img width="32px" height="32px"
