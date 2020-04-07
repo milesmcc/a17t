@@ -250,10 +250,14 @@ layout: default
         <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Install</p>
       </aside>
       <div class="md:w-9/12">
+        <p class="label mb-2">Using NPM (recommended)</p>
         <div class="card ~neutral !high font-mono mb-4">
           npm install a17t
         </div>
-        <p>(More detailed installation instructions and a CDN is coming soon.)</p>
+        <p class="label mb-2">Using a CDN</p>
+        <div class="card ~neutral !high font-mono mb-4 text-sm">
+          &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
+        </div>
       </div>
     </article>
   </div>
