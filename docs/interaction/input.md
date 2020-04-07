@@ -66,7 +66,7 @@ Inputs have full tone, priority, and disabling support. Priorities are communica
 ###### Disabling
 
 {% capture example %}
-<input class="input ~neutral disabled" value="This is a disabled input" type="text">
+<input class="input ~neutral" value="This is a disabled input" type="text" disabled>
 {% endcapture %}
 {% include example.html code=example %}
 
