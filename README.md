@@ -4,7 +4,7 @@
   <p align="center">
      An atomic design toolkit for pragmatists
     <br>
-    <a href="https://a17t.rmrm.io"><strong>Explore a17t »</strong></a>
+    <a href="https://a17t.rmrm.io"><strong>Discover a17t »</strong></a>
     <br>
     <br>
     <a href="https://a17t.rmrm.io/#concepts">Concepts</a>
@@ -16,7 +16,7 @@
 </p>
 
 ## Installation
-a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t`.
+a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t`. For more information, check out the [documentation site](https://a17t.rmrm.io).
 
 ## Overview
 
@@ -34,19 +34,16 @@ a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be insta
 </article>
 ```
 
+[View the full documentation &rarr;](https://a17t.rmrm.io)
+
 Some CSS frameworks come prepackaged with all sorts of components that are convenient at first but quickly become limiting. Utility frameworks like Tailwind are awesome, but can be difficult start using on their own.
 
 a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like jumbotrons, navbars, and menus), a17t provides common single-class elements in a default (but easily customizable) style.
 
-**Using a17t with [Tailwind](https://tailwindcss.com) is recommended!** While a17t can be used without Tailwind, they go very well together.
-
-## Dependencies
-If you're using a17t in your project, there are no dependencies: just import [`dist/a17t.css`](dist/a17t.css) and you're good to go! It's just a CSS file. Nothing more, nothing less. If you'd like to contribute to a17t or integrate it into your build process, be sure to install all the dependencies in the [`package.json`](package.json).
-
-More information about customization and contributing will be available soon. In the meantime, here's the core info you need to know: a17t is built using many of Tailwind's shorthand utilities, as well as PostCSS. It uses CSS variables to pass contextual values (like text colors, heading colors, etc.).
+**Using a17t with [Tailwind CSS](https://tailwindcss.com) is recommended!** While a17t can be used without Tailwind, they go very well together: you can use a17t for your atomic interface elements, and then stitch them together using Tailwind. You'll need to write very little custom CSS, if any.
 
 ## Getting Started
-Want to jump right in? Check out the [documentation site](https://a17t.rmrm.io) to get started. Here are links to some popular elements:
+Want to jump right in? **Check out the [documentation site](https://a17t.rmrm.io) to get started.** Here are links to some popular elements:
 
 * **Buttons** available [here](https://a17t.rmrm.io/interaction/button).
 * **Cards** available [here](https://a17t.rmrm.io/layout/card).
