@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="{{ "/assets/highlighting.css" | relative_url }}" crossorigin="anonymous">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef150c472d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <style>
+        .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+            color: var(--color-urge-core);
+        }
+    </style>
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

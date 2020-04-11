@@ -65,7 +65,7 @@ Cards have full tone and priority support.
 <div class="card ~neutral !low md:flex max-w-lg">
   <img class="rounded-full mx-auto h-20 w-20 md:mr-6 mb-6" src="{{ '/assets/profile_image.png' | relative_url }}">
   <div class="flex-grow text-center md:text-left mb-0">
-    <h3 class="heading my-0">Alex Hershenstein</h3>
+    <h4 class="heading my-0">Alex Hershenstein</h4>
     <p class="mb-3 mt-2">Alex is a staff designer on the product team.</p>
     <div>
       <span class="chip ~info mb-1">Color Theory</span> <span class="chip ~info mb-1">Product</span> <span
