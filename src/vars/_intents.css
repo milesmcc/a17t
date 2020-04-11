@@ -7,7 +7,8 @@
 
   --color-neutral-low-title: theme("colors.gray.900");
   --color-neutral-low-content: theme("colors.gray.700");
-  --color-neutral-low-fill: theme("colors.white");
+  --color-neutral-low-fill: theme("colors.transparent");
+  --color-neutral-low-background: theme("colors.white");
   --color-neutral-low-muted: theme("colors.gray.700");
 
   --color-neutral-normal-content: theme("colors.gray.800");
@@ -24,7 +25,8 @@
 
   --color-positive-low-title: theme("colors.green.700");
   --color-positive-low-content: theme("colors.green.600");
-  --color-positive-low-fill: theme("colors.white");
+  --color-positive-low-fill: theme("colors.transparent");
+  --color-positive-low-background: theme("colors.white");
   --color-positive-low-muted: theme("colors.green.500");
 
   --color-positive-normal-content: theme("colors.green.800");
@@ -41,7 +43,8 @@
 
   --color-warning-low-title: theme("colors.yellow.800");
   --color-warning-low-content: theme("colors.yellow.700");
-  --color-warning-low-fill: theme("colors.white");
+  --color-warning-low-fill: theme("colors.transparent");
+  --color-warning-low-background: theme("colors.white");
   --color-warning-low-muted: theme("colors.yellow.600");
 
   --color-warning-normal-content: theme("colors.yellow.800");
@@ -58,7 +61,8 @@
 
   --color-critical-low-title: theme("colors.red.700");
   --color-critical-low-content: theme("colors.red.600");
-  --color-critical-low-fill: theme("colors.white");
+  --color-critical-low-fill: theme("colors.transparent");
+  --color-critical-low-background: theme("colors.white");
   --color-critical-low-muted: theme("colors.red.500");
 
   --color-critical-normal-content: theme("colors.red.800");
@@ -75,7 +79,8 @@
 
   --color-info-low-title: theme("colors.blue.700");
   --color-info-low-content: theme("colors.blue.600");
-  --color-info-low-fill: theme("colors.white");
+  --color-info-low-fill: theme("colors.transparent");
+  --color-info-low-background: theme("colors.white");
   --color-info-low-muted: theme("colors.blue.500");
 
   --color-info-normal-content: theme("colors.blue.800");
@@ -92,7 +97,8 @@
 
   --color-urge-low-title: theme("colors.purple.700");
   --color-urge-low-content: theme("colors.purple.600");
-  --color-urge-low-fill: theme("colors.white");
+  --color-urge-low-fill: theme("colors.transparent");
+  --color-urge-low-background: theme("colors.white");
   --color-urge-low-muted: theme("colors.purple.500");
 
   --color-urge-normal-content: theme("colors.purple.800");

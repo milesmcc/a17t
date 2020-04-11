@@ -19,7 +19,9 @@
 
   &:hover,
   &:focus {
-    &:not([disabled]) {
+    &:not([disabled]):not(.field) {
+      /* We don't apply to button fields, because fields have
+      their own way of denoting state. */
       filter: brightness(var(--button-filter-brightness, 95%));
     }
   }
