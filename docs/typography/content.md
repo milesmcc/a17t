@@ -19,10 +19,10 @@ variables:
     type: ratio
     description: sets the line height
     default: 1.5
-  - name: --famiy-primary
+  - name: --family-primary
     type: fonts
     description: sets the body text font family
-  - name: --famiy-secondary
+  - name: --family-secondary
     type: fonts
     description: sets the display text (heading) font family
   - name: --color-title
