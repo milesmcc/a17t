@@ -1,6 +1,6 @@
 ---
 layout: element
-tab: element
+tab: elements
 subtab: element-progress
 category: Information
 title: Progress
