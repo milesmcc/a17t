@@ -28,7 +28,7 @@ The code element displays inline code in a monospace font. Inside of a [content 
 
 # Variants
 
-Beyond customization, the content element has no variants.
+Beyond customization, the code element has no variants.
 
 # Accessibility
 
