@@ -69,6 +69,18 @@ Buttons have full tone and priority support.
 {% endcapture %}
 {% include example.html code=example %}
 
+###### Block Button
+
+To make a block button, simply set the `width` to `100%` and the flex behavior to `justify-center`:
+
+{% capture example %}
+<div class="card ~neutral !low w-48 content">
+  <p>Your form here...</p>
+  <span class="button ~urge w-full justify-center">Click!</span>
+</div>
+{% endcapture %}
+{% include example.html code=example classes="bg-gray-100" %}
+
 # Accessibility
 
 **Be mindful of all possible states.** Not everyone interacts with a button by moving the mouse to click on it. Some use the tab key to select a button visually, and others use non-graphical interfaces entirely. When customizing buttons, remember that the `:hover` state does not apply to all cases in which a button is selected.
@@ -78,8 +90,16 @@ Buttons have full tone and priority support.
 # Examples
 
 {% capture example %}
-<span class="button ~info !high">Submit</span> <span class="button ~info !low">Save for Later</span>
+<div class="card ~neutral !low p-0">
+  <div class="p-4 content">
+    <h3>I'm trying my best.</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo nulla. Nam vitae pellentesque risus. Duis faucibus erat sit amet arcu efficitur lobortis. Donec ac convallis diam, non suscipit mauris.</p>
+  </div>
+  <div class="p-4 section ~urge">
+    <span class="button ~urge !high">Save</span> <span class="button ~urge !low">Continue Editing</span>
+  </div>
+</div>
 {% endcapture %}
-{% include example.html code=example %}
+{% include example.html code=example classes="bg-gray-100" %}
 
 {% include todo_more.html %}

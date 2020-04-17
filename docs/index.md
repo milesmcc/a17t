@@ -51,7 +51,7 @@ title: "The atomic web toolkit for pragmatists"
 <form class="card ~neutral !low">
   <div class="mb-4">
     <label class="label" for="toolkit">Current job</label>
-    <div class="select ~neutral !normal my-1 max-w-xs ">
+    <div class="select ~neutral !normal my-1 max-w-xs">
       <select>
         <option>Teacher</option>
         <option>Engineer</option>
@@ -259,6 +259,15 @@ title: "The atomic web toolkit for pragmatists"
         <div class="card ~neutral !high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
         </div>
+        <aside class="aside ~urge content mb-4">
+          <strong>Import a17t before Tailwind or other utility frameworks.</strong>
+          That way, you'll easily be able to override a17t's defaults without fighting CSS's specificity logic.
+        </aside>
+        <aside class="aside ~urge content mb-4">
+          <strong>Use a CSS reset.</strong>
+          To keep things modular and lightweight, a17t doesn't come with a CSS reset built-in. If you're not using
+          Tailwind (which has a CSS reset built-in), make sure you use something like <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
+        </aside>
       </div>
     </article>
   </div>
