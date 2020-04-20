@@ -55,7 +55,7 @@ Buttons have full tone and priority support.
 ###### {{priority|capitalize}} Priority
 {% capture example %}
 {% for tone in site.tones %}
-<span class="button ~{{tone}} !{{priority}}">Button</span>
+<span class="button ~{{tone}} !{{priority}} mb-1">Button</span>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -64,7 +64,7 @@ Buttons have full tone and priority support.
 ###### Button Field (normal priority)
 {% capture example %}
 {% for tone in site.tones %}
-<span class="button field ~{{tone}} w-auto">Button</span> 
+<span class="button field ~{{tone}} mb-1 w-auto">Button</span> 
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
