@@ -255,6 +255,10 @@ title: "The atomic web toolkit for pragmatists"
         <div class="card ~neutral !high font-mono mb-4">
           npm install a17t
         </div>
+        <p class="mb-6">Import a17t in your JavaScript using <code>import 'a17t'</code>. For more information about
+          CSS-in-JS, see <a href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
+          this guide</a>. a17t's default export is simply its compiled CSS file, so you have no shortage of options
+          to import it.</p>
         <p class="label mb-2">Using a CDN</p>
         <div class="card ~neutral !high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;

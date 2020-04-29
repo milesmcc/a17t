@@ -16,7 +16,7 @@
 </p>
 
 ## Installation
-a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t`. For more information, check out the [documentation site](https://a17t.miles.land).
+a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t` and imported into your JS using PostCSS with `import 'a17t'`. For more information, check out the [documentation site](https://a17t.miles.land). A CDN import is available.
 
 ## Overview
 
