@@ -52,9 +52,9 @@ In addition, the content element will apply the following spacing rules to its c
 * At least a margin of 3 between each element (including paragraphs)
 * A margin of 12 before each h1, unless it's the first element
 * A margin of 10 before each h2, unless it's the first element
-* A margin of 8 before heach h3, unless it's the first element
+* A margin of 8 before each h3, unless it's the first element
 * A margin of 6 before each h4, h5, h6, unless it's the first element
-* A horizonal margin of 1px before and after `<code>` and `<kbd>` elements
+* A horizontal margin of 1px before and after `<code>` and `<kbd>` elements
 * A left margin of 8 on all lists
 * A margin of 5 before and after `<blockquote>`s (and a margin of 1 before the `<cite>` element)   
 
