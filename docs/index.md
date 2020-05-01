@@ -263,8 +263,7 @@ title: "The atomic web toolkit for pragmatists"
         <div class="card ~neutral !high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
         </div>
-        <div class="content">
-          <h3>Hints and Best Practices</h3>
+        <aside class="aside ~urge content">
           <p>
             <strong>Import a17t before Tailwind or other utility frameworks.</strong>
             That way, you'll easily be able to override a17t's defaults without fighting CSS's specificity logic.</p>
@@ -278,15 +277,6 @@ title: "The atomic web toolkit for pragmatists"
             if applicable.</strong>. Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code>~urge</code>
             and <code>!low</code>). Add the following to your PurgeCSS config: <code>whitelistPatterns: [/^~/, /^!/]</code>.
           </p>
-        </div>
-        <aside class="aside ~urge content mb-4">
-          <strong>Import a17t before Tailwind or other utility frameworks.</strong>
-          That way, you'll easily be able to override a17t's defaults without fighting CSS's specificity logic.
-        </aside>
-        <aside class="aside ~urge content mb-4">
-          <strong>Use a CSS reset.</strong>
-          To keep things modular and lightweight, a17t doesn't come with a CSS reset built-in. If you're not using
-          Tailwind (which has a CSS reset built-in), make sure you use something like <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
         </aside>
       </div>
     </article>
