@@ -51,7 +51,7 @@
   }
 
   pre {
-    @apply pre overflow-scroll;
+    @apply pre overflow-auto;
   }
 
   code,

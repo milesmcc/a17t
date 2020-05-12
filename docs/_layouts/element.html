@@ -40,7 +40,7 @@ layout: default
     {% for example in page.examples %}
     <div class="card ~neutral !low mb-4">
       {{example}}
-      <div class="text-sm mt-6 overflow-scroll" style="max-height: 20rem;">
+      <div class="text-sm mt-6 overflow-auto" style="max-height: 20rem;">
         {% highlight html %}{{example}}{% endhighlight %}
       </div>
     </div>
@@ -52,7 +52,7 @@ layout: default
     </main>
     <h1 class="heading text-3xl mt-16 mb-4">Customization</h1>
     {% if page.variables %}
-    <article class="border px-2 bg-white rounded overflow-scroll max-w-full">
+    <article class="border px-2 bg-white rounded overflow-auto max-w-full">
       <table class="table">
         <thead>
           <tr>

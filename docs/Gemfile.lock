@@ -14,7 +14,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.6)
+    jekyll (3.8.7)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -47,11 +47,11 @@ GEM
       jekyll-seo-tag (~> 2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.3)
-    rb-fsevent (0.10.3)
+    public_suffix (4.0.5)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.17.0)
+    rouge (3.19.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -63,10 +63,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.5)
-  jekyll-feed (~> 0.6)
-  minima (~> 2.0)
+  jekyll (~> 3)
+  jekyll-feed
+  minima (~> 2)
   tzinfo-data
 
 BUNDLED WITH
-   1.17.1
+   2.1.4
