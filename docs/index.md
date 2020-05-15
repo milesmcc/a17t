@@ -5,7 +5,9 @@ title: "The atomic web toolkit for pragmatists"
 
 {% capture example_profile %}
 <div class="card ~neutral !low md:flex max-w-lg">
-  <img class="rounded-full mx-auto h-20 w-20 md:mr-6 mb-6" src="{{ '/assets/profile_image.png' | relative_url }}">
+  <div class="mx-auto h-20 w-20 md:mr-6 mb-6">
+    <img class="object-cover rounded-full" src="{{ '/assets/profile_image.png' | relative_url }}">
+  </div>
   <div class="flex-grow text-center md:text-left">
     <p class="support">Senior Researcher</p>
     <h3 class="heading text-xl">Dr. Katya Hattenagh</h3>
