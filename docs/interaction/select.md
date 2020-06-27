@@ -80,13 +80,16 @@ Selects have full tone, priority, and disabling support. Priorities are communic
 
 ###### Disabling
 
-<div class="select ~neutral" disabled>
-  <select>
+{% capture example %}
+<div class="select ~neutral">
+  <select disabled>
     <option>This select is disabled</option>
     <option>Another option</option>
     <option>A very long option that will overlap with the chevron, hopefully.</option>
   </select>
 </div>
+{% endcapture %}
+{% include example.html code=example %}
 
 # Accessibility
 
