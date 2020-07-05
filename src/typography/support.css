@@ -1,5 +1,5 @@
 .support {
     color: var(--color-muted);
 
-    @apply text-xs;
+    @apply text-xs font-secondary;
 }

@@ -1,5 +1,5 @@
 .switch {
-    @apply relative inline-block leading-snug align-baseline cursor-pointer pr-2;
+    @apply relative inline-block pr-2 leading-snug align-baseline cursor-pointer font-secondary;
 
     input {
         &[disabled], &[disabled] ~ * {

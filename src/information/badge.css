@@ -8,5 +8,5 @@
     justify-content: center;
     font-size: var(--badge-size, 0.6rem);
 
-    @apply rounded py-px px-1 font-medium;
+    @apply px-1 py-px font-medium rounded font-secondary;
 }

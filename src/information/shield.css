@@ -6,5 +6,5 @@
     justify-content: center;
     padding: var(--shield-padding-x, 1rem) var(--shield-padding-y, 1rem);
 
-    @apply rounded-full;
+    @apply rounded-full font-secondary;
 }

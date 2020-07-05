@@ -1,5 +1,5 @@
 .upload {
-    @apply inline-block relative pr-2 cursor-pointer;
+    @apply relative inline-block pr-2 cursor-pointer font-secondary;
 
     input {
         @apply hidden;

@@ -16,7 +16,7 @@
   text-decoration: none;
   appearance: none;
 
-  @apply rounded py-1 px-2 outline-none;
+  @apply px-2 py-1 rounded outline-none font-secondary;
 
   &:hover,
   &:focus {

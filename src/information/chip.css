@@ -6,5 +6,5 @@
     vertical-align: middle;
     justify-content: center;
 
-    @apply rounded px-2 py-1 text-xs;
+    @apply px-2 py-1 text-xs rounded font-secondary;
 }

@@ -16,8 +16,13 @@
     @apply select-all;
   }
 
+  &::placeholder {
+    color: var(--color-muted);
+    @apply opacity-50;
+  }
+
   &:hover {
-    box-shadow: var(--field-hover-box-shadow, 0 0 1px 1px var(--color-light)),
+    box-shadow: var(--field-hover-box-shadow, 0 0 0 1px var(--color-light)),
       var(--fallback-box-shadow);
   }
 
@@ -28,5 +33,5 @@
     @apply outline-none;
   }
 
-  @apply border rounded max-w-full w-full p-2 leading-tight bg-white inline-flex;
+  @apply inline-flex w-full max-w-full p-2 leading-tight border rounded font-secondary section;
 }

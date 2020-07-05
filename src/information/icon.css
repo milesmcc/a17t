@@ -7,4 +7,6 @@
     width: var(--icon-width, 1em);
     height: var(--icon-height, 1em);
     fill: var(--color-content);
+
+    @apply font-secondary;
 }

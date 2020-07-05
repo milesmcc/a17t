@@ -1,5 +1,5 @@
 .table {
-  @apply w-full border-collapse max-w-full overflow-auto;
+  @apply w-full max-w-full overflow-auto border-collapse font-secondary;
 
   thead {
     @apply border-b;
@@ -16,16 +16,9 @@
     border-color: inherit;
   }
 
-  tbody tr:nth-child(even) {
-    background-color: var(
-      --table-background-alternating,
-      theme("colors.neutral.100")
-    );
-  }
-
   td,
   th {
-    @apply p-2 text-left table-cell;
+    @apply table-cell p-2 text-left;
   }
 
   th {

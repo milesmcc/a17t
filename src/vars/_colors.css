@@ -8,7 +8,7 @@
   --color-neutral-low-title: theme("colors.neutral.900");
   --color-neutral-low-content: theme("colors.neutral.700");
   --color-neutral-low-fill: theme("colors.transparent");
-  --color-neutral-low-background: theme("colors.white");
+  --color-neutral-low-background: theme("colors.neutral.000");
   --color-neutral-low-muted: theme("colors.neutral.700");
 
   --color-neutral-normal-content: theme("colors.neutral.800");
@@ -16,7 +16,7 @@
   --color-neutral-normal-background: theme("colors.neutral.100");
   --color-neutral-normal-muted: theme("colors.neutral.700");
 
-  --color-neutral-high-content: theme("colors.white");
+  --color-neutral-high-content: theme("colors.neutral.000");
   --color-neutral-high-fill: theme("colors.neutral.700");
   --color-neutral-high-muted: theme("colors.neutral.300");
 
@@ -26,7 +26,7 @@
   --color-positive-low-title: theme("colors.positive.700");
   --color-positive-low-content: theme("colors.positive.600");
   --color-positive-low-fill: theme("colors.transparent");
-  --color-positive-low-background: theme("colors.white");
+  --color-positive-low-background: theme("colors.positive.000");
   --color-positive-low-muted: theme("colors.positive.500");
 
   --color-positive-normal-content: theme("colors.positive.800");
@@ -34,7 +34,7 @@
   --color-positive-normal-background: theme("colors.positive.100");
   --color-positive-normal-muted: theme("colors.positive.600");
 
-  --color-positive-high-content: theme("colors.white");
+  --color-positive-high-content: theme("colors.positive.000");
   --color-positive-high-fill: theme("colors.positive.500");
   --color-positive-high-muted: theme("colors.positive.100");
 
@@ -44,7 +44,7 @@
   --color-warning-low-title: theme("colors.warning.800");
   --color-warning-low-content: theme("colors.warning.700");
   --color-warning-low-fill: theme("colors.transparent");
-  --color-warning-low-background: theme("colors.white");
+  --color-warning-low-background: theme("colors.warning.000");
   --color-warning-low-muted: theme("colors.warning.600");
 
   --color-warning-normal-content: theme("colors.warning.800");
@@ -62,7 +62,7 @@
   --color-critical-low-title: theme("colors.critical.700");
   --color-critical-low-content: theme("colors.critical.600");
   --color-critical-low-fill: theme("colors.transparent");
-  --color-critical-low-background: theme("colors.white");
+  --color-critical-low-background: theme("colors.critical.000");
   --color-critical-low-muted: theme("colors.critical.500");
 
   --color-critical-normal-content: theme("colors.critical.800");
@@ -70,7 +70,7 @@
   --color-critical-normal-background: theme("colors.critical.100");
   --color-critical-normal-muted: theme("colors.critical.600");
 
-  --color-critical-high-content: theme("colors.white");
+  --color-critical-high-content: theme("colors.critical.000");
   --color-critical-high-fill: theme("colors.critical.500");
   --color-critical-high-muted: theme("colors.critical.100");
 
@@ -80,7 +80,7 @@
   --color-info-low-title: theme("colors.info.700");
   --color-info-low-content: theme("colors.info.600");
   --color-info-low-fill: theme("colors.transparent");
-  --color-info-low-background: theme("colors.white");
+  --color-info-low-background: theme("colors.info.000");
   --color-info-low-muted: theme("colors.info.500");
 
   --color-info-normal-content: theme("colors.info.800");
@@ -88,7 +88,7 @@
   --color-info-normal-background: theme("colors.info.100");
   --color-info-normal-muted: theme("colors.info.600");
 
-  --color-info-high-content: theme("colors.white");
+  --color-info-high-content: theme("colors.info.000");
   --color-info-high-fill: theme("colors.info.500");
   --color-info-high-muted: theme("colors.info.100");
 
@@ -98,7 +98,7 @@
   --color-urge-low-title: theme("colors.urge.700");
   --color-urge-low-content: theme("colors.urge.600");
   --color-urge-low-fill: theme("colors.transparent");
-  --color-urge-low-background: theme("colors.white");
+  --color-urge-low-background: theme("colors.urge.000");
   --color-urge-low-muted: theme("colors.urge.500");
 
   --color-urge-normal-content: theme("colors.urge.800");
@@ -106,7 +106,7 @@
   --color-urge-normal-background: theme("colors.urge.100");
   --color-urge-normal-muted: theme("colors.urge.600");
 
-  --color-urge-high-content: theme("colors.white");
+  --color-urge-high-content: theme("colors.urge.000");
   --color-urge-high-fill: theme("colors.urge.600");
   --color-urge-high-muted: theme("colors.urge.100");
 

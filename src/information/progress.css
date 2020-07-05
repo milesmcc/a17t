@@ -35,5 +35,5 @@
     border: none;
   }
 
-  @apply rounded-full;
+  @apply rounded-full font-secondary;
 }

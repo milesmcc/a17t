@@ -1,12 +1,11 @@
 .content {
-  line-height: var(--body-line-height, 1.5);
-  font-family: var(--family-primary);
-
   /* How this works: everything has a y-margin of 3; special elements,
      like headings, blockquotes, and preformatted code blocks, have 
      special spacing to help them fit better visually. When editing this
      file, be mindful of how various elements' spacing might interact and
      overlap. */
+
+  @apply leading-normal font-primary;
 
   > *:not(:last-child) {
     @apply mb-3;
@@ -51,7 +50,7 @@
   }
 
   pre {
-    @apply pre overflow-auto;
+    @apply overflow-auto pre;
   }
 
   code,
@@ -128,7 +127,7 @@
     @apply aside ~neutral !normal my-5;
 
     cite {
-      @apply support not-italic block mt-1;
+      @apply block mt-1 not-italic support;
     }
   }
 
