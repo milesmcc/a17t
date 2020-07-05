@@ -15,7 +15,7 @@ variables:
   - name: --code-background
     type: color
     description: sets the background color
-    default: theme('colors.gray.200')
+    default: theme('colors.neutral.200')
 ---
 
 # Overview

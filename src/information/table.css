@@ -6,7 +6,7 @@
   }
 
   tfoot {
-      @apply border-t;
+    @apply border-t;
   }
 
   tr {
@@ -19,7 +19,7 @@
   tbody tr:nth-child(even) {
     background-color: var(
       --table-background-alternating,
-      theme("colors.gray.100")
+      theme("colors.neutral.100")
     );
   }
 

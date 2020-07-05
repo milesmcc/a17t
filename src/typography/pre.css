@@ -1,5 +1,5 @@
 .pre {
-    background-color: var(--pre-background, theme("colors.gray.200"));
+    background-color: var(--pre-background, theme("colors.neutral.200"));
     white-space: pre;
 
     code {

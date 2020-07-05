@@ -1,5 +1,5 @@
 .code {
-  background-color: var(--code-background, theme("colors.gray.200"));
+  background-color: var(--code-background, theme("colors.neutral.200"));
 
   @apply rounded py-px px-1 inline font-mono;
 }

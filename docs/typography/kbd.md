@@ -15,7 +15,7 @@ variables:
   - name: --kbd-background
     type: color
     description: sets the kbd background
-    default: theme("colors.gray.700")
+    default: theme("colors.neutral.700")
   - name: --kbd-color
     type: color
     description: sets the color
