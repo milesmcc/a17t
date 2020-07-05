@@ -18,7 +18,7 @@ variables:
   - name: --color-light
     type: color
     description: sets default border color
-  - name: --field-shadow-transition-speed
+  - name: --field-transition-speed
     type: time
     description: sets the speed of the hover and focus transition
     default: 75ms
@@ -83,7 +83,7 @@ Fields have full tone, priority, and disabling support. Priorities are communica
 {% capture example %}
 <div>
   <p class="label">Your name</p>
-  <input class="field my-1" type="text" placeholder="Miles McCain">
+  <input class="my-1 field" type="text" placeholder="Miles McCain">
   <p class="support">Just your first name is fine, too.</p>
 </div>
 {% endcapture %}

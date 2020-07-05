@@ -1,6 +1,6 @@
 .field {
   border-color: var(--color-light);
-  transition: box-shadow var(--field-shadow-transition-speed, 75ms) ease-out;
+  transition: box-shadow var(--field-transition-speed, 75ms) ease-out, border var(--field-transition-speed, 75ms) ease-out;
   box-shadow: var(--fallback-box-shadow);
   appearance: none;
   -webkit-appearance: none;
@@ -22,12 +22,12 @@
   }
 
   &:hover {
-    box-shadow: var(--field-hover-box-shadow, 0 0 0 1px var(--color-light)),
+    box-shadow: var(--field-hover-box-shadow, 0 0 0 theme("borderWidth.default") var(--color-light)),
       var(--fallback-box-shadow);
   }
 
   &:focus {
-    box-shadow: var(--field-focus-box-shadow, 0 0 0 2px var(--color-core)),
+    box-shadow: var(--field-focus-box-shadow, 0 0 0 theme("borderWidth.2") var(--color-light)),
       var(--fallback-box-shadow);
 
     @apply outline-none;
