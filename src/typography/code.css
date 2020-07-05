@@ -1,5 +1,3 @@
 .code {
-  filter: brightness(95%);
-
-  @apply inline px-1 py-px font-mono rounded section;
+  @apply inline px-1 py-px font-mono rounded;
 }

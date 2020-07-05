@@ -11,11 +11,6 @@ selectors:
 display: Inline
 examples:
   - "This is <code class='code'>inline code</code>."
-variables:
-  - name: --code-background
-    type: color
-    description: sets the background color
-    default: theme('colors.neutral.200')
 ---
 
 # Overview

@@ -1,118 +1,124 @@
 :root {
+  @each $tone in neutral, positive, warning, critical, info, urge {
+    @each $val in 000, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+      --color-$(tone)-$(val)-fallback: theme("colors.$tone.$val");
+    }
+  }
+
   --color-transparent: theme("colors.transparent");
 
   /* NEUTRAL */
-  --color-neutral: theme("colors.neutral.600");
-  --color-neutral-light: theme("colors.neutral.300");
+  --color-neutral: var(--color-neutral-600-fallback);
+  --color-neutral-light: var(--color-neutral-300-fallback);
 
-  --color-neutral-low-title: theme("colors.neutral.900");
-  --color-neutral-low-content: theme("colors.neutral.700");
+  --color-neutral-low-title: var(--color-neutral-900-fallback);
+  --color-neutral-low-content: var(--color-neutral-700-fallback);
   --color-neutral-low-fill: theme("colors.transparent");
-  --color-neutral-low-background: theme("colors.neutral.000");
-  --color-neutral-low-muted: theme("colors.neutral.700");
+  --color-neutral-low-background: var(--color-neutral-000-fallback);
+  --color-neutral-low-muted: var(--color-neutral-700-fallback);
 
-  --color-neutral-normal-content: theme("colors.neutral.800");
-  --color-neutral-normal-fill: theme("colors.neutral.200");
-  --color-neutral-normal-background: theme("colors.neutral.100");
-  --color-neutral-normal-muted: theme("colors.neutral.700");
+  --color-neutral-normal-content: var(--color-neutral-800-fallback);
+  --color-neutral-normal-fill: var(--color-neutral-200-fallback);
+  --color-neutral-normal-background: var(--color-neutral-100-fallback);
+  --color-neutral-normal-muted: var(--color-neutral-700-fallback);
 
-  --color-neutral-high-content: theme("colors.neutral.000");
-  --color-neutral-high-fill: theme("colors.neutral.700");
-  --color-neutral-high-muted: theme("colors.neutral.300");
+  --color-neutral-high-content: var(--color-neutral-000-fallback);
+  --color-neutral-high-fill: var(--color-neutral-700-fallback);
+  --color-neutral-high-muted: var(--color-neutral-300-fallback);
 
   /* POSITIVE */
-  --color-positive: theme("colors.positive.500");
+  --color-positive: var(--color-positive-500-fallback);
 
-  --color-positive-low-title: theme("colors.positive.700");
-  --color-positive-low-content: theme("colors.positive.600");
+  --color-positive-low-title: var(--color-positive-700-fallback);
+  --color-positive-low-content: var(--color-positive-600-fallback);
   --color-positive-low-fill: theme("colors.transparent");
-  --color-positive-low-background: theme("colors.positive.000");
-  --color-positive-low-muted: theme("colors.positive.500");
+  --color-positive-low-background: var(--color-positive-000-fallback);
+  --color-positive-low-muted: var(--color-positive-500-fallback);
 
-  --color-positive-normal-content: theme("colors.positive.800");
-  --color-positive-normal-fill: theme("colors.positive.200");
-  --color-positive-normal-background: theme("colors.positive.100");
-  --color-positive-normal-muted: theme("colors.positive.600");
+  --color-positive-normal-content: var(--color-positive-800-fallback);
+  --color-positive-normal-fill: var(--color-positive-200-fallback);
+  --color-positive-normal-background: var(--color-positive-100-fallback);
+  --color-positive-normal-muted: var(--color-positive-600-fallback);
 
-  --color-positive-high-content: theme("colors.positive.000");
-  --color-positive-high-fill: theme("colors.positive.500");
-  --color-positive-high-muted: theme("colors.positive.100");
+  --color-positive-high-content: var(--color-positive-000-fallback);
+  --color-positive-high-fill: var(--color-positive-500-fallback);
+  --color-positive-high-muted: var(--color-positive-100-fallback);
 
   /* WARNING */
-  --color-warning: theme("colors.warning.500");
+  --color-warning: var(--color-warning-500-fallback);
 
-  --color-warning-low-title: theme("colors.warning.800");
-  --color-warning-low-content: theme("colors.warning.700");
+  --color-warning-low-title: var(--color-warning-800-fallback);
+  --color-warning-low-content: var(--color-warning-700-fallback);
   --color-warning-low-fill: theme("colors.transparent");
-  --color-warning-low-background: theme("colors.warning.000");
-  --color-warning-low-muted: theme("colors.warning.600");
+  --color-warning-low-background: var(--color-warning-000-fallback);
+  --color-warning-low-muted: var(--color-warning-600-fallback);
 
-  --color-warning-normal-content: theme("colors.warning.800");
-  --color-warning-normal-fill: theme("colors.warning.200");
-  --color-warning-normal-background: theme("colors.warning.100");
-  --color-warning-normal-muted: theme("colors.warning.600");
+  --color-warning-normal-content: var(--color-warning-800-fallback);
+  --color-warning-normal-fill: var(--color-warning-200-fallback);
+  --color-warning-normal-background: var(--color-warning-100-fallback);
+  --color-warning-normal-muted: var(--color-warning-600-fallback);
 
-  --color-warning-high-content: theme("colors.warning.900");
-  --color-warning-high-fill: theme("colors.warning.400");
-  --color-warning-high-muted: theme("colors.warning.800");
+  --color-warning-high-content: var(--color-warning-900-fallback);
+  --color-warning-high-fill: var(--color-warning-400-fallback);
+  --color-warning-high-muted: var(--color-warning-800-fallback);
 
   /* CRITICAL */
-  --color-critical: theme("colors.critical.500");
+  --color-critical: var(--color-critical-500-fallback);
 
-  --color-critical-low-title: theme("colors.critical.700");
-  --color-critical-low-content: theme("colors.critical.600");
+  --color-critical-low-title: var(--color-critical-700-fallback);
+  --color-critical-low-content: var(--color-critical-600-fallback);
   --color-critical-low-fill: theme("colors.transparent");
-  --color-critical-low-background: theme("colors.critical.000");
-  --color-critical-low-muted: theme("colors.critical.500");
+  --color-critical-low-background: var(--color-critical-000-fallback);
+  --color-critical-low-muted: var(--color-critical-500-fallback);
 
-  --color-critical-normal-content: theme("colors.critical.800");
-  --color-critical-normal-fill: theme("colors.critical.200");
-  --color-critical-normal-background: theme("colors.critical.100");
-  --color-critical-normal-muted: theme("colors.critical.600");
+  --color-critical-normal-content: var(--color-critical-800-fallback);
+  --color-critical-normal-fill: var(--color-critical-200-fallback);
+  --color-critical-normal-background: var(--color-critical-100-fallback);
+  --color-critical-normal-muted: var(--color-critical-600-fallback);
 
-  --color-critical-high-content: theme("colors.critical.000");
-  --color-critical-high-fill: theme("colors.critical.500");
-  --color-critical-high-muted: theme("colors.critical.100");
+  --color-critical-high-content: var(--color-critical-000-fallback);
+  --color-critical-high-fill: var(--color-critical-500-fallback);
+  --color-critical-high-muted: var(--color-critical-100-fallback);
 
   /* INFO */
-  --color-info: theme("colors.info.500");
+  --color-info: var(--color-info-500-fallback);
 
-  --color-info-low-title: theme("colors.info.700");
-  --color-info-low-content: theme("colors.info.600");
+  --color-info-low-title: var(--color-info-700-fallback);
+  --color-info-low-content: var(--color-info-600-fallback);
   --color-info-low-fill: theme("colors.transparent");
-  --color-info-low-background: theme("colors.info.000");
-  --color-info-low-muted: theme("colors.info.500");
+  --color-info-low-background: var(--color-info-000-fallback);
+  --color-info-low-muted: var(--color-info-500-fallback);
 
-  --color-info-normal-content: theme("colors.info.800");
-  --color-info-normal-fill: theme("colors.info.200");
-  --color-info-normal-background: theme("colors.info.100");
-  --color-info-normal-muted: theme("colors.info.600");
+  --color-info-normal-content: var(--color-info-800-fallback);
+  --color-info-normal-fill: var(--color-info-200-fallback);
+  --color-info-normal-background: var(--color-info-100-fallback);
+  --color-info-normal-muted: var(--color-info-600-fallback);
 
-  --color-info-high-content: theme("colors.info.000");
-  --color-info-high-fill: theme("colors.info.500");
-  --color-info-high-muted: theme("colors.info.100");
+  --color-info-high-content: var(--color-info-000-fallback);
+  --color-info-high-fill: var(--color-info-500-fallback);
+  --color-info-high-muted: var(--color-info-100-fallback);
 
   /* URGE */
-  --color-urge: theme("colors.urge.600");
+  --color-urge: var(--color-urge-600-fallback);
 
-  --color-urge-low-title: theme("colors.urge.700");
-  --color-urge-low-content: theme("colors.urge.600");
+  --color-urge-low-title: var(--color-urge-700-fallback);
+  --color-urge-low-content: var(--color-urge-600-fallback);
   --color-urge-low-fill: theme("colors.transparent");
-  --color-urge-low-background: theme("colors.urge.000");
-  --color-urge-low-muted: theme("colors.urge.500");
+  --color-urge-low-background: var(--color-urge-000-fallback);
+  --color-urge-low-muted: var(--color-urge-500-fallback);
 
-  --color-urge-normal-content: theme("colors.urge.800");
-  --color-urge-normal-fill: theme("colors.urge.200");
-  --color-urge-normal-background: theme("colors.urge.100");
-  --color-urge-normal-muted: theme("colors.urge.600");
+  --color-urge-normal-content: var(--color-urge-800-fallback);
+  --color-urge-normal-fill: var(--color-urge-200-fallback);
+  --color-urge-normal-background: var(--color-urge-100-fallback);
+  --color-urge-normal-muted: var(--color-urge-600-fallback);
 
-  --color-urge-high-content: theme("colors.urge.000");
-  --color-urge-high-fill: theme("colors.urge.600");
-  --color-urge-high-muted: theme("colors.urge.100");
+  --color-urge-high-content: var(--color-urge-000-fallback);
+  --color-urge-high-fill: var(--color-urge-600-fallback);
+  --color-urge-high-muted: var(--color-urge-100-fallback);
 
   /* APPLICATIONS */
   --color-fill: theme("colors.transparent");
-  --color-background: theme("colors.neutral.100");
+  --color-background: var(--color-neutral-100-fallback);
 
   /* DEFAULTS */
   --color-content: var(--color-neutral-low-content);

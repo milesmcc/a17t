@@ -1,29 +1,35 @@
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
-    --color-neutral-000: #fffaee;
-    --color-neutral-100: #fdf6e3;
-    --color-neutral-200: #f5eede;
-    --color-neutral-300: #e0dbcb;
-    --color-neutral-400: #afab9d;
-    --color-neutral-500: #858177;
-    --color-neutral-600: #66635a;
-    --color-neutral-700: #4e4c45;
-    --color-neutral-800: #302e2a;
-    --color-neutral-900: #22211e;
+    /* --color-neutral-900: #fffaee;
+    --color-neutral-800: #fdf6e3;
+    --color-neutral-700: #f5eede;
+    --color-neutral-600: #e0dbcb;
+    --color-neutral-500: #afab9d;
+    --color-neutral-400: #858177;
+    --color-neutral-300: #66635a;
+    --color-neutral-200: #4e4c45;
+    --color-neutral-100: #302e2a;
+    --color-neutral-000: #22211e;
 
-    --color-urge-100: #ebf1f2;
-    --color-urge-200: #c4d4d9;
-    --color-urge-300: #89a9b3;
-    --color-urge-400: #769ba6;
-    --color-urge-500: #4f7e8d;
-    --color-urge-600: #3b7080;
-    --color-urge-700: #2f5a66;
-    --color-urge-800: #1e3840;
-    --color-urge-900: #182d33;
+    --color-urge-800: #ebf1f2;
+    --color-urge-700: #c4d4d9;
+    --color-urge-600: #89a9b3;
+    --color-urge-500: #769ba6;
+    --color-urge-400: #4f7e8d;
+    --color-urge-300: #3b7080;
+    --color-urge-200: #2f5a66;
+    --color-urge-100: #1e3840;
+    --color-urge-000: #182d33;
 
-    /* --family-primary: 'PT Serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'; */
-} */
+    --border-radius-sm: none;
+    --border-radius-default: none;
+    --border-radius-md: none;
+    --border-radius-lg: none;
+
+    --border-width-default: 2px;
+    --border-width-2: 3px;
+    --border-width-4: 5px;
+    --border-width-8: 8px; */
+}
 
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
     color: var(--color-urge-core);
