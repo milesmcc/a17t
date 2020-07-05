@@ -22,7 +22,7 @@ layout: default
         {% endfor %}
     </div>
     {% endcapture %}
-    {% include example.html code=example classes="bg-gray-100" %}
+    {% include example.html code=example classes="bg-neutral-100" %}
     {% endfor %}
 
     <h3 class="heading text-2xl py-4">Asides</h3>

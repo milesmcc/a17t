@@ -79,7 +79,7 @@ To make a block button, simply set the `width` to `100%` and the flex behavior t
   <span class="button ~urge w-full justify-center">Click!</span>
 </div>
 {% endcapture %}
-{% include example.html code=example classes="bg-gray-100" %}
+{% include example.html code=example classes="bg-neutral-100" %}
 
 # Accessibility
 
@@ -100,6 +100,6 @@ To make a block button, simply set the `width` to `100%` and the flex behavior t
   </div>
 </div>
 {% endcapture %}
-{% include example.html code=example classes="bg-gray-100" %}
+{% include example.html code=example classes="bg-neutral-100" %}
 
 {% include todo_more.html %}

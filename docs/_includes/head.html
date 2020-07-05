@@ -4,22 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/a17t.css" | relative_url }}" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/highlighting.css" | relative_url }}"
-        crossorigin="anonymous">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/a17t.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/tailwind.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/highlighting.css" | relative_url }}">
     <script src="https://kit.fontawesome.com/ef150c472d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-    <style>
-        .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-            color: var(--color-urge-core);
-        }
-
-        :root {
-            --family-primary: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            --family-secondary: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/theme.css" | relative_url }}">
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

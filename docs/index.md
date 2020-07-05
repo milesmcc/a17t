@@ -5,13 +5,13 @@ title: "The atomic web toolkit for pragmatists"
 
 {% capture example_profile %}
 <div class="card ~neutral !low md:flex max-w-lg">
-  <div class="mx-auto h-20 w-20 md:mr-6 mb-6">
+  <div class="w-20 h-20 mx-auto mb-6 md:mr-6">
     <img class="object-cover rounded-full" src="{{ '/assets/profile_image.png' | relative_url }}">
   </div>
   <div class="flex-grow text-center md:text-left">
     <p class="support">Senior Researcher</p>
-    <h3 class="heading text-xl">Dr. Katya Hattenagh</h3>
-    <p class="mb-3 mt-2">Katya studies the intersection of machine learning and differential topology.</p>
+    <h3 class="text-xl heading">Dr. Katya Hattenagh</h3>
+    <p class="mt-2 mb-3">Katya studies the intersection of machine learning and differential topology.</p>
     <div>
       <span class="chip ~neutral mb-1">Discrete Math</span> <span class="chip ~neutral mb-1">Topology</span> <span
         class="chip ~neutral mb-1">Neural Nets</span>
@@ -53,7 +53,7 @@ title: "The atomic web toolkit for pragmatists"
 <form class="card ~neutral !low">
   <div class="mb-4">
     <label class="label" for="toolkit">Current job</label>
-    <div class="select ~neutral !normal my-1 max-w-xs">
+    <div class="select ~neutral !low my-1 max-w-xs">
       <select>
         <option>Teacher</option>
         <option>Engineer</option>
@@ -75,8 +75,8 @@ title: "The atomic web toolkit for pragmatists"
 {% capture example_delete %}
 <div class="card ~neutral !low p-0 max-w-sm">
   <div class="p-4">
-    <h2 class="heading text-lg mb-1">Just making sure!</h2>
-    <p class="support text-base mb-3">To confirm you'd like to delete this repository, please enter its name below.</p>
+    <h2 class="mb-1 text-lg heading">Just making sure!</h2>
+    <p class="mb-3 text-base support">To confirm you'd like to delete this repository, please enter its name below.</p>
     <input class="input" type="text" placeholder="milesmcc/a17t">
   </div>
   <section class="section ~critical p-4">
@@ -86,15 +86,15 @@ title: "The atomic web toolkit for pragmatists"
 </div>
 {% endcapture %}
 
-<div class="md:flex md:mt-24 mb-24 items-center justify-between">
-  <section class="md:w-6/12 mb-12 mt-6 mr-6">
-    <h2 class="heading text-lg md:text-3xl">
+<div class="items-center justify-between mb-24 md:flex md:mt-24">
+  <section class="mt-6 mb-12 mr-6 md:w-6/12">
+    <h2 class="text-lg heading md:text-3xl">
       a17t, <i>noun</i> <span class="text-gray-500">(ey&#712;seven&#712;teen&#712;tee) &mdash;</span><br>
     </h2>
-    <h1 class="heading text-4xl md:text-5xl mb-4 text-purple-600 font-semibold">
+    <h1 class="mb-4 text-4xl font-semibold heading md:text-5xl text-urge-600">
       atomic design toolkit
     </h1>
-    <h3 class="subheading text-lg md:text-xl mb-6">Build beautiful, unique interfaces
+    <h3 class="mb-6 text-lg subheading md:text-xl">Build beautiful, unique interfaces
     without reinventing the wheel. Let a17t provide
       the core building blocks, then customize with ease.</h3>
     <div>
@@ -110,13 +110,13 @@ title: "The atomic web toolkit for pragmatists"
   </section>
 </div>
 
-<hr class="sep h-12">
+<hr class="h-12 sep">
 
 <section class="md:flex">
   <div class="md:w-10/12">
     <article class="md:flex">
-      <aside class="hidden md:block w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-2xl">Overview</p>
+      <aside class="self-start hidden w-3/12 mb-4 md:block mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
+        <p class="text-2xl heading text-urge-600">Overview</p>
       </aside>
       <div class="md:w-9/12 content">
         <h2>Core interface elements. <br> No opinions about anything else.</h2>
@@ -129,26 +129,26 @@ title: "The atomic web toolkit for pragmatists"
         </p>
       </div>
     </article>
-    <hr class="sep h-16">
-    <article class="md:flex justify-end">
+    <hr class="h-16 sep">
+    <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_form label=true classes="bg-gray-100" %}
+        {% include example.html code=example_form label=true classes="bg-neutral-100" %}
       </div>
     </article>
-    <hr class="sep h-16">
+    <hr class="h-16 sep">
     <article class="md:flex" id="design">
-      <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Design Principles</p>
+      <aside class="self-start mb-4 md:w-3/12 mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
+        <p class="mb-8 text-3xl heading text-urge-600 md:text-2xl">Design Principles</p>
       </aside>
       <div class="md:w-9/12">
-        <section class="md:grid grid-cols-2 gap-8">
+        <section class="grid-cols-2 gap-8 md:grid">
           <div class="mb-6">
             <span class="shield ~info float-right ml-1 mb-1">
               <span class="icon">
                 <i class="fas fa-atom fa-lg"></i>
               </span>
             </span>
-            <h4 class="heading text-xl mb-1">Atomic &amp; flexible</h4>
+            <h4 class="mb-1 text-xl heading">Atomic &amp; flexible</h4>
             <p>a17t provides core, single-class interface elements and empowers you to assemble them your way. And
               everything is easily customizable using CSS variables, so you'll never need to settle for &ldquo;good
               enough.&rdquo;
@@ -160,7 +160,7 @@ title: "The atomic web toolkit for pragmatists"
                 <i class="fas fa-brain fa-lg"></i>
               </span>
             </span>
-            <h4 class="heading text-xl mb-1">Logical &amp; hierarchical</h4>
+            <h4 class="mb-1 text-xl heading">Logical &amp; hierarchical</h4>
             <p>a17t encourages you to think in terms of intent and hierarchy by specifying elements in terms of tone
               and priority. As an added bonus, this makes refactoring and customization a breeze.</p>
           </div>
@@ -170,7 +170,7 @@ title: "The atomic web toolkit for pragmatists"
                 <i class="fas fa-feather fa-lg"></i>
               </span>
             </span>
-            <h4 class="heading text-xl mb-1">Lightweight &amp; modern</h4>
+            <h4 class="mb-1 text-xl heading">Lightweight &amp; modern</h4>
             <p>a17t is built using PostCSS, CSS variables, and Tailwind CSS. That means it's reliable, customizable,
               and can integrate with any JS stack. Just import a small pure CSS file and you're good to go.</p>
           </div>
@@ -180,23 +180,23 @@ title: "The atomic web toolkit for pragmatists"
                 <i class="fas fa-smile-beam fa-lg"></i>
               </span>
             </span>
-            <h4 class="heading text-xl mb-1">Pleasant &amp; accessible</h4>
+            <h4 class="mb-1 text-xl heading">Pleasant &amp; accessible</h4>
             <p>a17t is designed to make every interaction a delight. In addition to its semantic markup, a17t is full
               of subtle animations and accessibility features that make it pleasing for everyone to use.</p>
           </div>
         </section>
       </div>
     </article>
-    <hr class="sep h-16">
-    <article class="md:flex justify-end">
+    <hr class="h-16 sep">
+    <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_profile label=true classes="bg-gray-100" %}
+        {% include example.html code=example_profile label=true classes="bg-neutral-100" %}
       </div>
     </article>
-    <hr class="sep h-16">
+    <hr class="h-16 sep">
     <article class="md:flex" id="concepts">
-      <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Concepts</p>
+      <aside class="self-start mb-4 md:w-3/12 mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
+        <p class="mb-8 text-3xl heading text-urge-600 md:text-2xl">Concepts</p>
       </aside>
       <div class="md:w-9/12 content">
         <h2>Use tones to control color</h2>
@@ -216,16 +216,16 @@ title: "The atomic web toolkit for pragmatists"
           experience.</p>
       </div>
     </article>
-    <hr class="sep h-16">
-    <article class="md:flex justify-end">
+    <hr class="h-16 sep">
+    <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
         {% include example.html label=true code=example_table %}
       </div>
     </article>
-    <hr class="sep h-16">
+    <hr class="h-16 sep">
     <article class="md:flex">
-      <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">More Benefits</p>
+      <aside class="self-start mb-4 md:w-3/12 mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
+        <p class="mb-8 text-3xl heading text-urge-600 md:text-2xl">More Benefits</p>
       </aside>
       <div class="md:w-9/12 content">
         <p><strong>Thoughtful typography</strong> &mdash; a17t is optimized for legibility. From headings to body text
@@ -241,19 +241,19 @@ title: "The atomic web toolkit for pragmatists"
           any extra effort.</p>
       </div>
     </article>
-    <hr class="sep h-16">
-    <article class="md:flex justify-end">
+    <hr class="h-16 sep">
+    <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_delete label=true classes="bg-gray-100" %}
+        {% include example.html code=example_delete label=true classes="bg-neutral-100" %}
       </div>
     </article>
-    <hr class="sep h-16">
-    <article class="md:flex pb-12" id="install">
-      <aside class="md:w-3/12 self-start mh-auto md:sticky mb-4 md:pr-12 md:text-right" style="top: 2rem;">
-        <p class="heading text-purple-600 text-3xl mb-8 md:text-2xl">Install</p>
+    <hr class="h-16 sep">
+    <article class="pb-12 md:flex" id="install">
+      <aside class="self-start mb-4 md:w-3/12 mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
+        <p class="mb-8 text-3xl heading text-urge-600 md:text-2xl">Install</p>
       </aside>
       <div class="md:w-9/12">
-        <p class="label mb-2">Using NPM (recommended)</p>
+        <p class="mb-2 label">Using NPM (recommended)</p>
         <div class="card ~neutral !high font-mono mb-4">
           npm install a17t
         </div>
@@ -261,7 +261,7 @@ title: "The atomic web toolkit for pragmatists"
           CSS-in-JS, see <a href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
           this guide</a>. a17t's default export is simply its compiled CSS file, so you have no shortage of options
           to import it.</p>
-        <p class="label mb-2">Using a CDN</p>
+        <p class="mb-2 label">Using a CDN</p>
         <div class="card ~neutral !high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
         </div>
@@ -283,7 +283,7 @@ title: "The atomic web toolkit for pragmatists"
       </div>
     </article>
   </div>
-  <div class="md:w-2/12 pl-20 hidden md:block opacity-75">
+  <div class="hidden pl-20 opacity-75 md:w-2/12 md:block">
     {% include elements_list.html %}
   </div>
 </section>

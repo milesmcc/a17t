@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="flex flex-wrap justify-between">
-  <section class="w-full md:w-1/3 md:pr-12 md:sticky mh-auto self-start" style="top: 3rem;">
-    <h1 class="heading text-5xl text-purple-600 page-name">{{page.title}}</h1>
-    <p class="subheading text-lg">{{page.description}}</p>
+  <section class="self-start w-full md:w-1/3 md:pr-12 md:sticky mh-auto" style="top: 3rem;">
+    <h1 class="text-5xl heading text-urge-600 page-name">{{page.title}}</h1>
+    <p class="text-lg subheading">{{page.description}}</p>
     <hr class="sep">
     <ul class="flex flex-wrap justify-between md:block">
       {% if page.display %}
@@ -23,11 +23,11 @@ layout: default
       {% if page.source %}
       <li class="mb-4">
         <p class="label">Source</p>
-        <p><a href="{{page.source}}" class="portal p-0 font-normal">GitHub &nearr;</a></p>
+        <p><a href="{{page.source}}" class="p-0 font-normal portal">GitHub &nearr;</a></p>
       </li>
       {% endif %}
       {% if page.features %}
-      <li class="mb-4 w-full">
+      <li class="w-full mb-4">
         <p class="label">Features</p>
         <p>{% for feature in page.features %}<span class="chip ~positive mr-1 mb-1">{{feature}}</span>{% endfor %}
         </p>
@@ -35,12 +35,12 @@ layout: default
       {% endif %}
     </ul>
   </section>
-  <article class="w-full md:w-2/3 mt-4">
+  <article class="w-full mt-4 md:w-2/3">
     {% if page.examples %}
     {% for example in page.examples %}
     <div class="card ~neutral !low mb-4">
       {{example}}
-      <div class="text-sm mt-6 overflow-auto" style="max-height: 20rem;">
+      <div class="mt-6 overflow-auto text-sm" style="max-height: 20rem;">
         {% highlight html %}{{example}}{% endhighlight %}
       </div>
     </div>
@@ -50,9 +50,9 @@ layout: default
     <main class="content">
       {{content}}
     </main>
-    <h1 class="heading text-3xl mt-16 mb-4">Customization</h1>
+    <h1 class="mt-16 mb-4 text-3xl heading">Customization</h1>
     {% if page.variables %}
-    <article class="border px-2 bg-white rounded overflow-auto max-w-full">
+    <article class="max-w-full card ~neutral !low overflow-auto">
       <table class="table">
         <thead>
           <tr>

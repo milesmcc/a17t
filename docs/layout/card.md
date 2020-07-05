@@ -51,7 +51,7 @@ Cards have full tone and priority support.
   {% endfor %}
 </div>
 {% endcapture %}
-{% include example.html code=example classes="bg-gray-100" %}
+{% include example.html code=example classes="bg-neutral-100" %}
 
 {% endfor %}
 
@@ -74,7 +74,7 @@ Cards have full tone and priority support.
   </div>
 </div>
 {% endcapture %}
-{% include example.html code=example classes="bg-gray-100"%}
+{% include example.html code=example classes="bg-neutral-100"%}
 
 {% capture example %}
 <alert class="card ~critical !high">
