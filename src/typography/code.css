@@ -1,5 +1,5 @@
 .code {
-  background-color: var(--code-background, theme("colors.neutral.200"));
+  filter: brightness(95%);
 
-  @apply rounded py-px px-1 inline font-mono;
+  @apply inline px-1 py-px font-mono rounded section;
 }
