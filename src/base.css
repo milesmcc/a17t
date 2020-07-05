@@ -1,4 +1,6 @@
-@import "./vars/_intents.css";
+@import "./vars/_colors.css";
+@import "./vars/_shadows.css";
+@import "./vars/_borders.css";
 @import "./vars/_typography.css";
 
 @import "./utils/chev.css";
