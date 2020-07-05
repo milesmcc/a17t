@@ -8,7 +8,7 @@
   transition: color var(--portal-transition-speed, 75ms) linear;
   text-decoration: none;
 
-  @apply font-medium rounded-full font-secondary;
+  @apply font-medium rounded-xl font-secondary;
 
   &:hover,
   &:focus {

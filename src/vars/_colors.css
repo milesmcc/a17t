@@ -28,6 +28,7 @@
 
   /* POSITIVE */
   --color-positive: var(--color-positive-500-fallback);
+  --color-positive-light: var(--color-positive-300-fallback);
 
   --color-positive-low-title: var(--color-positive-700-fallback);
   --color-positive-low-content: var(--color-positive-600-fallback);
@@ -46,6 +47,7 @@
 
   /* WARNING */
   --color-warning: var(--color-warning-500-fallback);
+  --color-warning-light: var(--color-warning-500-fallback);
 
   --color-warning-low-title: var(--color-warning-800-fallback);
   --color-warning-low-content: var(--color-warning-700-fallback);
@@ -64,6 +66,7 @@
 
   /* CRITICAL */
   --color-critical: var(--color-critical-500-fallback);
+  --color-critical-light: var(--color-critical-300-fallback);
 
   --color-critical-low-title: var(--color-critical-700-fallback);
   --color-critical-low-content: var(--color-critical-600-fallback);
@@ -82,6 +85,7 @@
 
   /* INFO */
   --color-info: var(--color-info-500-fallback);
+  --color-info-light: var(--color-info-300-fallback);
 
   --color-info-low-title: var(--color-info-700-fallback);
   --color-info-low-content: var(--color-info-600-fallback);
@@ -100,6 +104,7 @@
 
   /* URGE */
   --color-urge: var(--color-urge-600-fallback);
+  --color-urge-light: var(--color-urge-300-fallback);
 
   --color-urge-low-title: var(--color-urge-700-fallback);
   --color-urge-low-content: var(--color-urge-600-fallback);

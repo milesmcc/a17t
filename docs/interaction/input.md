@@ -81,7 +81,7 @@ Inputs have full tone, priority, and disabling support. Priorities are communica
 {% capture example %}
 <div>
   <p class="label">Your name</p>
-  <input class="field my-1" type="text" placeholder="Miles McCain">
+  <input class="my-1 field" type="text" placeholder="Miles McCain">
   <p class="support">Just your first name is fine, too.</p>
 </div>
 {% endcapture %}

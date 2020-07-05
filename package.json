@@ -6,7 +6,7 @@
   "scripts": {
     "build": "postcss src/a17t.css -o dist/a17t.css && postcss src/tailwind.css -o dist/tailwind.css",
     "watch": "postcss src/a17t.css -o dist/a17t.css --watch",
-    "updatedocs": "purgecss --css \"dist/*.css\" --config docs/purgecss.config.js --output docs/assets/",
+    "updatedocs": "purgecss --css \"dist/*.css\" --config docs/purgecss.config.js --output docs/assets/css/dist/",
     "docs": "jekyll serve --source docs --watch",
     "docswatch": "watch 'npm run updatedocs' ./dist --interval=1",
     "dev": "npm run build; npm run updatedocs & npm run watch & npm run docs & npm run docswatch"
