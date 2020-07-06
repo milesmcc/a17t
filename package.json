@@ -1,6 +1,6 @@
 {
   "name": "a17t",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Atomic design toolkit for beautiful, maintainable, and custom interfaces",
   "main": "dist/a17t.css",
   "scripts": {
