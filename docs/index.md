@@ -276,7 +276,7 @@ title: "The atomic web toolkit for pragmatists"
           </p>
           <p>
             <strong>Add <code>~*</code> and <code>!*</code> classes to your <a href="https://purgecss.com/whitelisting.html">PurgeCSS class whitelist</a>,
-            if applicable.</strong>. Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code>~urge</code>
+            if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code>~urge</code>
             and <code>!low</code>). Add the following to your PurgeCSS config: <code>whitelistPatterns: [/^~/, /^!/]</code>.
           </p>
         </aside>
