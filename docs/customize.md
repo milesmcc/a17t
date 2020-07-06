@@ -5,6 +5,8 @@ tab: customize
 description: Explore a17t's advanced customization options with an interactive theme builder
 ---
 
+{% include sample_themes.html %}
+
 Customizing a17t is unlike customizing most other CSS libraries. With a17t, everything is done at runtime! There are no complicated config files to setup in your repository, no build tools to run, and no conflicts to manage. That's because everything is just CSS variables.
 
 ### Preprocessors
@@ -33,4 +35,6 @@ By updating a17t's primitives, you can make drastic changes to the look and feel
 
 Know that customizing a17t isn't limited to changing just these variables! There are dozens of other element-specific and higher-level variables that you can change; this is just scratching the surface of what you can do.
 
-{% include theme_builder.html %}
+<div class="card ~neutral !low">
+    <p>Eventually, the theme builder will be available here. Check back soon! For now, you can explore the themes at the top of the page.</p>
+</div>

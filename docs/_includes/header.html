@@ -26,13 +26,13 @@
     </button>
   </div>
   <div
-    class="flex-wrap flex-grow hidden block px-2 py-4 rounded-lg shadow-lg md:flex md:items-center md:justify-between bg-neutral-200 md:bg-transparent md:shadow-none md:p-0"
+    class="flex-wrap flex-grow hidden block w-full max-w-full px-2 py-4 rounded-lg shadow-lg md:w-auto md:flex md:items-center md:justify-between bg-neutral-000 md:bg-transparent md:shadow-none md:p-0"
     id="navFullContent">
     <ul>
       <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
         Elements
         <div class="w-screen text-sm dropdown-display md:w-auto">
-          <div class="card ~neutral !low mt-1 flex flex-wrap md:flex-no-wrap w-4/5 md:w-auto">
+          <div class="card ~neutral !low bg-neutral-100 md:bg-neutral-000 mt-1 flex flex-wrap md:flex-no-wrap w-4/5 md:w-auto">
             {% include elements_list.html %}
           </div>
         </div>

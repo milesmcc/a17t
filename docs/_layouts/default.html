@@ -3,15 +3,15 @@
 
 {%- include head.html -%}
 
-<body class="section">
+<body class="max-w-full overflow-x-hidden section">
 
-  <div class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
+  <div class="max-w-screen-lg px-6 py-4 mx-auto md:px-4 md:py-10">
 
     <div style="z-index: 2;" class="relative">
       {%- include header.html -%}
     </div>
 
-    <hr class="sep h-12">
+    <hr class="h-12 sep">
 
     <main aria-label="Content" style="z-index: 1" class="relative">
       {{ content }}
