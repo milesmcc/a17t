@@ -65,3 +65,11 @@
   --color-urge-100: #44337a;
   --color-urge-000: var(--color-neutral-000);
 }
+
+.light-only {
+  display: none;
+}
+
+.dark-only {
+  display: initial;
+}

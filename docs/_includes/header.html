@@ -28,7 +28,7 @@
   <div
     class="flex-wrap flex-grow hidden block w-full max-w-full px-2 py-4 rounded-lg shadow-lg md:w-auto md:flex md:items-center md:justify-between bg-neutral-000 md:bg-transparent md:shadow-none md:p-0"
     id="navFullContent">
-    <ul>
+    <ul class="flex flex-wrap items-center">
       <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
         Elements
         <div class="w-screen text-sm dropdown-display md:w-auto">
@@ -37,10 +37,16 @@
           </div>
         </div>
       </li>
-      <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'customize' %}~urge active{% endif %}">
+      <li class="portal dropdown outline-none {% if page.tab == 'customize' %}~urge active{% endif %}">
         <a href="/customize">Customize</a>
       </li>
-      <li tabindex="0" class="portal"><a href="https://github.com/milesmcc/a17t/">Source</a></li>
+      <li class="portal"><a href="https://github.com/milesmcc/a17t/">Source</a></li>
+      <li class="pt-2 pl-2 portal dark-only">
+        <a class="github-button" href="https://github.com/milesmcc/a17t" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true" aria-label="Star milesmcc/a17t on GitHub">Star</a>
+      </li>
+      <li class="pt-2 pl-2 portal light-only">
+        <a class="github-button" href="https://github.com/milesmcc/a17t" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star milesmcc/a17t on GitHub">Star</a>
+      </li>
     </ul>
     <div class="flex items-center p-2 md:w-5/12 md:text-right md:p-0 portal md:justify-end" style="z-index: 0;">
       <input class="input ~neutral !low bg-neutral-000" type="text" placeholder="Search..." id="search">
