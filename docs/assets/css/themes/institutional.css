@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-urge-900: #000437;
+    --color-urge-800: #0f214f;
+    --color-urge-700: #2c3866;
+    --color-urge-600: #47527c;
+    --color-urge-500: #636c92;
+    --color-urge-400: #8088a7;
+    --color-urge-300: #9fa4bd;
+    --color-urge-200: #bec2d3;
+    --color-urge-100: #dee0e9;
+    --color-urge-000: #fefeff;
+
+    --color-neutral-000: #fefeff;
+
+    --border-radius-sm: none;
+    --border-radius-default: none;
+    --border-radius-md: none;
+    --border-radius-lg: none;
+    --border-radius-xl: none;
+
+    --family-primary: "PT Serif", Georgia, 'Times New Roman', Times, serif;
+
+    
+
+    /* --border-width-default: 2px;
+    --border-width-2: 3px;
+    --border-width-4: 5px;
+    --border-width-8: 8px; */
+}
