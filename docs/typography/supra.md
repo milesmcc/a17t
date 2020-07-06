@@ -53,7 +53,7 @@ The supra has full contextual tone and priority support.
 
 {% capture example %}
 <p class="supra">New Release</p>
-<p class="font-medium text-2xl text-gray-900 mb-2">Our best album yet!</p>
+<p class="font-medium text-2xl text-neutral-900 mb-2">Our best album yet!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit vel arcu sed cursus. Morbi eget diam commodo, bibendum tellus nec, viverra diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac facilisis mauris. Aenean luctus arcu velit.</p>
 {% endcapture %}
 {% include example.html code=example %}

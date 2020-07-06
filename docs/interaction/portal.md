@@ -14,7 +14,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<div class='text-gray-700'>\n  <span class='portal'>Code</span>\n  <span class='portal ~positive active' aria-selected='true'>Support</span>\n  <span class='portal'>Members</span>\n  <span class='portal' disabled>Disabled</span>\n</div>"
+  - "<div class='text-neutral-700'>\n  <span class='portal'>Code</span>\n  <span class='portal ~positive active' aria-selected='true'>Support</span>\n  <span class='portal'>Members</span>\n  <span class='portal' disabled>Disabled</span>\n</div>"
 variables:
   - name: --portal-padding
     type: padding

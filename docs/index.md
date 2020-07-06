@@ -89,7 +89,7 @@ title: "The atomic web toolkit for pragmatists"
 <div class="items-center justify-between mb-24 md:flex md:mt-24">
   <section class="mt-6 mb-12 mr-6 md:w-6/12">
     <h2 class="text-lg heading md:text-3xl">
-      a17t, <i>noun</i> <span class="text-gray-500">(ey&#712;seven&#712;teen&#712;tee) &mdash;</span><br>
+      a17t, <i>noun</i> <span class="text-neutral-500">(ey&#712;seven&#712;teen&#712;tee) &mdash;</span><br>
     </h2>
     <h1 class="mb-4 text-4xl font-semibold heading md:text-5xl text-urge-600">
       atomic design toolkit
