@@ -94,7 +94,7 @@ title: "The atomic web toolkit for pragmatists"
     <h1 class="mb-4 text-4xl font-semibold heading md:text-5xl text-urge-600">
       atomic design toolkit
     </h1>
-    <h3 class="mb-6 text-lg subheading md:text-xl">Build beautiful, unique interfaces
+    <h3 class="mb-6 text-lg subheading md:text-xl font-primary">Build beautiful, unique interfaces
     without reinventing the wheel. Let a17t provide
       the core building blocks, then customize with ease.</h3>
     <div>
@@ -113,7 +113,7 @@ title: "The atomic web toolkit for pragmatists"
 <hr class="h-12 sep">
 
 <section class="md:flex">
-  <div class="md:w-10/12">
+  <div class="lg:w-9/12">
     <article class="md:flex">
       <aside class="self-start hidden w-3/12 mb-4 md:block mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
         <p class="text-2xl heading text-urge-600">Overview</p>
@@ -283,7 +283,7 @@ title: "The atomic web toolkit for pragmatists"
       </div>
     </article>
   </div>
-  <div class="hidden pl-20 opacity-75 md:w-2/12 md:block">
+  <div class="hidden pl-20 opacity-75 md:w-3/12 lg:block">
     {% include elements_list.html %}
   </div>
 </section>
