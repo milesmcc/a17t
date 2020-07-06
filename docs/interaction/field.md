@@ -68,7 +68,7 @@ Fields have full tone, priority, and disabling support. Priorities are communica
 ###### Disabling
 
 {% capture example %}
-<input class="field ~neutral disabled" value="This is a disabled input" type="text">
+<input class="field ~neutral" value="This is a disabled input" type="text" disabled>
 {% endcapture %}
 {% include example.html code=example %}
 

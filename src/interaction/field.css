@@ -3,12 +3,12 @@
   transition: box-shadow var(--field-transition-speed, 75ms) ease-out, border var(--field-transition-speed, 75ms) ease-out;
   box-shadow: var(--fallback-box-shadow);
   appearance: none;
+  background-color: inherit;
   -webkit-appearance: none;
   -moz-appearance: none;
 
   &[disabled] {
     cursor: not-allowed;
-    background-color: var(--color-light);
     opacity: var(--field-disabled-opacity, 0.6);
   }
 
@@ -17,7 +17,6 @@
   }
 
   &::placeholder {
-    color: var(--color-muted);
     @apply opacity-50;
   }
 
@@ -33,5 +32,5 @@
     @apply outline-none;
   }
 
-  @apply inline-flex w-full max-w-full p-2 leading-tight border rounded font-secondary section;
+  @apply inline-flex w-full max-w-full p-2 leading-tight border rounded font-secondary;
 }
