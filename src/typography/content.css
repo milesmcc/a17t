@@ -7,11 +7,11 @@
 
   @apply leading-normal font-primary;
 
-  > *:not(:last-child) {
+  > *:not(:last-child), > blockquote *:not(:last-child) {
     @apply mb-3;
   }
 
-  > *:not(:first-child) {
+  > *:not(:first-child), > blockquote *:not(:first-child) {
     @apply mt-3;
   }
 
