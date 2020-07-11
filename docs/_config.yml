@@ -29,6 +29,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Helpful variables
 tones: ["neutral", "positive", "warning", "critical", "info", "urge"]
