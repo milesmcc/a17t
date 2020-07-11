@@ -19,9 +19,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Build beautiful, unique interfaces without reinventing the wheel.
   Let a17t provide the core building blocks, then customize with ease.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://a17t.miles.land" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MilesMcCain
 github_username:  milesmcc
+permalink: pretty
 
 # Build settings
 markdown: kramdown
