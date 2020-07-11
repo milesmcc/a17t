@@ -124,7 +124,7 @@
   }
 
   blockquote {
-    @apply aside ~neutral !normal my-5;
+    @apply aside ~neutral !normal;
 
     cite {
       @apply block mt-1 not-italic support;
