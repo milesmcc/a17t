@@ -202,12 +202,12 @@ title: "The atomic web toolkit for pragmatists"
         <h2>Use tones to control color</h2>
         <p>There are six tones by default: neutral, positive, warning, critical, info, and urge. (Don't worry, these
           colors are all customizable.) Tones are specified using special class names that start with a tilde 
-          (e.g., <code>~positive</code>). To make a light green chip, for example, use <code>chip
+          (e.g., <code class="code">~positive</code>). To make a light green chip, for example, use <code class="code">chip
             ~positive</code>.</p>
         <h2>Use priorities to control prominence</h2>
         <p>There are three priorities &mdash; low, normal, and high. You can specify a
-          priority by its class: an exclamation point followed by its name (e.g., <code>!high</code> or
-          <code>!low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
+          priority by its class: an exclamation point followed by its name (e.g., <code class="code">!high</code> or
+          <code class="code">!low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
           (communicated through drop shadow) when changing colors wouldn't look good.</p>
         <h2>Consider using with Tailwind</h2>
         <p>Because a17t only provides the core elements of your interface, like buttons and form inputs, you'll need a
@@ -257,11 +257,11 @@ title: "The atomic web toolkit for pragmatists"
         <div class="card ~neutral !high font-mono mb-4">
           npm install a17t
         </div>
-        <p class="mb-2">Import a17t in your JavaScript using <code>import 'a17t'</code> or into your preprocessed CSS using <code>@import 'a17t';</code>. For more information about
+        <p class="mb-2">Import a17t in your JavaScript using <code class="code">import 'a17t'</code> or into your preprocessed CSS using <code class="code">@import 'a17t';</code>. For more information about
           CSS-in-JS, see <a href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
           this guide</a>. a17t's default export is simply its compiled CSS file, so you have no shortage of options
           to import it.</p>
-        <p class="mb-6">Optionally use a17t's Tailwind distribution in your JavaScript with <code>import 'a17t/dist/tailwind.css'</code> or in your CSS with <code>@import 'a17t/dist/tailwind.css'</code>. The benefit of using a17t's Tailwind CSS distribution is that it uses the same CSS variables as a17t. That way, if you change your color scheme (for example), your Tailwind classes will change as well. (Note that the color names for a17t's Tailwind distribution match other a17t's naming system&mdash;e.g., the class for light grey text is `text-neutral-300`.)</p>
+        <p class="mb-6">Optionally use a17t's Tailwind distribution in your JavaScript with <code class="code">import 'a17t/dist/tailwind.css'</code> or in your CSS with <code class="code">@import 'a17t/dist/tailwind.css'</code>. The benefit of using a17t's Tailwind CSS distribution is that it uses the same CSS variables as a17t. That way, if you change your color scheme (for example), your Tailwind classes will change as well. (Note that the color names for a17t's Tailwind distribution match other a17t's naming system&mdash;e.g., the class for light grey text is `text-neutral-300`.)</p>
         <p class="mb-2 label">Using a CDN</p>
         <div class="card ~neutral !high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
@@ -276,9 +276,9 @@ title: "The atomic web toolkit for pragmatists"
             Tailwind (which has a CSS reset built-in), make sure you use something like <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
           </p>
           <p>
-            <strong>Add <code>~*</code> and <code>!*</code> classes to your <a href="https://purgecss.com/whitelisting.html">PurgeCSS class whitelist</a>,
-            if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code>~urge</code>
-            and <code>!low</code>). Add the following to your PurgeCSS config: <code>whitelistPatterns: [/^~/, /^!/]</code>.
+            <strong>Add <code class="code">~*</code> and <code class="code">!*</code> classes to your <a href="https://purgecss.com/whitelisting.html">PurgeCSS class whitelist</a>,
+            if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code class="code">~urge</code>
+            and <code class="code">!low</code>). Add the following to your PurgeCSS config: <code class="code">whitelistPatterns: [/^~/, /^!/]</code>.
           </p>
         </aside>
       </div>
