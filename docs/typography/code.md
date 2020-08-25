@@ -11,11 +11,20 @@ selectors:
 display: Inline
 examples:
   - "This is <code class='code'>inline code</code>."
+variables:
+  - name: --code-color
+    type: color
+    description: sets the color
+    default: var(--color-title)
+  - name: --code-background
+    type: color
+    description: sets the background color
+    default: var(--color-light)
 ---
 
 # Overview
 
-The code element displays inline code in a monospace font. Inside of a [content element](/typography/content), it is applied to the `<code>` tag.  
+The code element displays inline code in a monospace font and a color subtly different from the surrounding content. Inside of a [content element](/typography/content), it is applied to the `<code>` tag.  
 
 # Considerations
 
