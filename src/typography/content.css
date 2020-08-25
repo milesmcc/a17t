@@ -114,8 +114,6 @@
   }
 
   strong {
-    color: var(--color-title);
-
     @apply font-medium;
   }
 
