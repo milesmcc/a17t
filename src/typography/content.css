@@ -50,11 +50,11 @@
   }
 
   pre {
-    @apply overflow-auto pre; 
-  }
+    code {
+      background-color: unset;
+    }
 
-  pre code {
-    background-color: none;
+    @apply overflow-auto pre; 
   }
 
   code,
