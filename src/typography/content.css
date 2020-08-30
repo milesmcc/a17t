@@ -50,7 +50,11 @@
   }
 
   pre {
-    @apply overflow-auto pre;
+    @apply overflow-auto pre; 
+  }
+
+  pre code {
+    background-color: none;
   }
 
   code,
