@@ -6,7 +6,6 @@ module.exports = {
     require("postcss-preset-env")({
       stage: 4
     }),
-    require('postcss-custom-properties'),
     require("postcss-nested"),
     require("cssnano")({
       autoprefixer: false
