@@ -5,7 +5,7 @@ title: "The atomic web toolkit for pragmatists"
 
 {% capture example_profile %}
 <div class="card ~neutral !low md:flex max-w-lg">
-  <div class="w-20 h-20 mx-auto mb-6 md:mr-6">
+  <div class="w-20 h-20 mx-auto mb-6 md:mr-6 flex-shrink-0">
     <img class="object-cover rounded-full" src="{{ '/assets/profile_image.png' | relative_url }}">
   </div>
   <div class="flex-grow text-center md:text-left">
