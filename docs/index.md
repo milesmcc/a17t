@@ -276,7 +276,7 @@ title: "The atomic web toolkit for pragmatists"
             Tailwind (which has a CSS reset built-in), make sure you use something like <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
           </p>
           <p>
-            <strong>Add <code class="code">~*</code> and <code class="code">!*</code> classes to your <a href="https://purgecss.com/whitelisting.html">PurgeCSS class whitelist</a>,
+            <strong>Add <code class="code">~*</code> and <code class="code">!*</code> classes to your <a href="https://purgecss.com/safelisting.html">PurgeCSS class safelist</a>,
             if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code class="code">~urge</code>
             and <code class="code">!low</code>). Add the following to your PurgeCSS config: <code class="code">whitelistPatterns: [/^~/, /^!/]</code>.
           </p>
