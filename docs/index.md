@@ -258,7 +258,7 @@ title: "The atomic web toolkit for pragmatists"
           npm install a17t
         </div>
         <p class="mb-2">Import a17t in your JavaScript using <code class="code">import 'a17t'</code> or into your preprocessed CSS using <code class="code">@import 'a17t';</code>. For more information about
-          CSS-in-JS, see <a href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
+          CSS-in-JS, see <a class="underline" href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
           this guide</a>. a17t's default export is simply its compiled CSS file, so you have no shortage of options
           to import it.</p>
         <p class="mb-6">Optionally use a17t's Tailwind distribution in your JavaScript with <code class="code">import 'a17t/dist/tailwind.css'</code> or in your CSS with <code class="code">@import 'a17t/dist/tailwind.css'</code>. The benefit of using a17t's Tailwind CSS distribution is that it uses the same CSS variables as a17t. That way, if you change your color scheme (for example), your Tailwind classes will change as well. (Note that the color names for a17t's Tailwind distribution match other a17t's naming system&mdash;e.g., the class for light grey text is `text-neutral-300`.)</p>
