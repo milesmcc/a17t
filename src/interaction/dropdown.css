@@ -21,7 +21,7 @@
         visibility: visible;
         opacity: 1;
 
-        @apply cursor-default;
+        @apply cursor;
       }
     }
   }
@@ -31,7 +31,7 @@
       visibility: visible;
       opacity: 1;
 
-      @apply cursor-default;
+      @apply cursor;
     }
   }
 }

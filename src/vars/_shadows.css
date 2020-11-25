@@ -1,6 +1,6 @@
 :root {
   --fallback-box-shadow-low: theme("boxShadow.sm");
-  --fallback-box-shadow-normal: theme("boxShadow.default");
+  --fallback-box-shadow-normal: theme("boxShadow.DEFAULT");
   --fallback-box-shadow-high: theme("boxShadow.md");
   --fallback-box-shadow: var(--fallback-box-shadow-normal);
 }

@@ -1,6 +1,5 @@
 module.exports = {
     purge: [],
-    target: 'relaxed',
     prefix: '',
     important: false,
     separator: ':',
@@ -132,20 +131,20 @@ module.exports = {
         },
         borderColor: theme => ({
             ...theme('colors'),
-            default: theme('colors.neutral.300', 'currentColor'),
+            DEFAULT: theme('colors.neutral.300', 'currentColor'),
         }),
         borderOpacity: theme => theme('opacity'),
         borderRadius: {
             none: 'var(--border-radius-none, 0)',
             sm: 'var(--border-radius-sm, 0.125rem)',
-            default: 'var(--border-radius-default, 0.25rem)',
+            DEFAULT: 'var(--border-radius-default, 0.25rem)',
             md: 'var(--border-radius-md, 0.375rem)',
             lg: 'var(--border-radius-lg, 0.5rem)',
             xl: 'var(--border-radius-xl, 1rem)',
             full: 'var(--border-radius-full, 9999px)',
         },
         borderWidth: {
-            'default': 'var(--border-width-default, 1px)',
+            DEFAULT: 'var(--border-width-default, 1px)',
             '0': 'var(--border-width-0, 0)',
             '2': 'var(--border-width-2, 2px)',
             '4': 'var(--border-width-4, 4px)',
@@ -154,7 +153,7 @@ module.exports = {
         boxShadow: {
             'xs': 'var(--box-shadow-xs, 0 0 0 1px rgba(0, 0, 0, 0.05))',
             'sm': 'var(--box-shadow-sm, 0 1px 2px 0 rgba(0, 0, 0, 0.05))',
-            'default': 'var(--box-shadow-default, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06))',
+            DEFAULT: 'var(--box-shadow-default, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06))',
             'md': 'var(--box-shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06))',
             'lg': 'var(--box-shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05))',
             'xl': 'var(--box-shadow-xl, 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04))',
@@ -166,7 +165,7 @@ module.exports = {
         container: {},
         cursor: {
             auto: 'auto',
-            default: 'default',
+            DEFAULT: 'default',
             pointer: 'pointer',
             wait: 'wait',
             text: 'text',
@@ -187,11 +186,11 @@ module.exports = {
         },
         flexGrow: {
             '0': '0',
-            default: '1',
+            DEFAULT: '1',
         },
         flexShrink: {
             '0': '0',
-            default: '1',
+            DEFAULT: '1',
         },
         fontFamily: {
             primary: 'var(--family-primary, "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")',
@@ -556,7 +555,7 @@ module.exports = {
         transitionProperty: {
             none: 'none',
             all: 'all',
-            default: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
+            DEFAULT: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
             colors: 'background-color, border-color, color, fill, stroke',
             opacity: 'opacity',
             shadow: 'box-shadow',
@@ -690,8 +689,4 @@ module.exports = {
     },
     corePlugins: {},
     plugins: [],
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-    },
 }

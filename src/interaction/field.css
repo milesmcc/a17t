@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    box-shadow: var(--field-hover-box-shadow, 0 0 0 theme("borderWidth.default") var(--color-light)),
+    box-shadow: var(--field-hover-box-shadow, 0 0 0 theme("borderWidth.DEFAULT") var(--color-light)),
       var(--fallback-box-shadow);
   }
 
