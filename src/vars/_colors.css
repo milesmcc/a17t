@@ -1,6 +1,6 @@
 :root {
   @each $tone in neutral, positive, warning, critical, info, urge {
-    @each $val in 000, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+    @each $val in 000, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
       --color-$(tone)-$(val)-fallback: theme("colors.$tone.$val");
     }
   }
@@ -19,7 +19,7 @@
 
   --color-neutral-normal-content: var(--color-neutral-800-fallback);
   --color-neutral-normal-fill: var(--color-neutral-200-fallback);
-  --color-neutral-normal-background: var(--color-neutral-100-fallback);
+  --color-neutral-normal-background: var(--color-neutral-50-fallback);
   --color-neutral-normal-muted: var(--color-neutral-700-fallback);
 
   --color-neutral-high-content: var(--color-neutral-000-fallback);
@@ -38,12 +38,12 @@
 
   --color-positive-normal-content: var(--color-positive-800-fallback);
   --color-positive-normal-fill: var(--color-positive-200-fallback);
-  --color-positive-normal-background: var(--color-positive-100-fallback);
+  --color-positive-normal-background: var(--color-positive-50-fallback);
   --color-positive-normal-muted: var(--color-positive-600-fallback);
 
   --color-positive-high-content: var(--color-positive-000-fallback);
   --color-positive-high-fill: var(--color-positive-500-fallback);
-  --color-positive-high-muted: var(--color-positive-100-fallback);
+  --color-positive-high-muted: var(--color-positive-50-fallback);
 
   /* WARNING */
   --color-warning: var(--color-warning-500-fallback);
@@ -57,7 +57,7 @@
 
   --color-warning-normal-content: var(--color-warning-800-fallback);
   --color-warning-normal-fill: var(--color-warning-200-fallback);
-  --color-warning-normal-background: var(--color-warning-100-fallback);
+  --color-warning-normal-background: var(--color-warning-50-fallback);
   --color-warning-normal-muted: var(--color-warning-600-fallback);
 
   --color-warning-high-content: var(--color-warning-900-fallback);
@@ -76,12 +76,12 @@
 
   --color-critical-normal-content: var(--color-critical-800-fallback);
   --color-critical-normal-fill: var(--color-critical-200-fallback);
-  --color-critical-normal-background: var(--color-critical-100-fallback);
+  --color-critical-normal-background: var(--color-critical-50-fallback);
   --color-critical-normal-muted: var(--color-critical-600-fallback);
 
   --color-critical-high-content: var(--color-critical-000-fallback);
   --color-critical-high-fill: var(--color-critical-500-fallback);
-  --color-critical-high-muted: var(--color-critical-100-fallback);
+  --color-critical-high-muted: var(--color-critical-50-fallback);
 
   /* INFO */
   --color-info: var(--color-info-500-fallback);
@@ -95,12 +95,12 @@
 
   --color-info-normal-content: var(--color-info-800-fallback);
   --color-info-normal-fill: var(--color-info-200-fallback);
-  --color-info-normal-background: var(--color-info-100-fallback);
+  --color-info-normal-background: var(--color-info-50-fallback);
   --color-info-normal-muted: var(--color-info-600-fallback);
 
   --color-info-high-content: var(--color-info-000-fallback);
   --color-info-high-fill: var(--color-info-500-fallback);
-  --color-info-high-muted: var(--color-info-100-fallback);
+  --color-info-high-muted: var(--color-info-50-fallback);
 
   /* URGE */
   --color-urge: var(--color-urge-600-fallback);
@@ -114,16 +114,16 @@
 
   --color-urge-normal-content: var(--color-urge-800-fallback);
   --color-urge-normal-fill: var(--color-urge-200-fallback);
-  --color-urge-normal-background: var(--color-urge-100-fallback);
+  --color-urge-normal-background: var(--color-urge-50-fallback);
   --color-urge-normal-muted: var(--color-urge-600-fallback);
 
   --color-urge-high-content: var(--color-urge-000-fallback);
   --color-urge-high-fill: var(--color-urge-600-fallback);
-  --color-urge-high-muted: var(--color-urge-100-fallback);
+  --color-urge-high-muted: var(--color-urge-50-fallback);
 
   /* APPLICATIONS */
   --color-fill: theme("colors.transparent");
-  --color-background: var(--color-neutral-100-fallback);
+  --color-background: var(--color-neutral-50-fallback);
 
   /* DEFAULTS */
   --color-content: var(--color-neutral-low-content);

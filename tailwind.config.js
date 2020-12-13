@@ -1,3 +1,17 @@
+const colors = require('tailwindcss/colors')
+
+function makeVariable(dict, name) {
+    Object.keys(dict).map(function(key, index) {
+        dict[key] = `var(${name(key)}, ${dict[key]})`;  
+    });
+    return dict;
+}
+
+function prepColorDict(dict) {
+    dict["000"] = "white";
+    return dict;
+}
+
 module.exports = {
     purge: [],
     prefix: '',
@@ -17,78 +31,12 @@ module.exports = {
             black: '#000',
             white: '#fff',
 
-            neutral: {
-                "000": 'var(--color-neutral-000, white)',
-                "100": 'var(--color-neutral-100, #f7fafc)',
-                "200": 'var(--color-neutral-200, #edf2f7)',
-                "300": 'var(--color-neutral-300, #e2e8f0)',
-                "400": 'var(--color-neutral-400, #cbd5e0)',
-                "500": 'var(--color-neutral-500, #a0aec0)',
-                "600": 'var(--color-neutral-600, #718096)',
-                "700": 'var(--color-neutral-700, #4a5568)',
-                "800": 'var(--color-neutral-800, #2d3748)',
-                "900": 'var(--color-neutral-900, #1a202c)',
-            },
-            critical: {
-                "000": 'var(--color-critical-000, white)',
-                "100": 'var(--color-critical-100, #fff5f5)',
-                "200": 'var(--color-critical-200, #fed7d7)',
-                "300": 'var(--color-critical-300, #feb2b2)',
-                "400": 'var(--color-critical-400, #fc8181)',
-                "500": 'var(--color-critical-500, #f56565)',
-                "600": 'var(--color-critical-600, #e53e3e)',
-                "700": 'var(--color-critical-700, #c53030)',
-                "800": 'var(--color-critical-800, #9b2c2c)',
-                "900": 'var(--color-critical-900, #742a2a)',
-            },
-            warning: {
-                "000": 'var(--color-warning-000, white)',
-                "100": 'var(--color-warning-100, #fffff0)',
-                "200": 'var(--color-warning-200, #fefcbf)',
-                "300": 'var(--color-warning-300, #faf089)',
-                "400": 'var(--color-warning-400, #f6e05e)',
-                "500": 'var(--color-warning-500, #ecc94b)',
-                "600": 'var(--color-warning-600, #d69e2e)',
-                "700": 'var(--color-warning-700, #b7791f)',
-                "800": 'var(--color-warning-800, #975a16)',
-                "900": 'var(--color-warning-900, #744210)',
-            },
-            positive: {
-                "000": 'var(--color-positive-000, white)',
-                "100": 'var(--color-positive-100, #f0fff4)',
-                "200": 'var(--color-positive-200, #c6f6d5)',
-                "300": 'var(--color-positive-300, #9ae6b4)',
-                "400": 'var(--color-positive-400, #68d391)',
-                "500": 'var(--color-positive-500, #48bb78)',
-                "600": 'var(--color-positive-600, #38a169)',
-                "700": 'var(--color-positive-700, #2f855a)',
-                "800": 'var(--color-positive-800, #276749)',
-                "900": 'var(--color-positive-900, #22543d)',
-            },
-            info: {
-                "000": 'var(--color-info-000, white)',
-                "100": 'var(--color-info-100, #ebf8ff)',
-                "200": 'var(--color-info-200, #bee3f8)',
-                "300": 'var(--color-info-300, #90cdf4)',
-                "400": 'var(--color-info-400, #63b3ed)',
-                "500": 'var(--color-info-500, #4299e1)',
-                "600": 'var(--color-info-600, #3182ce)',
-                "700": 'var(--color-info-700, #2b6cb0)',
-                "800": 'var(--color-info-800, #2c5282)',
-                "900": 'var(--color-info-900, #2a4365)',
-            },
-            urge: {
-                "000": 'var(--color-urge-000, white)',
-                "100": 'var(--color-urge-100, #faf5ff)',
-                "200": 'var(--color-urge-200, #e9d8fd)',
-                "300": 'var(--color-urge-300, #d6bcfa)',
-                "400": 'var(--color-urge-400, #b794f4)',
-                "500": 'var(--color-urge-500, #9f7aea)',
-                "600": 'var(--color-urge-600, #805ad5)',
-                "700": 'var(--color-urge-700, #6b46c1)',
-                "800": 'var(--color-urge-800, #553c9a)',
-                "900": 'var(--color-urge-900, #44337a)',
-            },
+            neutral: makeVariable(prepColorDict(colors.coolGray), name => `--color-neutral-${name}`),
+            critical: makeVariable(prepColorDict(colors.red), name => `--color-critical-${name}`),
+            warning: makeVariable(prepColorDict(colors.amber), name => `--color-warning-${name}`),
+            positive: makeVariable(prepColorDict(colors.green), name => `--color-positive-${name}`),
+            info: makeVariable(prepColorDict(colors.teal), name => `--color-info-${name}`),
+            urge: makeVariable(prepColorDict(colors.indigo), name => `--color-urge-${name}`),
         },
         spacing: {
             'px': 'var(--spacing-px, 1px)',
