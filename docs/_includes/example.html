@@ -1,13 +1,13 @@
 <figure class="mb-6 search-exclude">
     {% if include.label %}
-    <p class="pl-4 mb-1 text-xs supra">Live Example</p>
+    <p class="mb-1 text-xs supra">Live Example</p>
     {% endif %}
     <section class="mb-2 border section ~neutral !low p-4 rounded-lg max-w-full {{include.classes}}">
         <div class="mx-auto">
             {{include.code}}
         </div>
     </section>
-    <details class="pl-4 content" {% if open %}open="open" {% endif %}>
+    <details class="content" {% if open %}open="open" {% endif %}>
         <summary class="mb-px cursor-pointer support">Example code</summary>
         {% highlight html %}{{include.code}}{% endhighlight %}
     </details>

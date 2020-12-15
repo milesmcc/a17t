@@ -47,7 +47,7 @@
 
   /* WARNING */
   --color-warning: var(--color-warning-500-fallback);
-  --color-warning-light: var(--color-warning-500-fallback);
+  --color-warning-light: var(--color-warning-300-fallback);
 
   --color-warning-low-title: var(--color-warning-800-fallback);
   --color-warning-low-content: var(--color-warning-700-fallback);

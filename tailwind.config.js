@@ -12,6 +12,25 @@ function prepColorDict(dict) {
     return dict;
 }
 
+function defaultColorMap() {
+    return {
+        neutral: colors.coolGray,
+        critical: colors.red,
+        warning: colors.amber,
+        positive: colors.green,
+        info: colors.blue,
+        urge: colors.violet,
+    }
+}
+
+function wrapColors() {
+    let obj = defaultColorMap();
+    for (let key of Object.keys(obj)) {
+        obj[key] = makeVariable(prepColorDict(obj[key]), name => `--color-${key}-${name}`);
+    }
+    return obj;
+}
+
 module.exports = {
     purge: [],
     prefix: '',
@@ -31,12 +50,7 @@ module.exports = {
             black: '#000',
             white: '#fff',
 
-            neutral: makeVariable(prepColorDict(colors.coolGray), name => `--color-neutral-${name}`),
-            critical: makeVariable(prepColorDict(colors.red), name => `--color-critical-${name}`),
-            warning: makeVariable(prepColorDict(colors.amber), name => `--color-warning-${name}`),
-            positive: makeVariable(prepColorDict(colors.green), name => `--color-positive-${name}`),
-            info: makeVariable(prepColorDict(colors.teal), name => `--color-info-${name}`),
-            urge: makeVariable(prepColorDict(colors.indigo), name => `--color-urge-${name}`),
+            ...wrapColors()
         },
         spacing: {
             'px': 'var(--spacing-px, 1px)',
