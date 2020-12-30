@@ -1,30 +1,23 @@
-const REMOTE_THEMES = [
-    {
-        name: "Default",
-        url: "/assets/css/themes/default.css",
-    },
-    {
-        name: "Solarized Light",
-        url: "/assets/css/themes/solarized-light.css",
-    }
-]
-
 function getDefaultTheme() {
     return {
         name: "Default",
         rules: "",
+        time: new Date().getTime()
     };
 }
 
-let theme = getDefaultTheme();
 
 function loadThemeFromStorage() {
-    theme = {
-        name: "Default",
-        rules: "",
-    };
+    let theme = getDefaultTheme();
+
     if (window.localStorage.getItem("theme") !== null) {
-        theme = JSON.parse(window.localStorage.getItem("theme"));
+        let storedTheme = JSON.parse(window.localStorage.getItem("theme"));
+
+        // If the theme doesn't have an associated time or was set more than 24h ago,
+        // reset.
+        if (("time" in storedTheme) && new Date().getTime() < storedTheme.time + 24*60*60*1000) {
+            theme = storedTheme;
+        }
     }
     document.querySelector("#custom-theme").textContent = theme.rules;
 }
@@ -33,6 +26,7 @@ function writeThemeToStorage(name, rules) {
     window.localStorage.setItem("theme", JSON.stringify({
         name: name,
         rules: rules,
+        time: new Date().getTime()
     }));
     loadThemeFromStorage();
 }
