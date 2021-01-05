@@ -15,11 +15,11 @@ variables:
   - name: --kbd-background
     type: color
     description: sets the kbd background
-    default: theme("colors.neutral.700")
+    default: var(--color-neutral-700)
   - name: --kbd-color
     type: color
     description: sets the color
-    default: theme("colors.white")
+    default: var(--color-neutral-000)
 ---
 
 # Overview
