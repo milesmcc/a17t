@@ -1,7 +1,4 @@
 :root {
-  /* Curious how this works? The `-fallback` colors are a17t's defaults. We just invert them!
-     This approach won't work for all interfaces, so be sure to pick your colors carefully. */
-
   --color-neutral-900: #f9fafb;
   --color-neutral-800: #f3f4f6;
   --color-neutral-700: #e5e7eb;
@@ -11,7 +8,7 @@
   --color-neutral-300: #4b5563;
   --color-neutral-200: #374151;
   --color-neutral-100: #1f2937;
-  --color-neutral-50: #111827;
+  --color-neutral-50: #172136;
   --color-neutral-000: #0b0f18;
 
   --color-critical-900: #fef2f2;
