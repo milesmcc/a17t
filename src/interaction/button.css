@@ -11,7 +11,7 @@
   position: relative;
   line-height: var(--button-line-height, 1.5);
   white-space: nowrap;
-  transition: filter var(--button-transition-speed, 75ms) linear;
+  transition: filter var(--button-transition-speed, 75ms) ease-in-out;
   transform-origin: center;
   text-decoration: none;
   appearance: none;
