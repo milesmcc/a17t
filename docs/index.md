@@ -171,7 +171,7 @@ title: "The atomic web toolkit for pragmatists"
               </span>
             </span>
             <h4 class="mb-1 text-xl heading">Lightweight &amp; modern</h4>
-            <p>a17t is built using PostCSS, CSS variables, and Tailwind CSS. That means it's reliable, customizable,
+            <p>a17t has no dependencies. That means it's reliable, customizable,
               and can integrate with any JS stack. Just import a small pure CSS file and you're good to go.</p>
           </div>
           <div class="mb-6">
