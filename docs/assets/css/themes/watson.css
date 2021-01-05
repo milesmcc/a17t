@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --color-urge-50: #EFF6FF;
+    --color-urge-100: #DBEAFE;
+    --color-urge-200: #BFDBFE;
+    --color-urge-300: #93C5FD;
+    --color-urge-400: #60A5FA;
+    --color-urge-500: #3B82F6;
+    --color-urge-600: #2563EB;
+    --color-urge-700: #1D4ED8;
+    --color-urge-800: #1E40AF;
+    --color-urge-900: #1E3A8A;
+
+    --color-neutral-50: #F8FAFC;
+    --color-neutral-100: #F1F5F9;
+    --color-neutral-200: #E2E8F0;
+    --color-neutral-300: #CBD5E1;
+    --color-neutral-400: #94A3B8;
+    --color-neutral-500: #64748B;
+    --color-neutral-600: #475569;
+    --color-neutral-700: #334155;
+    --color-neutral-800: #1E293B;
+    --color-neutral-900: #0F172A;
+
+    --border-radius-sm: none;
+    --border-radius-default: none;
+    --border-radius-md: none;
+    --border-radius-lg: none;
+    --border-radius-xl: none;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 900;
+    --font-weight-bold: 900;
+    --font-weight-extrabold: 900;
+    --font-weight-black: 900;
+
+    --box-shadow-xs: none;
+    --box-shadow-sm: none;
+    --box-shadow-default: none;
+    --box-shadow-md: none;
+    --box-shadow-lg: none;
+    --box-shadow-xl: none;
+    --box-shadow-2xl: none;
+
+    --family-secondary: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --family-primary: var(--family-secondary);
+}
+
+.card {
+    box-shadow: none;
+    border: 1px solid var(--color-light);    
+}
