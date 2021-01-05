@@ -17,7 +17,7 @@
   }
 
   &::placeholder {
-    @apply opacity-50;
+    @apply opacity-75;
   }
 
   &:hover {
