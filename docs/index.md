@@ -65,7 +65,7 @@ title: "The atomic web toolkit for pragmatists"
   </div>
   <div>
     <label class="label" for="toolkit">Favorite toolkit</label>
-    <input id="toolkit" type="text" class="input ~critical !normal my-1 max-w-xs  block" placeholder="At least 8 characters..."
+    <input id="toolkit" type="text" class="input ~critical !normal my-1 max-w-xs block" placeholder="At least 8 characters..."
       value="Not a17t">
     <p class="support ~critical">The correct answer is a17t!</p>
   </div>
