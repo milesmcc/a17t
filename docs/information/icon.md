@@ -31,7 +31,7 @@ Icons are deceptively difficult. Usually, they are loaded from a separate source
 
 The icon element has two purposes: to give all icons a set width and height (`1em` by `1em` by default) so that the page doesn't resize when they load, and to ensure that the icon is the correct color (by setting the `color` and `fill` properties).
 
-If you're looking for a nice way to display icons in your content, consider using the icon element in conjunction with a [shield](./shield).
+If you're looking for a nice way to display icons in your content, consider using the icon element in conjunction with a [shield](/information/shield/).
 
 # Considerations
 
