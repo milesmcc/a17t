@@ -11,7 +11,7 @@
     &bull;
     <a href="https://www.jsdelivr.com/package/npm/a17t">CDN</a>
     &bull;
-    <a href="LICENSE.md">License (MIT)</a>
+    <a href="https://miles.land/officehours/">Office Hours</a>
   </p>
 </p>
 
