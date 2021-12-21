@@ -4,11 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all prelim:twcss --parallel dev:*",
-      "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
-      "prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/base.css -o ./assets/css/dist/base.css --jit",
-      "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/base.css -o ./assets/css/dist/base.css --jit -w",
-      "dev:jekyll": "bundle exec jekyll serve --watch",
+      "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all dev:*",
+      "build": "NODE_ENV=production npm-run-all clean prod:*",
+      "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/base.css -o ./assets/css/dist/base.css --jit",
+      "dev:jekyll": "bundle exec jekyll serve",
       "prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/base.css -o ./assets/css/dist/base.css --jit --minify",
       "prod:jekyll": "bundle exec jekyll build"
     },
