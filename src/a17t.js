@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) {
     // Default values for when a specific priority is not specified
     addBase({
-        ":root": {
+        "*": {
             "--color-fill": "var(--color-fill-low)",
             "--color-content": "var(--color-content-low)",
         }
