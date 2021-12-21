@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
     color: var(--color-urge-core);
 }
