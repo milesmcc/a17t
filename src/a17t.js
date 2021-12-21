@@ -44,6 +44,8 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./information/chip")(c),
         ...require("./information/icon")(c),
         ...require("./information/progress")(c),
+        ...require("./information/shield")(c),
+        ...require("./information/table")(c),
     })
 });
 
