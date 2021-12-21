@@ -1,0 +1,16 @@
+<footer class="family-secondary support content">
+  <p><span class="@chip #low ~pink">Test</span></p>
+  <p><span class="@badge #low ~pink">Test</span></p>
+  <p class="pb-2">
+    Hi! If you made it this far, maybe you want to stay in touch. You can follow me on <a href="https://twitter.com/milesmccain">Twitter</a>, subscribe via <a href="/index.xml">Atom/RSS</a>, or sign up for my <a href="/letter/">infrequent email letter</a>.
+  </p>
+  <p class="pb-8">
+    &copy; R. Miles McCain {{ now.Format "2006"}}.
+    Content is licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, a Free Culture License.
+    The <a href="https://github.com/milesmcc/personal">source code</a> is available under <a href="https://github.com/milesmcc/personal/blob/master/LICENSE">GPLv3</a>.
+    This site collects (minimal) user analytics using <a href="https://github.com/milesmcc/shynet">Shynet</a>.
+    {{ range .AlternativeOutputFormats -}}
+    This page is also available via <a href="{{ .Permalink }}">{{ .Name }}</a>.
+    {{ end -}}
+  </p>
+</footer>

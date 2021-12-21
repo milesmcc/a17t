@@ -1,0 +1,41 @@
+<section>
+    <div>
+        {{if (not (eq ($.Param "link") nil))}}
+        <a href="{{ $.Param "link" }}">
+            {{end}}
+            {{if (not (eq ($.Param "icon") nil)) }}
+            {{ $icon := resources.Get ($.Param "icon.url") | resources.Minify | resources.Fingerprint }}
+            <img class="float-right h-32 hover-rotate pl-4" src="{{ $icon.Permalink }}" alt="{{ $.Param "icon.alt" }}">
+            {{ end }}
+            <h3 class="inline heading font-bold md:text-4xl">
+                {{ .Title | safeHTML }}
+                {{if (not (eq ($.Param "link") nil))}}
+                &nearr;
+                {{end}}
+            </h3>
+            <h3 class="inline heading font-bold md:text-4xl opacity-50">
+                {{if (not (eq ($.Param "subtitle") nil))}}
+                <br>{{ $.Param "subtitle" | safeHTML }}
+                {{end}}
+            </h3>
+            {{if (not (eq ($.Param "link") nil))}}
+        </a>
+        {{end}}
+    </div>
+    <div class="mt-4">
+        {{ if (not (eq ($.Param "dateOverride") nil))}}
+        <span class="chip ~neutral !low -ml-2 mb-2">
+            {{ $.Param "dateOverride" }}
+        </span>
+        {{ else if (not (eq ($.Param "date") nil))}}
+        <span class="chip ~neutral !low -ml-2 mb-2">
+            {{ .Date.Format "Jan 2, 2006" }}
+        </span>
+        {{ end }}
+        {{ range (.GetTerms "tags") }}
+        {{ if (not (eq (.Param "hidden") true))}}
+        <a class="chip ~neutral !normal bg-neutral-100 mb-2 mr-2" href="{{ .Permalink }}" aria-label="tagged under {{ .LinkTitle }}">{{ .LinkTitle }}</a>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>

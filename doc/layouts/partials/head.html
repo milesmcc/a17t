@@ -1,0 +1,12 @@
+{{ $title := printf `%s | %s` (default (truncate 64 .Summary) .Title) .Site.Title }}
+<title>{{ $title }}</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ default (truncate 160 ("&hellip;" | safeHTML) .Summary) .Description }}" />
+<meta property="og:description" content="{{ default (truncate 160 ("&hellip;" | safeHTML) .Summary) .Description }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<link rel="stylesheet" href="/gen/style.css" />

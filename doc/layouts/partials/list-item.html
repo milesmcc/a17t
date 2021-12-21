@@ -1,0 +1,41 @@
+<li class="mb-4">
+  <a {{ if (not (eq ($.Param "link") nil))}}href="{{ $.Param "link" }}" rel="nofollow noopener" {{else}} href="{{ .Permalink }}" {{end}} class="md:flex">
+    <div class="md:w-9/12">
+      <h3 class="heading text-base font-normal content text-neutral-800">
+      {{ if .Title }}
+      {{ .Title }}
+      {{ if (eq ($.Param "highlightSubtitle") true) }}
+      <span class="text-neutral-500">
+        &mdash; {{ $.Param "subtitle" }}
+      </span>
+      {{ end }}
+      {{ else }}
+      {{ .Summary }}
+      {{ if .Truncated }}
+      &rarr;
+      {{ end }}
+      {{ end }}
+      {{ if (not (eq ($.Param "link") nil))}}&nearr;{{end}}
+      </h3>
+      <span class="md:hidden pl-0 badge ~neutral !low inline">
+        {{ if (not (eq ($.Param "dateOverride") nil))}}
+        {{ $.Param "dateOverride" }}
+        {{ else }}
+        {{ .Date.Format "Jan 2, 2006" }}
+        {{ end }}
+      </span>
+      {{ range (.GetTerms "tags") }}
+      {{ if (not (eq (.Param "hidden") true))}}
+      <span class="badge {{ default "~neutral" (.Param "class") }} !normal bg-neutral-100 font-normal inline">{{ .Title }}</span>
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="hidden md:block support family-secondary md:w-3/12 text-right md:pl-2 mt-0 text-neutral-600">
+      {{ if (not (eq ($.Param "dateOverride") nil))}}
+      {{ $.Param "dateOverride" }}
+      {{ else }}
+      {{ .Date.Format "Jan 2, 2006" }}
+      {{ end }}
+    </div>
+  </a>
+</li>

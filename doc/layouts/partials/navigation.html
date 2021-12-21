@@ -1,0 +1,25 @@
+{{ $currentPage := . }}
+<nav class="flex justify-between w-full items-center md:block mb-12 md:mb-0" aria-label="navigation">
+  <a class="flex justify-end md:w-full md:mb-12" href="/">
+    {{ $img := resources.Get "images/icon.svg" | resources.Fingerprint }}
+    <img class="h-8 w-8 md:h-12 md:w-12" alt="a17t icon" src="{{ $img.Permalink }}" />
+  </a>
+  <div class="text-right md:-mt-1 {{ if (not (or (eq $currentPage.RelPermalink "/") .IsNode)) }}md:opacity-50 transition-opacity hover:opacity-100 focus:opacity-100{{ end }}">
+    <div class="md:text-right">
+      <ul class="-ml-2 md:ml-0 flex md:block">
+        {{ range .Site.Menus.main }}
+        <li>
+          <div class="portal font-semibold ~{{ .Params.style }} {{ if hasPrefix $currentPage.RelPermalink .URL }} active {{ else }} text-{{ .Params.style }}-500 {{ end }}">
+            <a href="{{ .URL }}">
+              {{ .Pre }}
+              <span>{{ .Name }}</span>
+              {{ .Post }}
+            </a>
+          </div>
+          <br>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
