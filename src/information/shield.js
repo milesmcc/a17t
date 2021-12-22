@@ -6,7 +6,7 @@ module.exports = ({ theme }) => {
             "display": "inline-flex",
             "vertical-align": "middle",
             "justify-content": "center",
-            "padding": theme("padding.2"),
+            "padding": theme("padding.4"),
             "border-radius": theme("borderRadius.full")
         }
     }
