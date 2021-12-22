@@ -7,10 +7,10 @@ module.exports = {
             colors: {
                 neutral: colors.gray,
                 positive: colors.green,
-                urge: colors.purple,
+                urge: colors.violet,
                 warning: colors.yellow,
                 info: colors.blue,
-                error: colors.red
+                critical: colors.red
             }
         },
     },

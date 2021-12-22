@@ -1,7 +1,7 @@
 module.exports = ({ theme }) => {
     return {
         ".card": {
-            "background-color": theme("color.transparent"),
+            "background-color": "var(--color-fill)",
             "color": "var(--color-content)",
             "display": "block",
             "padding": theme("spacing.4"),

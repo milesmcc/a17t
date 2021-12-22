@@ -4,7 +4,7 @@ module.exports = ({ theme }) => {
           "z-index": "1",
           "position": "relative",
           "cursor": "pointer",
-          ".\\@dropdown-display": {
+          ".dropdown-display": {
             "visibility": "hidden",
             "opacity": "0",
             "position": "absolute",
@@ -22,7 +22,7 @@ module.exports = ({ theme }) => {
             }
           },
           "&.selected": {
-            ".\\@dropdown-display": {
+            ".dropdown-display": {
               "visibility": "visible",
               "opacity": "1",
             }

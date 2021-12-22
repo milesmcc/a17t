@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
     return {
-        ".\\@chip": {
+        ".chip": {
             "background-color": "var(--color-fill)",
             "color": "var(--color-content)",
         }
