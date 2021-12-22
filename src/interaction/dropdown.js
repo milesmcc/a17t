@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
   return {
-      ".\\@dropdown": {
+      ".dropdown": {
           "z-index": "1",
           "position": "relative",
           "cursor": "pointer",

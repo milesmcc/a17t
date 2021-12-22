@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
     return {
-        ".\\@progress": {
+        ".progress": {
             "appearance": "none",
             "height": "1em",
             "display": "block",

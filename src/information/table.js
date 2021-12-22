@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
   return {
-      ".\\@table": {
+      ".table": {
           "width": "100%",
           "max-width": "100%",
           "overflow": "auto",

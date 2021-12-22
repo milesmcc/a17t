@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
     return {
-        ".\\@icon": {
+        ".icon": {
             "color": "var(--color-content)",
             "fill": "--color-content",
             "align-items": "center",

@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
   return {
-      ".\\@portal": {
+      ".portal": {
           "display": "inline-flex",
           "align-items": "left",
           "justify-content": "left",

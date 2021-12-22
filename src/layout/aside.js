@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
   return {
-      ".\\@aside": {
+      ".aside": {
           "border-left": "3px solid var(--color-content)",
           "background-color": "var(--color-fill)",
           "color": "var(--color-content)",

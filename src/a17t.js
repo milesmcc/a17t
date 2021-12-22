@@ -11,11 +11,11 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
 
     // Utilities: !high and !low
     let priorityVariants = {};
-    priorityVariants[".\\#high"] = {
+    priorityVariants[".\\@high"] = {
         "--color-fill": "var(--color-fill-high)",
         "--color-content": "var(--color-content-high)",
     }
-    priorityVariants[".\\#low"] = {
+    priorityVariants[".\\@low"] = {
         "--color-fill": "var(--color-fill-low)",
         "--color-content": "var(--color-content-low)",
     }

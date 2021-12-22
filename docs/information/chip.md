@@ -7,13 +7,13 @@ title: Chip
 description: An inline element for statuses, labels, categories, and more
 source: https://github.com/milesmcc/a17t/blob/master/src/information/chip.css
 selectors:
-  - .@chip
+  - .chip
 features:
   - Tones
   - Priorities
 display: Inline Flex
 examples:
-  - "<span class='@chip ~gray'>Chip</span>\n<span class='@chip ~green'>Chip</span>\n<span class='@chip ~yellow'>Chip</span>\n<span class='@chip ~red'>Chip</span>\n<span class='@chip ~blue'>Chip</span>\n<span class='@chip ~purple'>Chip</span>"
+  - "<span class='chip ~gray'>Chip</span>\n<span class='chip ~green'>Chip</span>\n<span class='chip ~yellow'>Chip</span>\n<span class='chip ~red'>Chip</span>\n<span class='chip ~blue'>Chip</span>\n<span class='chip ~purple'>Chip</span>"
 variables:
   - name: --color-fill
     type: color

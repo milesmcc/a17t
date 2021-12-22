@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
     return {
-        ".\\@shield": {
+        ".shield": {
             "background-color": "var(--color-fill)",
             "color": "var(--color-content)",
             "display": "inline-flex",
