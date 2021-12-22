@@ -56,6 +56,14 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./layout/sep")(c),
 
         ...require("./typography/code")(c),
+        ...require("./typography/content")(c),
+        ...require("./typography/heading")(c),
+        ...require("./typography/kbd")(c),
+        ...require("./typography/label")(c),
+        ...require("./typography/pre")(c),
+        ...require("./typography/subheading")(c),
+        ...require("./typography/support")(c),
+        ...require("./typography/supra")(c),
     })
 });
 
