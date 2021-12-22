@@ -46,6 +46,11 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./information/progress")(c),
         ...require("./information/shield")(c),
         ...require("./information/table")(c),
+
+        ...require("./interaction/button")(c),
+        ...require("./interaction/dropdown")(c),
+
+        ...require("./layout/aside")(c),
     })
 });
 
