@@ -13,7 +13,7 @@ features:
   - Auto-Elements
 display: Inherited
 examples:
-  - "<section class='content'>\n  <h2>Hello world!</h2>\n  <p>The content element makes sure things like spacing, colors, and sizing\n    look right for the 'classic' HTML content tags.</p>\n  <blockquote>\n    <p>It's very helpful for rendering markdown!</p>\n    <p>Have as many paragraphs as you want.</p>\n    <cite>&mdash; Miles McCain</cite>\n  </blockquote>\n</section>"
+  - "<section class='content ~neutral'>\n  <h2>Hello world!</h2>\n  <p>The content element makes sure things like spacing, colors, and sizing\n    look right for the 'classic' HTML content tags.</p>\n  <blockquote>\n    <p>It's very helpful for rendering markdown!</p>\n    <p>Have as many paragraphs as you want.</p>\n    <cite>&mdash; Miles McCain</cite>\n  </blockquote>\n</section>"
 variables:
   - name: --body-line-height
     type: ratio

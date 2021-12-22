@@ -38,7 +38,7 @@ layout: default
   <article class="w-full mt-4 md:w-2/3">
     {% if page.examples %}
     {% for example in page.examples %}
-    <div class="card ~neutral mb-4">
+    <div class="card bg-white mb-4">
       {{example}}
       <div class="mt-6 overflow-auto text-sm" style="max-height: 20rem;">
         {% highlight html %}{{example}}{% endhighlight %}
@@ -50,42 +50,5 @@ layout: default
     <main class="content">
       {{content}}
     </main>
-    <h1 class="mt-16 mb-4 text-3xl heading">Customization</h1>
-    {% if page.variables %}
-    <article class="max-w-full card bg-white overflow-auto">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for variable in page.variables %}
-          <tr>
-            <td><code>{{variable.name}}</code></td>
-            <td><span class="chip ~neutral @high">{{variable.type}}</code></td>
-            <td>
-              {% if variable.default %}
-              <code>{{variable.default}}</code>
-              {% else %}
-              &mdash;
-              {% endif %}
-            </td>
-            <td>{{variable.description}}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </article>
-    {% else %}
-    <p class="my-4">This element has no variables.</p>
-    {% endif %}
-    <p class="my-4 content">You can also customize this element by simply overriding any of its CSS attributes, listed
-      <a href="{{page.source}}">here</a>. Contextual variable defaults (e.g., <code>--color-content</code>) and global
-      variables (e.g., <code>--family-primary</code>) are defined <a
-        href="https://github.com/milesmcc/a17t/tree/master/src/vars">here</a>.</p>
   </article>
 </div>
