@@ -1,6 +1,0 @@
-.kbd {
-  background-color: var(--kbd-background, var(--color-neutral-000));
-  color: var(--kbd-color, var(--color-neutral-700));
-
-  @apply rounded py-px px-1 inline font-mono;
-}
