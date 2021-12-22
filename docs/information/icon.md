@@ -10,7 +10,7 @@ selectors:
   - .icon
 display: Inline Flex
 examples:
-  - "<span class=\"icon m-2 ~positive !low\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\">\n    <g stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\">\n      <path d=\"M11.29 11.71l-4-4\" />\n      <circle cx=\"5\" cy=\"5\" r=\"4\" />\n    </g>\n  </svg>\n</span>"
+  - "<span class=\"icon m-2 ~positive @low\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\">\n    <g stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\">\n      <path d=\"M11.29 11.71l-4-4\" />\n      <circle cx=\"5\" cy=\"5\" r=\"4\" />\n    </g>\n  </svg>\n</span>"
 variables:
   - name: --color-content
     type: color
@@ -45,7 +45,7 @@ Icons inherit their color from their context using the `--color-content` variabl
 
 {% capture example %}
 {% for tone in site.tones %}
-<span class="icon m-2 ~{{tone}} !low">
+<span class="icon m-2 ~{{tone}} @low">
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13">
         <g stroke-width="2" stroke="currentColor" fill="none">
             <path d="M11.29 11.71l-4-4" />

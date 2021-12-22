@@ -51,7 +51,7 @@ File uploads are headless --- they don't have a default style on their own --- s
 {% capture example %}
 <label class='upload !normal'>
   <input type='file'>
-  <span class='button ~neutral !high'>Select a File</span>
+  <span class='button ~neutral @high'>Select a File</span>
   <span>screenshot.jpg</span>
 </label>
 {% endcapture %}

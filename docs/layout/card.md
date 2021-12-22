@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Block
 examples:
-  - "<div class='card ~info !high'>\n  <strong>Hello world!</strong> This is what a card can look like.\n</div>"
+  - "<div class='card ~info @high'>\n  <strong>Hello world!</strong> This is what a card can look like.\n</div>"
 variables:
   - name: --color-content
     type: color
@@ -62,7 +62,7 @@ Cards have full tone and priority support.
 # Examples
 
 {% capture example %}
-<div class="card ~neutral !low md:flex max-w-lg">
+<div class="card ~neutral @low md:flex max-w-lg">
   <img class="rounded-full mx-auto h-20 w-20 md:mr-6 mb-6" src="{{ '/assets/profile_image.png' | relative_url }}">
   <div class="flex-grow text-center md:text-left mb-0">
     <h4 class="heading my-0">Alex Hershenstein</h4>
@@ -77,7 +77,7 @@ Cards have full tone and priority support.
 {% include example.html code=example classes="bg-neutral-100"%}
 
 {% capture example %}
-<alert class="card ~critical !high">
+<alert class="card ~critical @high">
   <p><b>Something went wrong!</b> Just kidding. This is just a static demonstration.</p>
 </alert>
 {% endcapture %}

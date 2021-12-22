@@ -9,7 +9,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         }
     })
 
-    // Utilities: !high and !low
+    // Utilities: @high and @low
     let priorityVariants = {};
     priorityVariants[".\\@high"] = {
         "--color-fill": "var(--color-fill-high)",

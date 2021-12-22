@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Inherited
 examples:
-  - "<div class='card ~neutral !low p-0 border'>\n  <div class='p-4'>\n    <h2 class='heading text-xl mb-1'>Welcome to the team.</h2>\n    <p>Lorem ipsum dolor sit amet. I forget the rest of lorem ipsum and don't want to look it up, so here's this instead.</p>\n  </div>\n  <section class='section ~info p-4'>\n    <span class='button ~info !high'>Save</span>\n    <span class='button bg-transparent'>Go Back</span>\n  </section>\n</div>"
+  - "<div class='card ~neutral @low p-0 border'>\n  <div class='p-4'>\n    <h2 class='heading text-xl mb-1'>Welcome to the team.</h2>\n    <p>Lorem ipsum dolor sit amet. I forget the rest of lorem ipsum and don't want to look it up, so here's this instead.</p>\n  </div>\n  <section class='section ~info p-4'>\n    <span class='button ~info @high'>Save</span>\n    <span class='button bg-transparent'>Go Back</span>\n  </section>\n</div>"
 variables:
   - name: --color-content
     type: color

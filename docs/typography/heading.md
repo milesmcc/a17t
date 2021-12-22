@@ -39,7 +39,7 @@ The heading has full contextual tone and priority support.
 
 {% capture example %}
 {% for tone in site.tones %}
-<h3 class="heading ~{{tone}} !low">This is a toned heading.</h3>
+<h3 class="heading ~{{tone}} @low">This is a toned heading.</h3>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}

@@ -40,7 +40,7 @@ layout: default
     <h3 class="heading text-2xl py-4">Icons</h3>
     {% capture example %}
     {% for tone in site.tones %}
-    <span class="icon m-2 ~{{tone}} !low">
+    <span class="icon m-2 ~{{tone}} @low">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13">
             <g stroke-width="2" stroke="currentColor" fill="none">
                 <path d="M11.29 11.71l-4-4" />
@@ -303,7 +303,7 @@ spansMultipleLines();
     {% include example.html code=example %}
 
     {% capture example %}
-    <div class="button ~neutral !high">
+    <div class="button ~neutral @high">
         More Options
         <span class="icon ml-4 mr-1">
             <i class="chev"></i>

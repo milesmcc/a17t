@@ -17,7 +17,7 @@ features:
   - Manual
 display: Inherited
 examples:
-  - "<span class='dropdown' tabindex='0'>\n  <span class='button ~neutral'>\n    <span>Select me</span>\n    <span class='ml-3 chev'></span>\n  </span>\n  <div class='dropdown-display'>\n    <div class='card ~neutral !high my-4 w-48'>Hello world!</div>\n  </div>\n</span>"
+  - "<span class='dropdown' tabindex='0'>\n  <span class='button ~neutral'>\n    <span>Select me</span>\n    <span class='ml-3 chev'></span>\n  </span>\n  <div class='dropdown-display'>\n    <div class='card ~neutral @high my-4 w-48'>Hello world!</div>\n  </div>\n</span>"
 variables:
   - name: --dropdown-animation-speed
     type: time

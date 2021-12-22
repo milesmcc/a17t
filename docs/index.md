@@ -4,7 +4,7 @@ title: "The atomic web toolkit for pragmatists"
 ---
 
 {% capture example_profile %}
-<div class="card ~neutral !low md:flex max-w-lg">
+<div class="card ~neutral @low md:flex max-w-lg">
   <div class="w-20 h-20 mx-auto mb-6 md:mr-6 flex-shrink-0">
     <img class="object-cover rounded-full" src="{{ '/assets/profile_image.png' | relative_url }}">
   </div>
@@ -50,10 +50,10 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_form %}
-<form class="card ~neutral !low">
+<form class="card ~neutral @low">
   <div class="mb-4">
     <label class="label" for="toolkit">Current job</label>
-    <div class="select ~neutral !low my-1 max-w-xs">
+    <div class="select ~neutral @low my-1 max-w-xs">
       <select>
         <option>Teacher</option>
         <option>Engineer</option>
@@ -73,14 +73,14 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_delete %}
-<div class="card ~neutral !low p-0 max-w-sm">
+<div class="card ~neutral @low p-0 max-w-sm">
   <div class="p-4">
     <h2 class="mb-1 text-lg heading">Just making sure!</h2>
     <p class="mb-3 text-base support">To confirm you'd like to delete this repository, please enter its name below.</p>
     <input class="input" type="text" placeholder="milesmcc/a17t">
   </div>
   <section class="section ~critical p-4">
-    <span class="button ~critical !high">Delete</span>
+    <span class="button ~critical @high">Delete</span>
     <span class="button ~neutral bg-transparent">Go Back</span>
   </section>
 </div>
@@ -206,8 +206,8 @@ title: "The atomic web toolkit for pragmatists"
             ~positive</code>.</p>
         <h2>Use priorities to control prominence</h2>
         <p>There are three priorities &mdash; low, normal, and high. You can specify a
-          priority by its class: an exclamation point followed by its name (e.g., <code class="code">!high</code> or
-          <code class="code">!low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
+          priority by its class: an exclamation point followed by its name (e.g., <code class="code">@high</code> or
+          <code class="code">@low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
           (communicated through drop shadow) when changing colors wouldn't look good.</p>
         <h2>Consider using with Tailwind</h2>
         <p>Because a17t only provides the core elements of your interface, like buttons and form inputs, you'll need a
@@ -254,7 +254,7 @@ title: "The atomic web toolkit for pragmatists"
       </aside>
       <div class="md:w-9/12">
         <p class="mb-2 label">Using NPM (recommended)</p>
-        <div class="card ~neutral !high font-mono mb-4">
+        <div class="card ~neutral @high font-mono mb-4">
           npm install a17t
         </div>
         <p class="mb-2 content">Import a17t in your JavaScript using <code class="code">import 'a17t'</code> or into your preprocessed CSS using <code class="code">@import 'a17t';</code>. For more information about
@@ -263,7 +263,7 @@ title: "The atomic web toolkit for pragmatists"
           to import it.</p>
         <p class="mb-6">Optionally use a17t's Tailwind distribution in your JavaScript with <code class="code">import 'a17t/dist/tailwind.css'</code> or in your CSS with <code class="code">@import 'a17t/dist/tailwind.css'</code>. The benefit of using a17t's Tailwind CSS distribution is that it uses the same CSS variables as a17t. That way, if you change your color scheme (for example), your Tailwind classes will change as well. (Note that the color names for a17t's Tailwind distribution match other a17t's naming system&mdash;e.g., the class for light grey text is `text-neutral-300`.)</p>
         <p class="mb-2 label">Using a CDN</p>
-        <div class="card ~neutral !high font-mono mb-4 text-sm">
+        <div class="card ~neutral @high font-mono mb-4 text-sm">
           &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
         </div>
         <aside class="aside ~urge content">
@@ -278,7 +278,7 @@ title: "The atomic web toolkit for pragmatists"
           <p>
             <strong>Add <code class="code">~*</code> and <code class="code">!*</code> classes to your <a href="https://purgecss.com/safelisting.html">PurgeCSS class safelist</a>,
             if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code class="code">~urge</code>
-            and <code class="code">!low</code>). Add the following to your PurgeCSS config: <code class="code">safelistPatterns: [/^~/, /^!/]</code>.
+            and <code class="code">@low</code>). Add the following to your PurgeCSS config: <code class="code">safelistPatterns: [/^~/, /^!/]</code>.
           </p>
         </aside>
       </div>

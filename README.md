@@ -23,8 +23,8 @@ a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be insta
 **Build beautiful, unique interfaces without reinventing the wheel. Let a17t provide the core building blocks, then customize with ease.**
 
 ```html
-<article class="card ~positive !high">
-  <!-- ~positive is for tone; !high is for priority -->
+<article class="card ~positive @high">
+  <!-- ~positive is for tone; @high is for priority -->
   
   <b>Congratulations!</b>
   You're using a17t to build a beautiful interface.

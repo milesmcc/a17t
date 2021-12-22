@@ -40,7 +40,7 @@ The supra has full contextual tone and priority support.
 
 {% capture example %}
 {% for tone in site.tones %}
-<p class="supra ~{{tone}} !low">Up is down</p>
+<p class="supra ~{{tone}} @low">Up is down</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}

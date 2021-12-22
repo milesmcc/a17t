@@ -64,7 +64,7 @@ Badges have full tone and priority support.
 # Examples
 
 {% capture example %}
-<p>Unread <span class='badge ~critical !high'>55</span></p>
+<p>Unread <span class='badge ~critical @high'>55</span></p>
 {% endcapture %}
 {% include example.html code=example %}
 

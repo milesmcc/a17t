@@ -72,13 +72,13 @@ Asides have full tone support. They also support priorities, but if you're chang
 {% include example.html code=example %}
 
 {% capture example %}
-<aside class="aside ~info !low mb-4">
+<aside class="aside ~info @low mb-4">
     <p>This is a low-priority critical aside. <b>You probably don't want this, but... maybe you do?</b></p>
 </aside>
 <aside class="aside ~positive !normal mb-4">
     <p>This is a normal-priority positive aside. <b>This is probably what you want.</b></p>
 </aside>
-<aside class="aside ~info !high mb-4">
+<aside class="aside ~info @high mb-4">
     <p>This is a high-priority info aside. <b>In most cases, you probably don't want this &mdash; use a card instead.</b></p>
 </aside>
 {% endcapture %}

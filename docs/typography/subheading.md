@@ -39,7 +39,7 @@ The subheading has full contextual tone and priority support.
 
 {% capture example %}
 {% for tone in site.tones %}
-<p class="subheading ~{{tone}} !low">This is a toned subheading.</p>
+<p class="subheading ~{{tone}} @low">This is a toned subheading.</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}

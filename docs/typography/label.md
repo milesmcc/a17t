@@ -38,7 +38,7 @@ Labels have full tone and priority support. They will automatically look appropr
 
 {% capture example %}
 {% for tone in site.tones %}
-<p class="label ~{{tone}} !low">This is a {{tone}} label.</p>
+<p class="label ~{{tone}} @low">This is a {{tone}} label.</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -59,7 +59,7 @@ Labels have full tone and priority support. They will automatically look appropr
 {% include example.html code=example %}
 
 {% capture example %}
-<div class="~critical !low">
+<div class="~critical @low">
   <label class="label" for="biggame">Who will win the Big Game?</label>
   <input class="input my-2" id="biggame" type="text" value="Berkeley">
   <p class="support">That's wrong. Stanford will win.</p>

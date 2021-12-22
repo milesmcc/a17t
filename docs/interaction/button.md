@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<button class='button ~positive !low'>Button</button>\n<button class='button ~positive !normal'>Button</button>\n<button class='button ~positive !high'>Button</button>"
+  - "<button class='button ~positive @low'>Button</button>\n<button class='button ~positive !normal'>Button</button>\n<button class='button ~positive @high'>Button</button>"
 variables:
   - name: --color-fill
     type: color
@@ -74,7 +74,7 @@ Buttons have full tone and priority support.
 To make a block button, simply set the `width` to `100%` and the flex behavior to `justify-center`:
 
 {% capture example %}
-<div class="card ~neutral !low w-48 content">
+<div class="card ~neutral @low w-48 content">
   <p>Your form here...</p>
   <span class="button ~urge w-full justify-center">Click!</span>
 </div>
@@ -90,13 +90,13 @@ To make a block button, simply set the `width` to `100%` and the flex behavior t
 # Examples
 
 {% capture example %}
-<div class="card ~neutral !low p-0">
+<div class="card ~neutral @low p-0">
   <div class="p-4 content">
     <h3>I'm trying my best.</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo nulla. Nam vitae pellentesque risus. Duis faucibus erat sit amet arcu efficitur lobortis. Donec ac convallis diam, non suscipit mauris.</p>
   </div>
   <div class="p-4 section ~urge">
-    <span class="button ~urge !high">Save</span> <span class="button ~urge !low">Continue Editing</span>
+    <span class="button ~urge @high">Save</span> <span class="button ~urge @low">Continue Editing</span>
   </div>
 </div>
 {% endcapture %}

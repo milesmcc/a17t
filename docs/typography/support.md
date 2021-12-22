@@ -34,7 +34,7 @@ Supports have full tone and priority support. They will automatically look appro
 
 {% capture example %}
 {% for tone in site.tones %}
-<p class="support ~{{tone}} !low">This is a {{tone}} support.</p>
+<p class="support ~{{tone}} @low">This is a {{tone}} support.</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -54,7 +54,7 @@ Supports have full tone and priority support. They will automatically look appro
 {% include example.html code=example %}
 
 {% capture example %}
-<div class="~critical !low">
+<div class="~critical @low">
   <input class="input my-1" type="text" value="Berkeley">
   <p class="support">That's wrong. Stanford.</p>
 </div>
