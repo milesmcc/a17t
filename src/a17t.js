@@ -52,6 +52,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
 
         ...require("./layout/aside")(c),
         ...require("./layout/card")(c),
+        ...require("./layout/sep")(c),
     })
 });
 
