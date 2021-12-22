@@ -1,5 +1,0 @@
-.label {
-    color: var(--color-title);
-
-    @apply font-medium font-secondary;
-}
