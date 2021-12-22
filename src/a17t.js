@@ -51,6 +51,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./interaction/dropdown")(c),
 
         ...require("./layout/aside")(c),
+        ...require("./layout/card")(c),
     })
 });
 
