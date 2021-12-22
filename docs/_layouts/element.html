@@ -4,32 +4,32 @@ layout: default
 
 <div class="flex flex-wrap justify-between">
   <section class="self-start w-full md:w-1/3 md:pr-12 md:sticky mh-auto" style="top: 3rem;">
-    <h1 class="text-5xl heading text-urge-600 page-name">{{page.title}}</h1>
-    <p class="text-lg subheading">{{page.description}}</p>
+    <h1 class="text-5xl @heading text-urge-600 page-name">{{page.title}}</h1>
+    <p class="text-lg @subheading">{{page.description}}</p>
     <hr class="sep">
     <ul class="flex flex-wrap justify-between md:block">
       {% if page.display %}
       <li class="mb-4">
-        <p class="label">Display</p>
+        <p class="@label">Display</p>
         <p>{{page.display}}</p>
       </li>
       {% endif %}
       {% if page.selectors %}
       <li class="mb-4">
-        <p class="label">Selectors</p>
+        <p class="@label">Selectors</p>
         {% for selector in page.selectors %}<code class="block my-px">{{selector}}</code>{% endfor %}
       </li>
       {% endif %}
       {% if page.source %}
       <li class="mb-4">
-        <p class="label">Source</p>
-        <p><a href="{{page.source}}" class="p-0 font-normal portal">GitHub &nearr;</a></p>
+        <p class="@label">Source</p>
+        <p><a href="{{page.source}}" class="p-0 font-normal @portal">GitHub &nearr;</a></p>
       </li>
       {% endif %}
       {% if page.features %}
       <li class="w-full mb-4">
-        <p class="label">Features</p>
-        <p>{% for feature in page.features %}<span class="chip ~positive mr-1 mb-1">{{feature}}</span>{% endfor %}
+        <p class="@label">Features</p>
+        <p>{% for feature in page.features %}<span class="@chip ~positive mr-1 mb-1">{{feature}}</span>{% endfor %}
         </p>
       </li>
       {% endif %}
@@ -38,7 +38,7 @@ layout: default
   <article class="w-full mt-4 md:w-2/3">
     {% if page.examples %}
     {% for example in page.examples %}
-    <div class="card ~neutral !low mb-4">
+    <div class="@card ~neutral mb-4">
       {{example}}
       <div class="mt-6 overflow-auto text-sm" style="max-height: 20rem;">
         {% highlight html %}{{example}}{% endhighlight %}
@@ -52,7 +52,7 @@ layout: default
     </main>
     <h1 class="mt-16 mb-4 text-3xl heading">Customization</h1>
     {% if page.variables %}
-    <article class="max-w-full card ~neutral !low overflow-auto">
+    <article class="max-w-full @card ~neutral overflow-auto">
       <table class="table">
         <thead>
           <tr>
@@ -66,7 +66,7 @@ layout: default
           {% for variable in page.variables %}
           <tr>
             <td><code>{{variable.name}}</code></td>
-            <td><span class="chip ~neutral !high">{{variable.type}}</code></td>
+            <td><span class="@chip ~neutral #high">{{variable.type}}</code></td>
             <td>
               {% if variable.default %}
               <code>{{variable.default}}</code>
@@ -83,7 +83,7 @@ layout: default
     {% else %}
     <p class="my-4">This element has no variables.</p>
     {% endif %}
-    <p class="my-4 content">You can also customize this element by simply overriding any of its CSS attributes, listed
+    <p class="my-4 @content">You can also customize this element by simply overriding any of its CSS attributes, listed
       <a href="{{page.source}}">here</a>. Contextual variable defaults (e.g., <code>--color-content</code>) and global
       variables (e.g., <code>--family-primary</code>) are defined <a
         href="https://github.com/milesmcc/a17t/tree/master/src/vars">here</a>.</p>
