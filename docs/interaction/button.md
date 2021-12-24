@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<button class='button ~positive @low'>Button</button>\n<button class='button ~positive !normal'>Button</button>\n<button class='button ~positive @high'>Button</button>"
+  - "<button class='button ~positive @low'>Button</button>\n<button class='button ~positive @high'>Button</button>"
 variables:
   - name: --color-fill
     type: color

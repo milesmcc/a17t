@@ -1,6 +1,7 @@
 module.exports = ({ theme }) => {
   return {
       ".button": {
+          "border": theme("spacing.px") + " solid var(--color-accent)",
           "background-color": "var(--color-fill)",
           "color": "var(--color-content)",
           "display": "inline-flex",
@@ -19,6 +20,7 @@ module.exports = ({ theme }) => {
           "appearance": "none",
           "padding": theme("spacing.1") + " " + theme("spacing.2"),
           "border-radius": theme("borderRadius.DEFAULT"),
+          "box-shadow": theme("boxShadow.sm"),
           "outline": "none",
           "&:hover, &:focus": {
             "&:not([disabled]):not(.field)": {
@@ -28,6 +30,9 @@ module.exports = ({ theme }) => {
           "&[disabled]": {
             "opacity": "0.6",
             "cursor": "not-allowed"
+          },
+          "&:active": {
+            "box-shadow": theme("boxShadow.sm") + ", " + theme("boxShadow.inner")
           }
       }
   }
