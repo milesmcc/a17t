@@ -42,7 +42,7 @@ Progress bars have full tone support.
 
 {% capture example %}
 {% for tone in site.tones %}
-<progress class="progress ~{{tone}} mb-4" value="75" max="100">75%</progress>
+<progress class="progress ~{{tone}} @high {% if forloop.last == false %}mb-4{% endif %}" value="75" max="100">75%</progress>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -50,13 +50,5 @@ Progress bars have full tone support.
 # Accessibility
 
 {% include accessibility_defaults.html %}
-
-# Examples
-
-{% capture example %}
-<p class="label mb-2">Categories</p>
-<p><span class='chip ~neutral mb-1'>Design</span> <span class='chip ~neutral mb-1'>Architecture</span> <span class='chip ~neutral mb-1'>New York</span> <span class='chip ~neutral mb-1'>Urbanism</span></p>
-{% endcapture %}
-{% include example.html code=example %}
 
 {% include todo_more.html %}
