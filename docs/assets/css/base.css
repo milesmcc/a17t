@@ -6,8 +6,4 @@
     .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
         color: var(--color-urge-core);
     }
-    
-    .dark-only {
-        display: none;
-    }
 }
