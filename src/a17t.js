@@ -1,6 +1,15 @@
 const plugin = require('tailwindcss/plugin')
 
 let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) {
+    // Patch the "theme" function to support "theme.bg", falling back to "white" if necessary:
+    let newThemeFunc = (arg) => {
+        let res = theme(arg);
+        if (arg === "colors.bg" && res === undefined) {
+            return theme("colors.white");
+        }
+        return res;
+    }
+
     // Default values for when a specific priority is not specified
     addBase({
         "*": {
@@ -38,7 +47,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
     }
 
     // Register all the components!
-    let c = { theme }; // The arguments passed to each component
+    let c = { theme: newThemeFunc }; // The arguments passed to each component
     addComponents({
         ...require("./information/badge")(c),
         ...require("./information/chip")(c),
@@ -49,7 +58,9 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
 
         ...require("./interaction/button")(c),
         ...require("./interaction/dropdown")(c),
+        ...require("./interaction/field")(c),
         ...require("./interaction/portal")(c),
+        ...require("./interaction/select")(c),
 
         ...require("./layout/aside")(c),
         ...require("./layout/card")(c),
@@ -64,6 +75,8 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./typography/subheading")(c),
         ...require("./typography/support")(c),
         ...require("./typography/supra")(c),
+
+        ...require("./utils/chev")(c),
     })
 });
 
