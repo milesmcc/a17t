@@ -12,7 +12,7 @@ features:
   - Tones
 display: Block
 examples:
-  - "<progress class='progress' value='75' max='100'>75%</progress>"
+  - "<progress class='progress ~neutral' value='75' max='100'>75%</progress>"
 variables:
   - name: --progress-height
     type: size
