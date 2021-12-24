@@ -6,10 +6,10 @@ module.exports = ({ theme }) => {
           "overflow": "auto",
           "border-collapse": "collapse",
           "thead": {
-            "border-bottom-width": theme("border.DEFAULT")
+            "border-bottom-width": theme("borderWidth.DEFAULT")
           },
           "tfoot": {
-            "border-top-width": theme("border.DEFAULT")
+            "border-top-width": theme("borderWidth.DEFAULT")
           },
           "tr": {
             "display": "table-row",
