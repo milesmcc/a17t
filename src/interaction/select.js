@@ -3,11 +3,11 @@ module.exports = ({ theme }) => {
       ".select": {
           "position": "relative",
           "select": {
-            ...require("../interaction/field")({theme})[".field, .input"],
+            ...require("../interaction/field")({theme})[".field"],
             "padding-right": theme("spacing.10"),
             "display": "block",
           },
-          "&::after": {
+          ":after": {
             ...require("../utils/chev")({theme})[".chev"],
             "right": "1em",
             "position": "absolute"
