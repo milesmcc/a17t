@@ -5,12 +5,14 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                neutral: colors.gray,
+                neutral: colors.slate,
                 positive: colors.green,
                 urge: colors.violet,
                 warning: colors.yellow,
                 info: colors.blue,
-                critical: colors.red
+                critical: colors.red,
+                inf: "white",
+                zero: colors.slate[900]
             }
         },
     },
