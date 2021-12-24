@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<div class='select !normal max-w-xs'>\n  <select>\n    <option>Choice A</option>\n    <option>Choice B</option>\n    <option>Choice C</option>\n  </select>\n</div>"
+  - "<div class='select ~neutral max-w-xs'>\n  <select>\n    <option>Choice A</option>\n    <option>Choice B</option>\n    <option>Choice C</option>\n  </select>\n</div>"
 variables:
   - name: --color-light
     type: color
