@@ -7,7 +7,7 @@ module.exports = ({ theme }) => {
             "padding-right": theme("spacing.10"),
             "display": "block",
           },
-          ":after": {
+          "&:after": {
             ...require("../utils/chev")({theme})[".chev"],
             "right": "1em",
             "position": "absolute"
