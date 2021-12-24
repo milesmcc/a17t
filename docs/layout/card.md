@@ -76,11 +76,4 @@ Cards have full tone and priority support.
 {% endcapture %}
 {% include example.html code=example classes="bg-neutral-100"%}
 
-{% capture example %}
-<alert class="card ~critical @high">
-  <p><b>Something went wrong!</b> Just kidding. This is just a static demonstration.</p>
-</alert>
-{% endcapture %}
-{% include example.html code=example %}
-
 {% include todo_more.html %}
