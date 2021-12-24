@@ -13,8 +13,9 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
     // Default values for when a specific priority is not specified
     addBase({
         "*": {
-            "--color-fill": "var(--color-fill-low)",
-            "--color-content": "var(--color-content-low)",
+            "--color-fill": "var(--color-fill-low)", // Background color (e.g., for a chip)
+            "--color-content": "var(--color-content-low)", // Usually the text color
+            "--color-accent": "var(--color-accent-low)", // Slightly offset from the fill color (e.g., button outline)
         }
     })
 
@@ -23,10 +24,12 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
     priorityVariants[".\\@high"] = {
         "--color-fill": "var(--color-fill-high)",
         "--color-content": "var(--color-content-high)",
+        "--color-accent": "var(--color-accent-high)",
     }
     priorityVariants[".\\@low"] = {
         "--color-fill": "var(--color-fill-low)",
         "--color-content": "var(--color-content-low)",
+        "--color-accent": "var(--color-accent-low)",
     }
     addBase(priorityVariants)
 
@@ -41,6 +44,8 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
                 "--color-fill-low": values[200],
                 "--color-content-high": values[50],
                 "--color-content-low": values[800],
+                "--color-accent-high": values[600],
+                "--color-accent-low": values[300]
             }
         }
         addUtilities(colorVariants)
