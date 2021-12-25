@@ -86,33 +86,26 @@ title: "The atomic web toolkit for pragmatists"
 </div>
 {% endcapture %}
 
-<div class="items-center justify-between mb-24 md:flex md:mt-24">
-  <section class="mt-6 mb-12 mr-6 md:w-6/12">
-    <h2 class="text-lg heading md:text-3xl">
-      a17t, <i>noun</i> <span class="text-neutral-400">(ey&#712;seven&#712;teen&#712;tee) &mdash;</span><br>
-    </h2>
-    <h1 class="mb-4 text-4xl heading md:text-5xl text-urge-600">
-      atomic design toolkit
-    </h1>
-    <h3 class="mb-6 text-lg subheading md:text-xl font-primary">Build beautiful, unique interfaces
-    without reinventing the wheel. Let a17t provide
-      the core building blocks, then customize with ease.</h3>
-    <div>
-      <ul class="text-lg">
-        <li class="portal ~urge active"><a href="#install">Start</a></li>
-        <li class="portal"><a href="#design">Principles</a></li>
-        <li class="portal"><a href="#concepts">Concepts</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="md:w-5/12">
-    <img src="{{'/assets/main_code_demo.png'|relative_url}}" class="rounded" alt="a17t code demo">
-  </section>
+<div class="mb-24 md:mt-24">
+  <p class="text-center">
+    <a class="section ~urge @low rounded-full py-1 px-3" href="https://github.com/milesmcc/a17t/releases">
+      <i class="fa-brands fa-github"></i>
+      Version 0.8.0 released &rarr;
+    </a>
+  </p>
+  <h1 class="text-center heading text-6xl font-extrabold mt-4">Build beautiful interfaces without reinventing the wheel.</h1>
+  <h3 class="text-center subheading text-2xl mt-6">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
+  <div class="justify-center mt-6 flex gap-2">
+    <a href="/install" class="button ~urge @high px-4 py-2 font-md rounded-md">Get started</a>
+    <a href="https://github.com/milesmcc/a17t" class="button ~neutral @low px-4 py-2 font-md rounded-md">
+      View the source
+    </a>
+  </div>
 </div>
 
 <hr class="h-12 sep">
 
-<section class="md:flex">
+<section class="md:flex" id="fold">
   <div class="lg:w-9/12">
     <article class="md:flex">
       <aside class="self-start hidden w-3/12 mb-4 md:block mh-auto md:sticky md:pr-12 md:text-right" style="top: 2rem;">
