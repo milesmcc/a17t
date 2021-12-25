@@ -35,6 +35,7 @@ module.exports = ({ theme }) => {
   return {
     // We list these separately so that we can do `require(...)[".field"]` in other components.
     ".field": component,
-    ".input": component
+    ".input": component,
+    ".textarea": component,
   }
 }
