@@ -1,6 +1,8 @@
 const plugin = require('tailwindcss/plugin')
 
 let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) {
+
+
     // Patch the "theme" function to support "theme.bg", falling back to "white" if necessary:
     let newThemeFunc = (arg) => {
         let res = theme(arg);
@@ -16,6 +18,15 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
             "--color-fill": "var(--color-fill-low)", // Background color (e.g., for a chip)
             "--color-content": "var(--color-content-low)", // Usually the text color
             "--color-accent": "var(--color-accent-low)", // Slightly offset from the fill color (e.g., button outline)
+        },
+        "@keyframes spin": { // Used by .loading; must be in base
+            "0%": {
+                "transform": "rotate(0deg)",
+            },
+
+            "100%": {
+                "transform": "rotate(360deg)"
+            },
         }
     })
 
@@ -83,6 +94,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./typography/supra")(c),
 
         ...require("./utils/chev")(c),
+        ...require("./utils/loading")(c),
     })
 });
 
