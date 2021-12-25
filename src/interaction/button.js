@@ -18,7 +18,7 @@ module.exports = ({ theme }) => {
           "transform-origin": "center",
           "text-decoration": "none",
           "appearance": "none",
-          "padding": theme("spacing.1") + " " + theme("spacing.2"),
+          "padding": "0.25em 0.5em",
           "border-radius": theme("borderRadius.DEFAULT"),
           "box-shadow": theme("boxShadow.sm"),
           "outline": "none",
