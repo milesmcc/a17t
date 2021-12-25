@@ -31,7 +31,7 @@ variables:
 
 The badge is a small inline element ideal for data heavy interfaces. It's useful for drawing attention to the elements near it -- for example, as a "New" label or unread count.
 
-Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/chip) instead.
+Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/information/chip) instead.
 
 # Considerations
 
