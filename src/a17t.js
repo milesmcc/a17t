@@ -66,6 +66,7 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         ...require("./interaction/field")(c),
         ...require("./interaction/portal")(c),
         ...require("./interaction/select")(c),
+        ...require("./interaction/switch")(c),
 
         ...require("./layout/aside")(c),
         ...require("./layout/card")(c),
