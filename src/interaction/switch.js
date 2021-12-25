@@ -1,6 +1,6 @@
 module.exports = ({ theme }) => {
     return {
-        ".chip": {
+        ".switch": {
             "position": "relative",
             "display": "inline-block",
             "padding-right": theme("spacing.2"),
