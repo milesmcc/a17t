@@ -1,7 +1,7 @@
 module.exports = ({ theme }) => {
     return {
         ".pre": {
-            "background-color": theme("colors.gray.100"),
+            "background-color": theme("colors.gray.200"),
             "white-space": "pre",
             "code": {
                 "padding": theme("spacing.0"),
