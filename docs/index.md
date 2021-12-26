@@ -73,7 +73,7 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_delete %}
-<div class="card ~neutral @low p-0 max-w-sm">
+<div class="card ~neutral @low p-0 border-0">
   <div class="p-4">
     <h2 class="mb-1 text-lg heading">Just making sure!</h2>
     <p class="mb-3 text-base support">To confirm you'd like to delete this repository, please enter its name below.</p>
@@ -81,7 +81,7 @@ title: "The atomic web toolkit for pragmatists"
   </div>
   <section class="section ~critical p-4">
     <span class="button ~critical @high">Delete</span>
-    <span class="button ~neutral bg-transparent">Go Back</span>
+    <span class="pl-2 text-neutral-800">Go Back</span>
   </section>
 </div>
 {% endcapture %}
