@@ -9,7 +9,7 @@ module.exports = ({ theme }) => {
           "flex-wrap": "nowrap",
           "align-items": "center",
           "align-content": "center",
-          "justify-content": "space-between",
+          "justify-content": "center",
           "cursor": "pointer",
           "position": "relative",
           "line-height": "1.5",
