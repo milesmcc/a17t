@@ -50,25 +50,31 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_form %}
-<form class="card ~neutral @low">
-  <div class="mb-4">
-    <label class="label" for="toolkit">Current job</label>
-    <div class="select ~neutral @low my-1 max-w-xs">
-      <select>
-        <option>Teacher</option>
-        <option>Engineer</option>
-        <option>Firefighter</option>
-        <option>Other</option>
-      </select>
+<form class="card ~neutral @low p-0 max-w-xs">
+  <section class="p-4 flex flex-col gap-4">
+    <div>
+      <label class="label" for="toolkit">Current job</label>
+      <div class="select ~neutral @low my-1">
+        <select>
+          <option>Teacher</option>
+          <option>Engineer</option>
+          <option>Firefighter</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <p class="support">If you are a student, select 'other.'</p>
     </div>
-    <p class="support">If you don't currently have a job, select 'other.'</p>
-  </div>
-  <div>
-    <label class="label" for="toolkit">Favorite toolkit</label>
-    <input id="toolkit" type="text" class="input ~critical !normal my-1 max-w-xs block" placeholder="At least 8 characters..."
-      value="Not a17t">
-    <p class="support ~critical">The correct answer is a17t!</p>
-  </div>
+    <div>
+      <label class="label" for="toolkit">Favorite toolkit</label>
+      <input id="toolkit" type="text" class="input ~critical !normal my-1" placeholder="At least 8 characters..."
+        value="Not a17t">
+      <p class="support ~critical">The correct answer is a17t!</p>
+    </div>
+  </section>
+  <section class="section ~neutral flex gap-2 p-4">
+    <button class="button ~info @high">Submit</button>
+    <button class="button ~neutral @low">Save draft</button>
+  </section>
 </form>
 {% endcapture %}
 
@@ -88,13 +94,13 @@ title: "The atomic web toolkit for pragmatists"
 
 <div class="mb-24 md:mt-24">
   <p class="text-center">
-    <a class="section ~urge @low rounded-full py-1 px-3" href="https://github.com/milesmcc/a17t/releases">
+    <a class="section ~urge @low rounded-full py-1 px-3 text-sm md:text-base" href="https://github.com/milesmcc/a17t/releases">
       <i class="fa-brands fa-github"></i>
-      Version 0.8.0 released &rarr;
+      Version {{ site.a17t_version }} released &rarr;
     </a>
   </p>
-  <h1 class="text-center heading text-6xl font-extrabold mt-4">Build beautiful interfaces without reinventing the wheel.</h1>
-  <h3 class="text-center subheading text-2xl mt-6">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
+  <h1 class="text-center heading text-3xl md:text-6xl font-extrabold mt-4">Build beautiful interfaces without reinventing the wheel.</h1>
+  <h3 class="text-center subheading text-md md:text-2xl mt-6">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
   <div class="justify-center mt-6 flex gap-2">
     <a href="/install" class="button ~urge @high px-4 py-2 font-md rounded-md">Get started</a>
     <a href="https://github.com/milesmcc/a17t" class="button ~neutral @low px-4 py-2 font-md rounded-md">
@@ -103,7 +109,7 @@ title: "The atomic web toolkit for pragmatists"
   </div>
 </div>
 
-<hr class="h-12 sep">
+<hr class="h-0 md:h-12 sep">
 
 <section class="md:flex" id="fold">
   <div class="lg:w-9/12">
@@ -112,20 +118,20 @@ title: "The atomic web toolkit for pragmatists"
         <p class="text-2xl heading text-urge-600">Overview</p>
       </aside>
       <div class="md:w-9/12 content">
-        <h2>Core interface elements. <br> No opinions about anything else.</h2>
-        <p>Some CSS frameworks come prepackaged with all sorts of components that are convenient
-          at first but quickly become limiting. Utility frameworks like Tailwind are awesome, but
-          can be difficult start using on their own.</p>
-        <p>a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like
-          jumbotrons, navbars, and menus), a17t provides common single-class elements in a default (but easily
-          customizable) style.
-        </p>
+        <h2>Atomic interface elements. <br> <span class="text-neutral-500">Stop styling your buttons from scratch.</span></h2>
+        <p>Tailwind CSS is great. But do you really want to design all your interface elements from scratch
+        for every new project? Are you confident you'll handle all the accessibility states properly?</p>
+        <p>Traditional design libraries are overkill &mdash; but Tailwind on its own isn't enough when you're just getting started.
+        a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like
+        jumbotrons, navbars, and menus), a17t provides common single-class elements in a neutral design language.</p>
+        <p>As a Tailwind CSS plugin, a17t configures itself using your <code class="code">tailwind.config.js</code> file, so it'll
+        integrate seamlessly with your codebase.</p>
       </div>
     </article>
     <hr class="h-16 sep">
     <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_form label=true classes="bg-neutral-100" %}
+        {% include example.html code=example_form label=true classes="flex justify-center bg-inf" %}
       </div>
     </article>
     <hr class="h-16 sep">
