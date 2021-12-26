@@ -2,7 +2,7 @@ module.exports = ({ theme }) => {
   return {
       ".button": {
           "border": theme("spacing.px") + " solid var(--color-accent)",
-          "background-color": "var(--color-fill)",
+          "background-color": "var(--color-muted)",
           "color": "var(--color-content)",
           "display": "inline-flex",
           "flex-direction": "row",

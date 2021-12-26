@@ -17,7 +17,8 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         "*": {
             "--color-fill": "var(--color-fill-low)", // Background color (e.g., for a chip)
             "--color-content": "var(--color-content-low)", // Usually the text color
-            "--color-accent": "var(--color-accent-low)", // Slightly offset from the fill color (e.g., button outline)
+            "--color-accent": "var(--color-accent-low)", // Slightly offset (darker) from the fill color (e.g., button outline)
+            "--color-muted": "var(--color-muted-low)", // Slightly offset (lighter) from the fill color (e.g., button background)
         },
         "@keyframes spin": { // Used by .loading; must be in base
             "0%": {
@@ -36,11 +37,13 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
         "--color-fill": "var(--color-fill-high)",
         "--color-content": "var(--color-content-high)",
         "--color-accent": "var(--color-accent-high)",
+        "--color-muted": "var(--color-muted-high)",
     }
     priorityVariants[".\\@low"] = {
         "--color-fill": "var(--color-fill-low)",
         "--color-content": "var(--color-content-low)",
         "--color-accent": "var(--color-accent-low)",
+        "--color-muted": "var(--color-muted-low)",
     }
     addBase(priorityVariants)
 
@@ -56,7 +59,9 @@ let a17t = plugin(function ({ addBase, addUtilities, addComponents, e, theme }) 
                 "--color-content-high": values[50],
                 "--color-content-low": values[800],
                 "--color-accent-high": values[600],
-                "--color-accent-low": values[300]
+                "--color-accent-low": values[300],
+                "--color-muted-high": values[600],
+                "--color-muted-low": values[100]
             }
         }
         addUtilities(colorVariants)
