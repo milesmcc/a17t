@@ -5,7 +5,7 @@ subtab: element-table
 category: Information
 title: Table
 description: A minimal table for displaying structured data
-source: https://github.com/milesmcc/a17t/blob/master/src/information/table.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/table.js
 selectors:
   - .table
 features:
