@@ -5,7 +5,7 @@ subtab: element-field
 category: Interaction
 title: Field
 description: A boilerplate element to apply to fields of (nearly) all types
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/field.css
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/field.js
 selectors:
   - .field
 features:
@@ -13,62 +13,43 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<input type='text' class='field ~neutral !normal w-auto' placeholder='Hello world'>"
-variables:
-  - name: --color-light
-    type: color
-    description: sets default border color
-  - name: --field-transition-speed
-    type: time
-    description: sets the speed of the hover and focus transition
-    default: 75ms
-  - name: --fallback-box-shadow
-    type: box shadow
-    description: sets the base box shadow
-  - name: --field-disabled-opacity
-    type: opacity
-    description: sets the opacity of disabled fields
-    default: 0.6
-  - name: --field-hover-box-shadow
-    description: sets additional box shadow on hover
-    type: box shadow
-    default: 0 0 1px 1px var(--color-light)
-  - name: --field-focus-box-shadow
-    description: sets additional box shadow on focus
-    type: box shadow
-    default: 0 0 0 2px var(--color-light)
+  - "<input type='text' class='field ~neutral w-auto' placeholder='Hello world'>"
 ---
 
 # Overview
 
 Form fields are a fundamental interface element. They're also hard to get right: you need to think about hover animations, focusing, overriding user-agent stylesheets, cursors, disabled states, 'readonly' inputs, validation, borders, line heights, and more. Fortunately, a17t does all this for you.
 
-Apply a `.field` selector whenever you want a form-style field to look nice. All the specialized field inputs are based off of this `.field` element: [Inputs](/interaction/input), [Selects](/interaction/select), and [Textareas](/interaction/textarea).
+Apply a `.field` selector whenever you want a form-style field to look nice. Fields are especially useful for textareas and text inputs.
 
 # Considerations
 
-**Specialized fields** --- The `.field` element is a relatively low-level utility. Often, you'll want to use a more specific element when you're working with form inputs (see list above).
-
 **Multiple (adjacent) fields** --- You can build adjacent fields by removing the left or right border from the fields and setting their x-margin to zero. Beware that using adjacent fields can result in a poor user experience on mobile.
+
+**Backwards compatability** --- Prior to v0.10.0, a17t had two other elements (`.input` and `.textarea`) that were identical to `.field` under the hood. For simplicity, these elements are all consolated under `.field`. Now, we recommend you just use `.field`. (That being said, `.input` and `.textarea` will continue to work --- we don't want your code to break!)
 
 # Variants
 
-Fields have full tone, priority, and disabling support. Priorities are communicated through elevation.
+Fields have full tone support.
 
-{% for priority in site.priorities %}
-###### {{priority|capitalize}} Priority
 {% capture example %}
 {% for tone in site.tones %}
-<input class="field ~{{tone}} !{{priority}} mb-4 mr-4 w-auto" placeholder="Type something..." type="text">
+<input class="field ~{{tone}} m-2 w-auto" placeholder="Type something..." type="text">
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
-{% endfor %}
 
-###### Disabling
+# Disabling
 
 {% capture example %}
 <input class="field ~neutral" value="This is a disabled input" type="text" disabled>
+{% endcapture %}
+{% include example.html code=example %}
+
+# Textareas
+
+{% capture example %}
+<textarea class='field ~neutral !normal' placeholder='Write something...'></textarea>
 {% endcapture %}
 {% include example.html code=example %}
 
@@ -86,6 +67,11 @@ Fields have full tone, priority, and disabling support. Priorities are communica
   <input class="my-1 field" type="text" placeholder="Miles McCain">
   <p class="support">Just your first name is fine, too.</p>
 </div>
+{% endcapture %}
+{% include example.html code=example %}
+
+{% capture example %}
+<textarea class="field ~neutral !normal" rows="8">This textarea has 8 rows and actual content.</textarea>
 {% endcapture %}
 {% include example.html code=example %}
 
