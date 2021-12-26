@@ -34,3 +34,4 @@ plugins:
 # Helpful variables
 tones: ["neutral", "positive", "warning", "critical", "info", "urge"]
 priorities: ["low", "high"]
+a17t_version: "0.10.0"
