@@ -1,7 +1,7 @@
 {
   "name": "a17t",
-  "version": "0.5.1",
-  "description": "Atomic design toolkit for beautiful, maintainable, and custom interfaces",
+  "version": "0.10.0",
+  "description": "Atomic design toolkit. Build beautiful interfaces without reinventing the wheel.",
   "main": "src/a17t.js",
   "scripts": {},
   "repository": {
