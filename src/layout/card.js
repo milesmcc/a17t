@@ -6,7 +6,7 @@ module.exports = ({ theme }) => {
             "background-color": theme("colors.bg"),
             "overflow": "hidden",
             "border-radius": theme("borderRadius.lg"),
-            "box-shadow": theme("boxShadow.lg"),
+            "box-shadow": theme("boxShadow.md"),
             "border": "1px solid " + theme("colors.gray.100"),
         }
     }
