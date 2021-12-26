@@ -5,7 +5,7 @@ subtab: element-portal
 category: Interaction
 title: Portal
 description: An inline element for navigation
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/portal.css
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/portal.js
 selectors:
   - .portal
   - .active
@@ -14,30 +14,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<div class='text-neutral-700'>\n  <span class='portal'>Code</span>\n  <span class='portal ~positive active' aria-selected='true'>Support</span>\n  <span class='portal'>Members</span>\n  <span class='portal' disabled>Disabled</span>\n</div>"
-variables:
-  - name: --portal-padding
-    type: padding
-    description: sets padding around portal text
-    default: 0.15em 0.5em
-  - name: --portal-transition-speed
-    type: time
-    description: sets animation speed on focus and hover
-    default: 75ms
-  - name: --portal-focus-color
-    type: color
-    description: the color of the portal on focus and highlight
-    default: var(--color-title)
-  - name: --portal-disabled-opacity
-    type: opacity
-    description: sets the opacity of disabled portals
-    default: 0.6
-  - name: --color-fill
-    type: color
-    description: sets the background color of active portals
-  - name: --color-content
-    type: color
-    description: sets the text color of active portals
+  - "<div class='text-neutral-700'>\n  <span class='portal'>Code</span>\n  <span class='portal ~info active' aria-selected='true'>Support</span>\n  <span class='portal'>Members</span>\n  <span class='portal' disabled>Disabled</span>\n</div>"
 ---
 
 # Overview
@@ -60,10 +37,10 @@ Portals have full tone and priority support.
 ###### {{priority|capitalize}} Priority (Active)
 {% capture example %}
 {% for tone in site.tones %}
-<span class="portal ~{{tone}} !{{priority}} active mr-2 mb-2">Navigate</span>
+<span class="portal ~{{tone}} @{{priority}} active mr-2 mb-2">Navigate</span>
 {% endfor %}
 {% endcapture %}
-{% include example.html code=example %}
+{% include example.html code=example classes="bg-transparent" %}
 {% endfor %}
 
 # Accessibility
