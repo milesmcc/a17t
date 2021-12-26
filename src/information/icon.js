@@ -2,7 +2,7 @@ module.exports = ({ theme }) => {
     return {
         ".icon": {
             "color": "var(--color-content)",
-            "fill": "--color-content",
+            "fill": "var(--color-content)",
             "align-items": "center",
             "justify-content": "center",
             "vertical-align": "middle",
