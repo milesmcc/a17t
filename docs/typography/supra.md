@@ -5,7 +5,7 @@ subtab: element-supra
 category: Typography
 title: Supra
 description: A small element that's less disruptive than its sibling, the label
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/supra.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/supra.js
 features:
   - Tones
   - Priorities
@@ -14,14 +14,6 @@ selectors:
 display: Inherited
 examples:
   - "<p class='supra'>Have fun</p>"
-variables:
-  - name: --supra-letter-spacing
-    type: size
-    description: sets the letter spacing
-    default: 0.06rem
-  - name: --color-muted
-    type: color
-    description: sets the color
 ---
 
 # Overview
