@@ -102,7 +102,7 @@ title: "The atomic web toolkit for pragmatists"
   <h1 class="text-center heading text-3xl md:text-6xl font-extrabold mt-4">Build beautiful interfaces without reinventing the wheel.</h1>
   <h3 class="text-center subheading text-md md:text-2xl mt-6">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
   <div class="justify-center mt-6 flex gap-2">
-    <a href="/install" class="button ~urge @high px-4 py-2 font-md rounded-md">Get started</a>
+    <a href="/guide/" class="button ~urge @high px-4 py-2 font-md rounded-md">Get started</a>
     <a href="https://github.com/milesmcc/a17t" class="button ~neutral @low px-4 py-2 font-md rounded-md">
       View the source
     </a>
