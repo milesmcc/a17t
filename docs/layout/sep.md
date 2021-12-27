@@ -5,17 +5,12 @@ subtab: element-sep
 category: Layout
 title: Sep
 description: A helper element to add visual separation between elements
-source: https://github.com/milesmcc/a17t/blob/master/src/layout/sep.css
+source: https://github.com/milesmcc/a17t/blob/master/src/layout/sep.js
 selectors:
   - .sep
 display: Inherited
 examples:
   - "<p>Before the separator.</p>\n<hr class='sep'>\n<p>After the separator.</p>"
-variables:
-  - name: --sep-height
-    description: sets the sep's height
-    default: 3rem
-    type: size
 ---
 
 # Overview
@@ -34,7 +29,7 @@ If you think that using `<hr class="sep">` instead of `margin-bottom` is an abso
 
 # Variants
 
-The `.sep` element has no variants --- it's just a vertical spacer. If you're using Tailwind, you can change its height by using `h-x` utilities (e.g., `h-12`, `h-8`, `h-24`, etc.).
+The `.sep` element has no variants --- it's just a vertical spacer. If you're using Tailwind, you can change its height by using `h-x` utilities (e.g., the default `h-12`, `h-8`, `h-24`, etc.).
 
 # Accessibility
 
