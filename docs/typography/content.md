@@ -5,7 +5,7 @@ subtab: element-content
 category: Typography
 title: Content
 description: A just-add-water wrapper element for content-heavy markup
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/content.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/content.js
 selectors:
   - .content
 features:
@@ -14,25 +14,11 @@ features:
 display: Inherited
 examples:
   - "<section class='content ~neutral'>\n  <h2>Hello world!</h2>\n  <p>The content element makes sure things like spacing, colors, and sizing\n    look right for the 'classic' HTML content tags.</p>\n  <blockquote>\n    <p>It's very helpful for rendering markdown!</p>\n    <p>Have as many paragraphs as you want.</p>\n    <cite>&mdash; Miles McCain</cite>\n  </blockquote>\n</section>"
-variables:
-  - name: --body-line-height
-    type: ratio
-    description: sets the line height
-    default: 1.5
-  - name: --family-primary
-    type: fonts
-    description: sets the body text font family
-  - name: --family-secondary
-    type: fonts
-    description: sets the display text (heading) font family
-  - name: --color-title
-    type: color
-    description: sets the title color
 ---
 
 # Overview
 
-The content element automatically styles a set of core HTML tags without requiring any classes be applied directly. It makes sure that their relative spacing is nice, too &mdash; from a typographical perspective, this element is somewhat opinionated. Fortunately, its opinions are backed by typographic best practices.
+The content element automatically styles a set of core HTML tags without requiring any classes be applied directly. It makes sure that their relative spacing is nice, too &mdash; from a typographical perspective, this element is somewhat opinionated. Fortunately, its opinions are backed by typographic best practices. It is quite similar to the Tailwind CSS [typography plugin](https://tailwindcss.com/docs/typography-plugin).
 
 The content element will automatically style the following elements, if inside a `.content` selector:
 
