@@ -5,21 +5,12 @@ subtab: element-kbd
 category: Typography
 title: Kbd
 description: An inline element for representing the keyboard
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/kbd.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/kbd.js
 selectors:
   - .kbd
 display: Inline
 examples:
   - "To print, press <kbd class='kbd'>Cmd</kbd> + <kbd class='kbd'>P</kbd>"
-variables:
-  - name: --kbd-background
-    type: color
-    description: sets the kbd background
-    default: var(--color-neutral-700)
-  - name: --kbd-color
-    type: color
-    description: sets the color
-    default: var(--color-neutral-000)
 ---
 
 # Overview
