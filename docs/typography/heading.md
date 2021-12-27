@@ -5,7 +5,7 @@ subtab: element-heading
 category: Typography
 title: Heading
 description: A flexible element for larger, more prominent text
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/heading.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/heading.js
 features:
   - Tones
   - Priorities
@@ -14,13 +14,6 @@ selectors:
 display: Inherited
 examples:
   - "<h3 class='heading'>This is a heading.</h3>"
-variables:
-  - name: --family-secondary
-    type: font
-    description: sets the font family
-  - name: --color-title
-    type: color
-    description: sets the color
 ---
 
 # Overview
