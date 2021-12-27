@@ -81,7 +81,7 @@ module.exports = ({ theme }) => {
             "color": "inherit",
             "text-decoration": "underline"
           },
-          "strong, em, b": {
+          "strong, b": {
             "font-weight": theme("fontWeight.semibold")
           },
           "blockquote": {
