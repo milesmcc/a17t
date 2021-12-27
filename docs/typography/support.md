@@ -5,7 +5,7 @@ subtab: element-support
 category: Typography
 title: Support
 description: An element to apply a supporting label (often to a form field)
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/support.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/support.js
 selectors:
   - .support
 features:
@@ -13,16 +13,12 @@ features:
   - Priorities
 display: Inherited
 examples:
-  - "<input class='input my-2' type='text' placeholder='Miles McCain'>\n<p class='support'>This is a support. Take note!</p>"
-variables:
-  - name: --color-muted
-    type: color
-    description: sets the color
+  - "<input class='input ~neutral my-2' type='text' placeholder='Miles McCain'>\n<p class='support'>This is a support. Take note!</p>"
 ---
 
 # Overview
 
-The support element is used for visually secondary labels (usually for supporting---but non-critical---information). They are often helpful for building form interfaces. The support element is very simple: it applies a small font size and `--color-muted`.
+The support element is used for visually secondary labels (usually for supporting---but non-critical---information). They are often helpful for building form interfaces. The support element is very simple: it applies a small font size.
 
 # Considerations
 
@@ -48,7 +44,7 @@ Supports have full tone and priority support. They will automatically look appro
 # Examples
 
 {% capture example %}
-<input class="input my-1" id="question" type="text" value="The Recurse Center">
+<input class="input ~neutral my-1" id="question" type="text" value="The Recurse Center">
 <p class="support">There are two right answers.</p>
 {% endcapture %}
 {% include example.html code=example %}
