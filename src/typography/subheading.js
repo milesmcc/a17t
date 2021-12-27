@@ -3,6 +3,7 @@ module.exports = ({ theme }) => {
         ".subheading": {
             "color": "var(--color-content)",
             "opacity": "0.7",
+            "font-size": theme("fontSize.xl"),
         }
     }
 }
