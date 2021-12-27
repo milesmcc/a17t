@@ -4,7 +4,7 @@ title: "The atomic web toolkit for pragmatists"
 ---
 
 {% capture example_profile %}
-<div class="card ~neutral @low md:flex max-w-lg">
+<div class="card md:flex max-w-lg">
   <div class="w-20 h-20 mx-auto mb-6 md:mr-6 flex-shrink-0">
     <img class="object-cover rounded-full" src="{{ '/assets/profile_image.png' | relative_url }}">
   </div>
@@ -50,7 +50,7 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_form %}
-<form class="card ~neutral @low p-0 max-w-xs">
+<form class="card p-0 max-w-xs">
   <section class="p-4 flex flex-col gap-4">
     <div>
       <label class="label" for="toolkit">Current job</label>
@@ -79,11 +79,11 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_delete %}
-<div class="card ~neutral @low p-0 border-0">
+<div class="card p-0 border-0">
   <div class="p-4">
     <h2 class="mb-1 text-lg heading">Just making sure!</h2>
     <p class="mb-3 text-base support">To confirm you'd like to delete this repository, please enter its name below.</p>
-    <input class="input" type="text" placeholder="milesmcc/a17t">
+    <input class="input ~neutral" type="text" placeholder="milesmcc/a17t">
   </div>
   <section class="section ~critical p-4">
     <span class="button ~critical @high">Delete</span>
