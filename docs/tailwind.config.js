@@ -1,5 +1,16 @@
 let colors = require("tailwindcss/colors")
 
+function getLibrary() {
+    try {
+        // Use local a17t if it's available
+        return require("../src/a17t.js")
+    } catch (ex) {
+        // Fallback to npm's a17t if not
+        console.log("Using global a17t (not local version)")
+        return require("a17t")
+    }
+}
+
 module.exports = {
     content: ["./**/*.{html,md}"],
     theme: {
@@ -17,6 +28,6 @@ module.exports = {
         },
     },
     plugins: [
-        require("../src/a17t.js")
+        getLibrary()
     ],
 }
