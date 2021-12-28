@@ -50,11 +50,11 @@ title: "The atomic web toolkit for pragmatists"
 {% endcapture %}
 
 {% capture example_form %}
-<form class="card p-0 max-w-xs">
+<form class="card p-0">
   <section class="p-4 flex flex-col gap-4">
     <div>
       <label class="label" for="toolkit">Current job</label>
-      <div class="select ~neutral @low my-1">
+      <div class="select ~neutral @low block my-1 max-w-xs">
         <select>
           <option>Teacher</option>
           <option>Engineer</option>
@@ -66,14 +66,14 @@ title: "The atomic web toolkit for pragmatists"
     </div>
     <div>
       <label class="label" for="toolkit">Favorite toolkit</label>
-      <input id="toolkit" type="text" class="input ~critical !normal my-1" placeholder="At least 8 characters..."
+      <input id="toolkit" type="text" class="input ~critical !normal my-1 max-w-xs block" placeholder="At least 8 characters..."
         value="Not a17t">
       <p class="support ~critical">The correct answer is a17t!</p>
     </div>
   </section>
   <section class="section ~neutral flex gap-2 p-4">
-    <button class="button ~info @high">Submit</button>
-    <button class="button ~neutral @low">Save draft</button>
+    <span class="button ~info @high">Submit</span>
+    <span class="button ~neutral @low">Save draft</span>
   </section>
 </form>
 {% endcapture %}
@@ -92,18 +92,18 @@ title: "The atomic web toolkit for pragmatists"
 </div>
 {% endcapture %}
 
-<div class="mb-24 md:mt-24">
-  <p class="text-center">
-    <a class="section ~urge @low rounded-full py-1 px-3 text-sm md:text-base" href="https://github.com/milesmcc/a17t/releases">
-      <i class="fa-brands fa-github"></i>
+<div class="mb-24 md:mt-24 text-center flex flex-col gap-4">
+  <p>
+    <a class="chip ~urge @low text-sm md:text-base gap-2" href="https://github.com/milesmcc/a17t/releases">
+      <i class="icon fa-brands fa-github"></i>
       Version {{ site.a17t_version }} released &rarr;
     </a>
   </p>
-  <h1 class="text-center heading text-3xl md:text-6xl font-extrabold mt-4">Build beautiful interfaces without reinventing the wheel.</h1>
-  <h3 class="text-center subheading text-md md:text-2xl mt-6">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
-  <div class="justify-center mt-6 flex gap-2">
-    <a href="/guide/" class="button ~urge @high px-4 py-2 font-md rounded-md">Get started</a>
-    <a href="https://github.com/milesmcc/a17t" class="button ~neutral @low px-4 py-2 font-md rounded-md">
+  <h1 class="heading text-3xl md:text-6xl font-extrabold">Build beautiful interfaces without reinventing the wheel.</h1>
+  <h3 class="subheading text-base md:text-2xl">a17t is a Tailwind CSS plugin that provides atomic components like <a class="code" href="/interaction/field">field</a>, <a class="code" href="/interaction/button">button</a>, and <a class="code" href="/layout/card">card</a> in a neutral design language that scales with your project.</h3>
+  <div class="justify-center mt-4 flex gap-2">
+    <a href="/guide/" class="button ~urge @high button-xl">Get started</a>
+    <a href="https://github.com/milesmcc/a17t" class="button ~neutral @low button-xl">
       View the source
     </a>
   </div>
@@ -131,7 +131,7 @@ title: "The atomic web toolkit for pragmatists"
     <hr class="h-16 sep">
     <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html code=example_form label=true classes="flex justify-center bg-inf" %}
+        {% include example.html code=example_form label=true classes="bg-inf" %}
       </div>
     </article>
     <hr class="h-16 sep">
@@ -215,7 +215,7 @@ title: "The atomic web toolkit for pragmatists"
     <hr class="h-16 sep">
     <article class="justify-end md:flex">
       <div class="md:w-9/12 md:max-w-full">
-        {% include example.html label=true code=example_table %}
+        {% include example.html label=true code=example_table classes="bg-transparent" %}
       </div>
     </article>
     <hr class="h-16 sep">
