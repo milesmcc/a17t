@@ -118,7 +118,7 @@ title: "The atomic web toolkit for pragmatists"
         <p class="text-2xl heading text-urge-600">Overview</p>
       </aside>
       <div class="md:w-9/12 content">
-        <h2>Atomic interface elements. <br> <span class="text-neutral-500">Stop styling your buttons from scratch.</span></h2>
+        <h2>Atomic interface elements. <br> Stop styling everything from scratch.</h2>
         <p>Tailwind CSS is great. But do you really want to design all your interface elements from scratch
         for every new project? Are you confident you'll handle all the accessibility states properly?</p>
         <p>Traditional design libraries are overkill &mdash; but Tailwind on its own isn't enough when you're just getting started.
@@ -149,7 +149,7 @@ title: "The atomic web toolkit for pragmatists"
             </span>
             <h4 class="mb-1 text-xl heading">Atomic &amp; flexible</h4>
             <p>a17t provides core, single-class interface elements and empowers you to assemble them your way. And
-              everything is easily customizable using CSS variables, so you'll never need to settle for &ldquo;good
+              you can customize it through your Tailwind config, so you'll never need to settle for &ldquo;good
               enough.&rdquo;
             </p>
           </div>
@@ -170,8 +170,8 @@ title: "The atomic web toolkit for pragmatists"
               </span>
             </span>
             <h4 class="mb-1 text-xl heading">Lightweight &amp; modern</h4>
-            <p>a17t has no dependencies. That means it's reliable, customizable,
-              and can integrate with any JS stack. Just import a small pure CSS file and you're good to go.</p>
+            <p>a17t has no dependencies except Tailwind. That means it's reliable, customizable,
+              and can integrate with any stack. Just install the plugin and you're good to go.</p>
           </div>
           <div class="mb-6">
             <span class="float-right shield ~urge ml-1 mb-1">
@@ -199,20 +199,17 @@ title: "The atomic web toolkit for pragmatists"
       </aside>
       <div class="md:w-9/12 content">
         <h2>Use tones to control color</h2>
-        <p>There are six tones by default: neutral, positive, warning, critical, info, and urge. (Don't worry, these
-          colors are all customizable.) Tones are specified using special class names that start with a tilde 
-          (e.g., <code class="code">~positive</code>). To make a light green chip, for example, use <code class="code">chip
-            ~positive</code>.</p>
+        <p>There's a tone for every Tailwind color! Tones are specified using special class names that start with a tilde 
+          (e.g., <code class="code">~green</code>). To make an indigo chip, for example, use <code class="code">chip
+            ~indigo</code>.</p>
         <h2>Use priorities to control prominence</h2>
-        <p>There are three priorities &mdash; low, normal, and high. You can specify a
-          priority by its class: an exclamation point followed by its name (e.g., <code class="code">@high</code> or
-          <code class="code">@low</code>). Usually, priorities affect an elements' colors, but fallback to using elevation
-          (communicated through drop shadow) when changing colors wouldn't look good.</p>
-        <h2>Consider using with Tailwind</h2>
-        <p>Because a17t only provides the core elements of your interface, like buttons and form inputs, you'll need a
-          tool to stitch everything together. (a17t does not provide any grid utilities.) While you could do this using
-          pure CSS, using a17t in conjunction with Tailwind makes for a very smooth and efficient development
-          experience.</p>
+        <p>There are three priorities &mdash; low and high. You can specify a
+          priority by its class: an &ldquo;at sign&rdquo; followed by its name (e.g., <code class="code">@high</code> or
+          <code class="code">@low</code>). Priorities change elements' visual prominence.</p>
+        <h2>A perfect match for Tailwind</h2>
+        <p>a17t only provides atomic elements of your interface, like buttons and form inputs, and you'll need a
+          tool to stitch everything together. That's where Tailwind comes in. a17t provides a solid and accessible base for your
+          interface &mdash; use Tailwind to combine a17t's components into a masterpiece.</p>
       </div>
     </article>
     <hr class="h-16 sep">
@@ -232,9 +229,9 @@ title: "The atomic web toolkit for pragmatists"
         <p><strong>No margins</strong> &mdash; While most a17t elements have some kind of internal spacing, none have
           any external margin by default. This is intentional: spacing is not one-size-fits-all, so not having any makes
           a17t more flexible.</p>
-        <p><strong>CSS variables</strong> &mdash; Unlike libraries built using preprocessing tools like Sass, a17t
-          relies on CSS variables for customization. That means you can tweak it dynamically on the page without using
-          any build tools.</p>
+        <p><strong>Tailwind plugin</strong> &mdash; Unlike most component libraries libraries, a17t is a Tailwind plugin
+          and reads important values &mdash; like colors and spacing &mdash; from your Tailwind config. That means installation
+          and customization is a breeze.</p>
         <p><strong>Effortlessly responsive</strong> &mdash; All of a17t's elements are designed to look great on any
           kind of device. So as long as you build your layout responsively, a17t will automatically follow suit without
           any extra effort.</p>
@@ -252,34 +249,9 @@ title: "The atomic web toolkit for pragmatists"
         <p class="mb-8 text-3xl heading text-urge-600 md:text-2xl">Install</p>
       </aside>
       <div class="md:w-9/12">
-        <p class="mb-2 label">Using NPM (recommended)</p>
-        <div class="card ~neutral @high font-mono mb-4">
-          npm install a17t
-        </div>
-        <p class="mb-2 content">Import a17t in your JavaScript using <code class="code">import 'a17t'</code> or into your preprocessed CSS using <code class="code">@import 'a17t';</code>. For more information about
-          CSS-in-JS, see <a href="https://css-tricks.com/the-many-ways-to-include-css-in-javascript-applications/">
-          this guide</a>. a17t's default export is simply its compiled CSS file, so you have no shortage of options
-          to import it.</p>
-        <p class="mb-6">Optionally use a17t's Tailwind distribution in your JavaScript with <code class="code">import 'a17t/dist/tailwind.css'</code> or in your CSS with <code class="code">@import 'a17t/dist/tailwind.css'</code>. The benefit of using a17t's Tailwind CSS distribution is that it uses the same CSS variables as a17t. That way, if you change your color scheme (for example), your Tailwind classes will change as well. (Note that the color names for a17t's Tailwind distribution match other a17t's naming system&mdash;e.g., the class for light grey text is `text-neutral-300`.)</p>
-        <p class="mb-2 label">Using a CDN</p>
-        <div class="card ~neutral @high font-mono mb-4 text-sm">
-          &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/a17t@latest/dist/a17t.css"&gt;
-        </div>
-        <aside class="aside ~urge content">
-          <p>
-            <strong>Import a17t before Tailwind or other utility frameworks.</strong>
-            That way, you'll easily be able to override a17t's defaults without fighting CSS's specificity logic.</p>
-          <p>
-            <strong>Use a CSS reset.</strong>
-            To keep things modular and lightweight, a17t doesn't come with a CSS reset built-in. If you're not using
-            Tailwind (which has a CSS reset built-in), make sure you use something like <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
-          </p>
-          <p>
-            <strong>Add <code class="code">~*</code> and <code class="code">!*</code> classes to your <a href="https://purgecss.com/safelisting.html">PurgeCSS class safelist</a>,
-            if applicable.</strong> Because of an issue with PurgeCSS, it erroneously removes modifier classes that only set CSS variables (like <code class="code">~urge</code>
-            and <code class="code">@low</code>). Add the following to your PurgeCSS config: <code class="code">safelistPatterns: [/^~/, /^!/]</code>.
-          </p>
-        </aside>
+        <p class="mb-2 content">To install a17t, simply add it to the plugin section of your Tailwind config with <code class="code">require("a17t")</code>. For more information about
+          installing and customizing a17t, check out our <a href="/guide">detailed guide</a>.</p>
+        <a href="/guide" class="button ~urge @high px-4 py-2 font-md rounded-md mt-4">Read the guide &rarr;</a>
       </div>
     </article>
   </div>
