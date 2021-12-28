@@ -13,7 +13,7 @@ features:
   - Priorities
 display: Inherited
 examples:
-  - "<label class='label' for='name'>What is your name?</label>\n<input class='input my-2' type='text' id='name' placeholder='Miles McCain'>"
+  - "<label class='label' for='name'>What is your name?</label>\n<input class='input ~neutral my-2' type='text' id='name' placeholder='Miles McCain'>"
 ---
 
 # Overview
