@@ -6,8 +6,4 @@
     :root {
         font-family: "Inter", sans-serif;
     }
-
-    .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-        color: var(--color-urge-core);
-    }
 }
