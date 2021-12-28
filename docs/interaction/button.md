@@ -22,6 +22,8 @@ The button is a core interface element --- it's the primary way to indicate inte
 
 The example buttons on this page are `<span>` elements, but the `.button` selector can be applied to essentially any type of element. If a button's element is interactive (e.g., an `<a>` with a valid `href` attribute), the `:focus` state will by default be identical to the `:hover` state.
 
+There are low and high priority variants, as well as a large variant (ideal for marketing pages) and a loading variant (great for indicating work happening behind the scenes).
+
 # Considerations
 
 **Navigation** --- Avoid using buttons for navigation. Buttons should generally only be used to perform _actions_. While that may sometimes mean navigating to a new page (as is the case with a sign-up button), it usually doesn't. In cases of regular navigation, consider using a [portal](/interaction/portal) instead.
@@ -48,6 +50,18 @@ To make a button "loading," simply apply the `.loading` selector.
 <span class="button ~info @low loading mb-1">Save</span>
 <span class="button ~urge @high loading mb-1">Save</span>
 <span class="button ~critical @high loading mb-1">Save</span>
+{% endcapture %}
+{% include example.html code=example %}
+
+###### Large Buttons
+
+To make a button large --- as we do on a17t's [landing page](/) --- simply apply the `button-xl` class.
+
+{% capture example %}
+<a href="/guide/" class="button ~urge @high button-xl">Get started</a>
+<a href="https://github.com/milesmcc/a17t" class="button ~neutral @low button-xl">
+  View the source
+</a>
 {% endcapture %}
 {% include example.html code=example %}
 

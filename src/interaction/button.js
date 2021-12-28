@@ -33,6 +33,11 @@ module.exports = ({ theme }) => {
           },
           "&:active": {
             "box-shadow": theme("boxShadow.sm") + ", " + theme("boxShadow.inner")
+          },
+          "&.button-xl": {
+            "padding": theme("spacing.2") + " " + theme("spacing.4"),
+            "font-size": theme("fontSize.md"),
+            "border-radius": theme("borderRadius.md")
           }
       }
   }
