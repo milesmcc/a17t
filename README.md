@@ -2,7 +2,10 @@
   <h3 align="center"><img src="docs/assets/logo.png" height="75"></h3>
 
   <p align="center">
-     An atomic design toolkit for pragmatists
+    <br>
+    An atomic design toolkit for pragmatists.
+    <br>
+    <i>A Tailwind CSS plugin.</i>
     <br>
     <a href="https://a17t.miles.land"><strong>Discover a17t »</strong></a>
     <br>
@@ -16,7 +19,7 @@
 </p>
 
 ## Installation
-a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t` and imported into your JS using PostCSS with `import 'a17t'`. For more information, check out the [documentation site](https://a17t.miles.land). A CDN import is available.
+a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be installed with `npm install a17t` and installed in Tailwind by adding `require("a17t")` to the `plugins` section of your `tailwind.config.js` file. For more information, check out the [documentation site](https://a17t.miles.land).
 
 ## Overview
 
@@ -38,9 +41,7 @@ a17t is available on [NPM](https://www.npmjs.com/package/a17t), and can be insta
 
 Some CSS frameworks come prepackaged with all sorts of components that are convenient at first but quickly become limiting. Utility frameworks like Tailwind are awesome, but can be difficult start using on their own.
 
-a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like jumbotrons, navbars, and menus), a17t provides common single-class elements in a default (but easily customizable) style.
-
-**Using a17t with [Tailwind CSS](https://tailwindcss.com) is recommended!** While a17t can be used without Tailwind, they go very well together: you can use a17t for your atomic interface elements, and then stitch them together using Tailwind. You'll need to write very little custom CSS, if any.
+a17t tries to get the balance right. Instead of providing all-inclusive, opinionated components (like jumbotrons, navbars, and menus), a17t provides common single-class elements in a default (but easily customizable) style. And it's a Tailwind plugin, so it'll integrate into your project seamlessly.
 
 ## Getting Started
 Want to jump right in? **Check out the [documentation site](https://a17t.miles.land) to get started.** Here are links to some popular elements:
