@@ -5,7 +5,7 @@ subtab: element-section
 category: Layout
 title: Section
 description: An opinionless element that applies context-dependent color
-source: https://github.com/milesmcc/a17t/blob/master/src/layout/section.css
+source: https://github.com/milesmcc/a17t/blob/master/src/layout/section.js
 selectors:
   - .section
 features:
@@ -13,14 +13,7 @@ features:
   - Priorities
 display: Inherited
 examples:
-  - "<div class='card ~neutral !low p-0 border'>\n  <div class='p-4'>\n    <h2 class='heading text-xl mb-1'>Welcome to the team.</h2>\n    <p>Lorem ipsum dolor sit amet. I forget the rest of lorem ipsum and don't want to look it up, so here's this instead.</p>\n  </div>\n  <section class='section ~info p-4'>\n    <span class='button ~info !high'>Save</span>\n    <span class='button bg-transparent'>Go Back</span>\n  </section>\n</div>"
-variables:
-  - name: --color-content
-    type: color
-    description: sets the content (text) color
-  - name: --color-background
-    type: color
-    description: sets the background color
+  - "<div class='card p-0 border-b-0'>\n  <div class='p-4'>\n    <h2 class='heading text-xl mb-1'>Welcome to the team.</h2>\n    <p>Lorem ipsum dolor sit amet. I forget the rest of lorem ipsum and don't want to look it up, so here's this instead.</p>\n  </div>\n  <section class='section ~info p-4'>\n    <span class='button ~info @high'>Save</span>\n    <span class='button bg-transparent'>Go Back</span>\n  </section>\n</div>"
 ---
 
 # Overview
@@ -48,7 +41,7 @@ Sections have full tone and priority support. (They are the primary way that ton
   {% endfor %}
 </div>
 {% endcapture %}
-{% include example.html code=example %}
+{% include example.html code=example classes="bg-transparent" %}
 
 {% endfor %}
 

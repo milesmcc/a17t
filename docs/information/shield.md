@@ -5,7 +5,7 @@ subtab: element-shield
 category: Information
 title: Shield
 description: An element to make icons look good at any size
-source: https://github.com/milesmcc/a17t/blob/master/src/information/shield.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/shield.js
 selectors:
   - .shield
 features:
@@ -14,21 +14,6 @@ features:
 display: Inline Flex
 examples:
   - "<span class=\"shield ~info\">\n  <span class=\"icon\">\n    <i class=\"fas fa-atom fa-lg\"></i>\n  </span>\n</span>"
-variables:
-  - name: --color-fill
-    type: color
-    description: sets background color
-  - name: --color-content
-    type: color
-    description: sets icon color
-  - name: --shield-padding-x
-    type: size
-    description: sets the x-padding
-    default: 1rem
-  - name: --shield-padding-y
-    type: size
-    description: sets the y-padding
-    default: 1rem
 ---
 
 # Overview
@@ -45,13 +30,13 @@ Icons are fundamental to many designs, but they often don't look good on their o
 
 # Variants
 
-Icons have full tone and priority support, although using the `!normal` (default) priority is recommended.
+Icons have full tone and priority support, although using the `@low` (default) priority is recommended.
 
 {% for priority in site.priorities %}
-###### {{priority|capitalize}} Priority {% if priority == "normal" %}(Recommended){% endif %}
+###### {{priority|capitalize}} Priority {% if priority == "low" %}(Recommended){% endif %}
 {% capture example %}
 {% for tone in site.tones %}
-<span class="shield ~{{tone}} !{{priority}} ml-1 mb-1">
+<span class="shield ~{{tone}} @{{priority}} ml-1 mb-1">
   <span class="icon">
     <i class="fas fa-swatchbook fa-lg"></i>
   </span>
@@ -78,7 +63,7 @@ Icons have full tone and priority support, although using the `!normal` (default
   <div class="flex-grow">
   <h4 class="heading text-xl mb-1">Atomic &amp; flexible</h4>
   <p>a17t provides core, single-class interface elements and empowers you to assemble them your way. And
-    everything is easily customizable using CSS variables, so you'll never need to settle for &ldquo;good enough.&rdquo;
+    everything is easily customizable through Tailwind CSS, so you'll never need to settle for &ldquo;good enough.&rdquo;
   </p>
   </div>
 </div>

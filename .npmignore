@@ -1,0 +1,6 @@
+node_modules
+docs/node_modules
+docs/_site
+docs/.jekyll-cache
+docs/assets/css/dist
+docs/.sass-cache/

@@ -5,7 +5,7 @@ subtab: element-table
 category: Information
 title: Table
 description: A minimal table for displaying structured data
-source: https://github.com/milesmcc/a17t/blob/master/src/information/table.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/table.js
 selectors:
   - .table
 features:
@@ -13,20 +13,13 @@ features:
 display: Block
 examples:
   - "<table class=\"table\">\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Status</th>\n      <th>Price</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Landinator 9000 <span class=\"badge ~neutral\">New</span></td>\n      <td><span class=\"chip ~positive\">Completed</span></td>\n      <td>$300</td>\n    </tr>\n    <tr>\n      <td>Hammer</td>\n      <td><span class=\"chip ~urge\">Waiting</span></td>\n      <td>$20</td>\n    </tr>\n    <tr>\n      <td>Computer</td>\n      <td><span class=\"chip ~info\">Processing</span></td>\n      <td>$500</td>\n    </tr>\n  </tbody>\n</table>"
-variables:
-  - name: --table-background-alternating
-    type: color
-    description: sets background color of alternating rows
-  - name: --color-title
-    type: color
-    description: sets color of header cells
 ---
 
 # Overview
 
 Tables are surprisingly hard to get right. The table element applies to the top-level `<table>` element and results in nice-looking (albeit somewhat opinionated) tables.
 
-Tables are one of the few elements in a17t that are more complex than a single class. The `.table` selector specifies styles for `thead`, `tfoot`, `tr`, `tbody`, `td`, and `th`. It automatically also applies itself to `<table>` elements inside the `.content` selector.
+Tables are one of the few elements in a17t that are more complex than a single class. The `.table` selector specifies styles for `thead`, `tfoot`, `tr`, `tbody`, `td`, and `th`. It automatically also applies itself to `<table>` elements inside the [`.content`](/typography/content) selector.
 
 # Considerations
 
@@ -36,7 +29,7 @@ Tables are one of the few elements in a17t that are more complex than a single c
 
 # Variants
 
-Tables do not directly respond to tone and priority variants; that information is simply passed down to child elements (e.g. chips).
+Tables do not directly respond to tone variants; that information is simply passed down to child elements (e.g. chips).
 
 # Accessibility
 

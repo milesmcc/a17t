@@ -5,24 +5,12 @@ subtab: element-icon
 category: Information
 title: Icon
 description: A utility element to wrap all icons, regardless of source
-source: https://github.com/milesmcc/a17t/blob/master/src/information/icon.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/icon.js
 selectors:
   - .icon
 display: Inline Flex
 examples:
-  - "<span class=\"icon m-2 ~positive !low\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\">\n    <g stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\">\n      <path d=\"M11.29 11.71l-4-4\" />\n      <circle cx=\"5\" cy=\"5\" r=\"4\" />\n    </g>\n  </svg>\n</span>"
-variables:
-  - name: --color-content
-    type: color
-    description: sets icon color
-  - name: --icon-width
-    type: size
-    description: sets icon width
-    default: 1em
-  - name: --icon-height
-    type: size
-    description: sets icon height
-    default: 1em
+  - "<span class=\"icon m-2 ~positive @low\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\">\n    <g stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\">\n      <path d=\"M11.29 11.71l-4-4\" />\n      <circle cx=\"5\" cy=\"5\" r=\"4\" />\n    </g>\n  </svg>\n</span>"
 ---
 
 # Overview
@@ -45,7 +33,7 @@ Icons inherit their color from their context using the `--color-content` variabl
 
 {% capture example %}
 {% for tone in site.tones %}
-<span class="icon m-2 ~{{tone}} !low">
+<span class="icon m-2 ~{{tone}} @low">
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13">
         <g stroke-width="2" stroke="currentColor" fill="none">
             <path d="M11.29 11.71l-4-4" />

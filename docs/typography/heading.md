@@ -5,7 +5,7 @@ subtab: element-heading
 category: Typography
 title: Heading
 description: A flexible element for larger, more prominent text
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/heading.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/heading.js
 features:
   - Tones
   - Priorities
@@ -14,13 +14,6 @@ selectors:
 display: Inherited
 examples:
   - "<h3 class='heading'>This is a heading.</h3>"
-variables:
-  - name: --family-secondary
-    type: font
-    description: sets the font family
-  - name: --color-title
-    type: color
-    description: sets the color
 ---
 
 # Overview
@@ -39,7 +32,7 @@ The heading has full contextual tone and priority support.
 
 {% capture example %}
 {% for tone in site.tones %}
-<h3 class="heading ~{{tone}} !low">This is a toned heading.</h3>
+<h3 class="heading ~{{tone}} @low">This is a toned heading.</h3>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}

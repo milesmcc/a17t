@@ -5,7 +5,7 @@ subtab: element-label
 category: Typography
 title: Label
 description: An element to apply a strong label (often to a form field)
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/label.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/label.js
 selectors:
   - .label
 features:
@@ -14,19 +14,11 @@ features:
 display: Inherited
 examples:
   - "<label class='label' for='name'>What is your name?</label>\n<input class='input my-2' type='text' id='name' placeholder='Miles McCain'>"
-variables:
-  - name: --color-title
-    type: color
-    description: sets the color
-  - name: --kbd-color
-    type: color
-    description: sets the color
-    default: theme("colors.white")
 ---
 
 # Overview
 
-The label element is used for visually prominent labels. They are often helpful for building form interfaces. The label element is simple: it applies a medium weight and the `--color-title` to its content.
+The label element is used for visually prominent labels. They are often helpful for building form interfaces. The label element is simple: it applies a medium weight to its content.
 
 # Considerations
 
@@ -38,7 +30,7 @@ Labels have full tone and priority support. They will automatically look appropr
 
 {% capture example %}
 {% for tone in site.tones %}
-<p class="label ~{{tone}} !low">This is a {{tone}} label.</p>
+<p class="label ~{{tone}}">This is a {{tone}} label.</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -59,7 +51,7 @@ Labels have full tone and priority support. They will automatically look appropr
 {% include example.html code=example %}
 
 {% capture example %}
-<div class="~critical !low">
+<div class="~critical @low">
   <label class="label" for="biggame">Who will win the Big Game?</label>
   <input class="input my-2" id="biggame" type="text" value="Berkeley">
   <p class="support">That's wrong. Stanford will win.</p>

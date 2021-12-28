@@ -1,6 +1,6 @@
 <header class="flex flex-wrap items-center justify-between" style="z-index: 1;">
   <div class="mr-6">
-    <h3 class="text-2xl ~urge !low"><a href="/" class="flex items-center">
+    <h3 class="text-2xl text-urge-600"><a href="/" class="flex items-center">
         <div class="mr-2 icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 32 32">
@@ -29,32 +29,32 @@
     class="flex-wrap flex-grow hidden block w-full max-w-full px-2 py-4 rounded-lg shadow-lg md:w-auto md:flex md:items-center md:justify-between bg-neutral-000 md:bg-transparent md:shadow-none md:p-0"
     id="navFullContent">
     <ul class="flex flex-wrap items-center">
-      <li tabindex="0" class="portal dropdown outline-none {% if page.tab == 'elements' %}~urge active{% endif %}">
-        Elements
+      <li tabindex="0" class="dropdown outline-none">
+        <span class="portal {% if page.tab == 'elements' %}~urge active{% endif %}">Elements</span>
         <div class="w-screen text-sm dropdown-display md:w-auto">
           <div
-            class="card ~neutral !low bg-neutral-100 md:bg-neutral-000 mt-1 flex flex-wrap md:flex-nowrap w-4/5 md:w-auto">
+            class="card mt-1 flex flex-wrap md:flex-nowrap w-4/5 md:w-auto">
             {% include elements_list.html %}
           </div>
         </div>
       </li>
-      <li class="portal dropdown outline-none {% if page.tab == 'customize' %}~urge active{% endif %}">
-        <a href="/customize/">Customize</a>
+      <li class="portal dropdown outline-none {% if page.tab == 'guide' %}~urge active{% endif %}">
+        <a href="/guide/">Guide</a>
       </li>
       <li class="portal"><a href="https://github.com/milesmcc/a17t/">Source</a></li>
-      <li class="pt-2 pl-2 portal dark-only">
+      <li class="pt-2 pl-2 portal hidden dark:inline">
         <a class="github-button" href="https://github.com/milesmcc/a17t"
           data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true"
           aria-label="Star milesmcc/a17t on GitHub">Star</a>
       </li>
-      <li class="pt-2 pl-2 portal light-only">
+      <li class="pt-2 pl-2 portal dark:hidden">
         <a class="github-button" href="https://github.com/milesmcc/a17t"
           data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true"
           aria-label="Star milesmcc/a17t on GitHub">Star</a>
       </li>
     </ul>
     <div class="flex items-center p-2 md:w-5/12 md:text-right md:p-0 portal md:justify-end" style="z-index: 0;">
-      <input class="input ~neutral !low bg-neutral-000" type="text" placeholder="Search..." id="search">
+      <input class="input ~neutral @low bg-neutral-000" type="text" placeholder="Search (/)..." id="search">
     </div>
   </div>
 </header>

@@ -5,7 +5,7 @@ subtab: element-switch
 category: Interaction
 title: Switch
 description: A multipurpose element for binary on/off form fields
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/switch.css
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/switch.js
 selectors:
   - .switch
 features:

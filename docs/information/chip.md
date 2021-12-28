@@ -5,7 +5,7 @@ subtab: element-chip
 category: Information
 title: Chip
 description: An inline element for statuses, labels, categories, and more
-source: https://github.com/milesmcc/a17t/blob/master/src/information/chip.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/chip.js
 selectors:
   - .chip
 features:
@@ -13,14 +13,7 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<span class='chip ~neutral'>Chip</span>\n<span class='chip ~positive'>Chip</span>\n<span class='chip ~warning'>Chip</span>\n<span class='chip ~critical'>Chip</span>\n<span class='chip ~info'>Chip</span>\n<span class='chip ~urge'>Chip</span>"
-variables:
-  - name: --color-fill
-    type: color
-    description: sets background color
-  - name: --color-content
-    type: color
-    description: sets text color
+  - "<span class='chip ~gray'>Chip</span>\n<span class='chip ~green'>Chip</span>\n<span class='chip ~yellow'>Chip</span>\n<span class='chip ~red'>Chip</span>\n<span class='chip ~blue'>Chip</span>\n<span class='chip ~purple'>Chip</span>"
 ---
 
 # Overview
@@ -31,7 +24,7 @@ Most chips will generally be only a word or two. For longer content, consider us
 
 # Considerations
 
-**Margins** --- When using badges, be mindful of margins. In most cases, you'll want an y-margin of at least `1rem` to prevent visual overlap when wrapping. (Like all a17t elements, badges specify no margin themselves.) Using Tailwind? Just add `mb-1` to any chip that could have another chip wrap below it.
+**Margins** --- When using badges, be mindful of margins. In most cases, you'll want an y-margin of at least `1rem` to prevent visual overlap when wrapping. (Like all a17t elements, badges specify no margin themselves.)
 
 **Similarity to Buttons** --- Depending on your layout, chips can look a lot like buttons. Avoid using chips and buttons with the same priority near one another to prevent confusion over which elements are interactive.
 
@@ -43,7 +36,7 @@ Chips have full tone and priority support.
 ###### {{priority|capitalize}} Priority
 {% capture example %}
 {% for tone in site.tones %}
-<span class="chip ~{{tone}} !{{priority}} mb-1">Category</span>
+<span class="chip ~{{tone}} @{{priority}} mb-1">Category</span>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -57,7 +50,7 @@ Chips have full tone and priority support.
 
 {% capture example %}
 <p class="label mb-2">Categories</p>
-<p><span class='chip ~neutral mb-1'>Design</span> <span class='chip ~neutral mb-1'>Architecture</span> <span class='chip ~neutral mb-1'>New York</span> <span class='chip ~neutral mb-1'>Urbanism</span></p>
+<p><span class='chip ~neutral @high mb-1'>Design</span> <span class='chip ~neutral @high mb-1'>Architecture</span> <span class='chip ~neutral @high mb-1'>New York</span> <span class='chip ~neutral @high mb-1'>Urbanism</span></p>
 {% endcapture %}
 {% include example.html code=example %}
 

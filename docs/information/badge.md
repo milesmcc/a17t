@@ -5,7 +5,7 @@ subtab: element-badge
 category: Information
 title: Badge
 description: A small inline status indicator helpful for unread counts, notifications, and more
-source: https://github.com/milesmcc/a17t/blob/master/src/information/badge.css
+source: https://github.com/milesmcc/a17t/blob/master/src/information/badge.js
 selectors:
   - .badge
 features:
@@ -13,31 +13,20 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<span class='badge ~neutral'>Badge</span>\n<span class='badge ~positive'>Badge</span>\n<span class='badge ~warning'>Badge</span>\n<span class='badge ~critical'>Badge</span>\n<span class='badge ~info'>Badge</span>\n<span class='badge ~urge'>Badge</span>"
-variables:
-  - name: --color-fill
-    type: color
-    description: sets background color
-  - name: --color-content
-    type: color
-    description: sets text color
-  - name: --badge-size
-    type: size
-    description: sets height
-    default: 0.6em
+  - "<span class='badge ~neutral @high'>Badge</span>\n<span class='badge ~positive @high'>Badge</span>\n<span class='badge ~warning @high'>Badge</span>\n<span class='badge ~critical'>Badge</span>\n<span class='badge ~info'>Badge</span>\n<span class='badge ~urge'>Badge</span>"
 ---
 
 # Overview
 
 The badge is a small inline element ideal for data heavy interfaces. It's useful for drawing attention to the elements near it -- for example, as a "New" label or unread count.
 
-Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/chip) instead.
+Badges are nearly always pinned on another element (i.e., inline). If you're thinking about using a badge on its own, consider a [chip](/information/chip) instead.
 
 # Considerations
 
 **Vertical alignment** --- Badges are vertically aligned with the middle of the text surrounding it. While normally this results in correct positioning, it can look odd when badges are followed by non-text elements.
 
-**Reduced text size** --- Badges are best preceded with text that is of size `1 rem`. If they are used next to text of other sizes, the badge will look disproportional. (You can resize setting `--badge-size`.)
+**Reduced text size** --- Badges are best preceded with text that is of size `1 rem`. If they are used next to text of other sizes, the badge will look disproportional.
 
 **Medium font weight** --- To compensate for their reduced text size, badges by default have an increased text weight (medium) to aid readability.
 
@@ -51,7 +40,7 @@ Badges have full tone and priority support.
 ###### {{priority|capitalize}} Priority
 {% capture example %}
 {% for tone in site.tones %}
-<span class="badge ~{{tone}} !{{priority}}">New</span>
+<span class="badge ~{{tone}} @{{priority}}">New</span>
 {% endfor %}
 {% endcapture %}
 {% include example.html code=example %}
@@ -64,7 +53,7 @@ Badges have full tone and priority support.
 # Examples
 
 {% capture example %}
-<p>Unread <span class='badge ~critical !high'>55</span></p>
+<p>Unread <span class='badge ~critical @high'>55</span></p>
 {% endcapture %}
 {% include example.html code=example %}
 

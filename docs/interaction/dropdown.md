@@ -5,7 +5,7 @@ subtab: element-dropdown
 category: Interaction
 title: Dropdown
 description: An expandable element for exposing hidden content
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/dropdown.css
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/dropdown.js
 selectors:
   - .dropdown
   - .dropdown-display
@@ -17,12 +17,7 @@ features:
   - Manual
 display: Inherited
 examples:
-  - "<span class='dropdown' tabindex='0'>\n  <span class='button ~neutral'>\n    <span>Select me</span>\n    <span class='ml-3 chev'></span>\n  </span>\n  <div class='dropdown-display'>\n    <div class='card ~neutral !high my-4 w-48'>Hello world!</div>\n  </div>\n</span>"
-variables:
-  - name: --dropdown-animation-speed
-    type: time
-    description: sets the fade-in speed for the dropdown display
-    default: 100ms
+  - "<span class='dropdown' tabindex='0'>\n  <span class='button ~neutral'>\n    <span>Select me</span>\n    <span class='ml-3 chev'></span>\n  </span>\n  <div class='dropdown-display'>\n    <div class='card ~neutral @high m-4 w-48'>Hello world!</div>\n  </div>\n</span>"
 ---
 
 # Overview

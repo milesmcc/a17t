@@ -1,7 +1,9 @@
-.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-    color: var(--color-urge-core);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.dark-only {
-    display: none;
+@layer components {
+    :root {
+        font-family: "Inter", sans-serif;
+    }
 }

@@ -5,21 +5,12 @@ subtab: element-code
 category: Typography
 title: Code
 description: A small selector for inline code
-source: https://github.com/milesmcc/a17t/blob/master/src/typography/code.css
+source: https://github.com/milesmcc/a17t/blob/master/src/typography/code.js
 selectors:
   - .code
 display: Inline
 examples:
   - "This is <code class='code'>inline code</code>."
-variables:
-  - name: --code-color
-    type: color
-    description: sets the color
-    default: var(--color-title)
-  - name: --code-background
-    type: color
-    description: sets the background color
-    default: var(--color-light)
 ---
 
 # Overview

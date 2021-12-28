@@ -1,7 +1,0 @@
-.supra {
-    text-transform: uppercase;
-    letter-spacing: var(--supra-letter-spacing, 0.06rem);
-    color: var(--color-muted);
-
-    @apply text-sm font-secondary;
-}

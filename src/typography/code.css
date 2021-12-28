@@ -1,6 +1,0 @@
-.code {
-  background-color: var(--code-background, var(--color-light));
-  color: var(--code-color, var(--color-title));
-
-  @apply inline px-1 py-px font-mono rounded;
-}

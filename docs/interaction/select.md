@@ -5,7 +5,7 @@ subtab: element-select
 category: Interaction
 title: Select
 description: A dropdown-style single select element
-source: https://github.com/milesmcc/a17t/blob/master/src/interaction/select.css
+source: https://github.com/milesmcc/a17t/blob/master/src/interaction/select.js
 selectors:
   - .select
 features:
@@ -13,42 +13,12 @@ features:
   - Priorities
 display: Inline Flex
 examples:
-  - "<div class='select !normal max-w-xs'>\n  <select>\n    <option>Choice A</option>\n    <option>Choice B</option>\n    <option>Choice C</option>\n  </select>\n</div>"
-variables:
-  - name: --color-light
-    type: color
-    description: sets default border color
-  - name: --field-shadow-transition-speed
-    type: time
-    description: sets the speed of the hover and focus transition
-    default: 75ms
-  - name: --fallback-box-shadow
-    type: box shadow
-    description: sets the base box shadow
-  - name: --field-disabled-opacity
-    type: opacity
-    description: sets the opacity of disabled fields
-    default: 0.8
-  - name: --field-hover-box-shadow
-    description: sets additional box shadow on hover
-    type: box shadow
-    default: 0 0 1px 1px var(--color-light)
-  - name: --field-focus-box-shadow
-    description: sets additional box shadow on focus
-    type: box shadow
-    default: 0 0 0 2px var(--color-light)
-  - name: --select-chev-offset
-    description: how much the chevron should be offset
-    type: size
-    default: 1em
-  - name: --color-core
-    description: sets the color of the chevron
-    type: color
+  - "<div class='select ~neutral max-w-xs'>\n  <select>\n    <option>Choice A</option>\n    <option>Choice B</option>\n    <option>Choice C</option>\n  </select>\n</div>"
 ---
 
 # Overview
 
-Selects are a common interactive element for choosing among a list of predefined options. The a17t `.select` element is a specialized type of [field](/interaction/field) with a downward chevron.
+Selects are a common interactive element for choosing among a list of predefined options. The a17t `.select` element is a specialized type of [field](/interaction/field) with a downward chevron on the right side.
 
 Unlike some elements, the select element must be applied as the _parent_ of the actual HTML `<select>` element it's being applied to. This allows the chevron to be inserted automatically.
 
@@ -58,16 +28,14 @@ Unlike some elements, the select element must be applied as the _parent_ of the 
 
 # Variants
 
-Selects have full tone, priority, and disabling support. Priorities are communicated through elevation.
+Selects have full tone support.
 
-{% for priority in site.priorities %}
-###### {{priority|capitalize}} Priority
 {% capture example %}
 <section class="md:grid grid-cols-3 gap-4">
 {% for tone in site.tones %}
   <div class="select ~{{tone}} !{{priority}}">
     <select>
-      <option>~{{tone}} !{{priority}}</option>
+      <option>~{{tone}}</option>
       <option>Another option</option>
       <option>A very long option that will overlap with the chevron, hopefully.</option>
     </select>
@@ -76,9 +44,8 @@ Selects have full tone, priority, and disabling support. Priorities are communic
 </section>
 {% endcapture %}
 {% include example.html code=example %}
-{% endfor %}
 
-###### Disabling
+# Disabling
 
 {% capture example %}
 <div class="select ~neutral">
