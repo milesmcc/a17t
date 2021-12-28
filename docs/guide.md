@@ -91,7 +91,7 @@ That's it! Just place this new rule wherever you write your CSS. (Depending on y
 
 Verify that `@tailwind components` comes earlier than `@tailwind utilities` in your Tailwind CSS file. It should look something like:
 
-```css
+```
 @tailwind base
 @tailwind components
 @tailwind utilities
@@ -99,4 +99,11 @@ Verify that `@tailwind components` comes earlier than `@tailwind utilities` in y
 
 Note that `@tailwind utilities` comes *after* `@tailwind components`.
 
-_Having a different issue? Found a different fix? Please submit a PR documenting it here!_
+##### Something else...
+
+Can't find what you're looking for? Open an issue on GitHub!
+
+<a href="https://github.com/milesmcc/a17t/issues/new" class="button">
+    <i class="icon fa-brands fa-github mr-2"></i>
+    Open an Issue
+</a>
