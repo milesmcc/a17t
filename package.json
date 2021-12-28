@@ -1,7 +1,7 @@
 {
   "name": "a17t",
-  "version": "0.10.0",
-  "description": "Atomic design toolkit. Build beautiful interfaces without reinventing the wheel.",
+  "version": "0.10.1",
+  "description": "Atomic design toolkit. Build beautiful interfaces without reinventing the wheel. Tailwind CSS plugin.",
   "main": "src/a17t.js",
   "scripts": {},
   "repository": {
