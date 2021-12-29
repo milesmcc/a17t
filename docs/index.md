@@ -203,7 +203,7 @@ title: "The atomic web toolkit for pragmatists"
           (e.g., <code class="code">~green</code>). To make an indigo chip, for example, use <code class="code">chip
             ~indigo</code>.</p>
         <h2>Use priorities to control prominence</h2>
-        <p>There are three priorities &mdash; low and high. You can specify a
+        <p>There are two priorities &mdash; low and high. You can specify a
           priority by its class: an &ldquo;at sign&rdquo; followed by its name (e.g., <code class="code">@high</code> or
           <code class="code">@low</code>). Priorities change elements' visual prominence.</p>
         <h2>A perfect match for Tailwind</h2>
