@@ -65,11 +65,11 @@ module.exports = ({ theme }) => {
           },
           "li": {
             "display": "list-item",
-            "text-align": "left"
+            "text-align": "start"
           },
           "ol, ul": {
             "display": "block",
-            "margin-left": theme("spacing.8"),
+            "margin-inline-start": theme("spacing.8"),
           },
           "ol": {
             "list-style-type": "decimal"
